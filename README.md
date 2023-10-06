@@ -1,39 +1,272 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# DentalDecor
 
-Welcome,
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+## Table of Contents
 
-## Codeanywhere Reminders
+1. [Overview](#overview)
+2. [Project Goals](#project-goals)
+    1. [User Goals](#user-goals)
+3. [Business Model](#business-model)
+    1. [SEO](#seo)
+    2. [Target Audience](#target-audience)
+4. [User Experience](#user-experience)
+    1. [User Requirements and Expectations](#user-requirements-and-expectations)
+    2. [User Stories](#user-stories)
+    3. [Site Owner Stories](#site-owner-stories)
+5. [Design](#design)
+    1. [Colours](#colours)
+    2. [Fonts](#fonts)
+    3. [Database](#database)
+    4. [Data Models](#data-models)
+    5. [Wireframes](#wireframes)
+    6. [Agile Design](#agile-design)
+6. [Technologies Used](#technologies-used)
+    1. [Languages & Frameworks](#languages--frameworks)
+    2. [Libraries and Tools](#libraries--tools)
+7. [Features](#features)
+8. [Future Features](#future-features)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+9. [Deployment](#deployment)
 
-`python3 -m http.server`
+10. [Credits](#credits)
+    1. [Code](#code)
+    2. [Tutorials](#tutorials)
+    3. [Imagery](#imagery)
+11. [Acknowledgements](#acknowledgements)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## Overview
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## Project (Site owner) Goals
 
-`http_server`
+### User Goals
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Business Model
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### SEO
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Target audience
 
-To log into the Heroku toolbelt CLI:
+##### Back to [top](#table-of-contents)
+## User Experience
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### User Requirements and Expectations
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### User stories
 
----
 
-Happy coding!
+### Site Owner Stories
+
+
+## Design
+***
+### Colors
+
+
+### Fonts
+
+
+##### Back to [top](#table-of-contents)
+
+## Database
+***
+
+### Data Models
+
+#### User model
+
+
+
+
+####  Product
+
+
+
+####  Category
+
+
+
+####  CustomerProfile
+
+
+
+#### Contact
+
+
+
+#### Order
+
+
+
+####  OrderLineItem
+
+
+### Wireframes
+
+
+<details><summary>Big screens - laptop & desktop</summary>
+
+<details><summary>Home page</summary>
+<img src="" >
+</details>
+
+<details><summary>Shop</summary>
+<img src="">
+</details>
+
+<details><summary> details</summary>
+<img src="">
+</details>
+
+<details><summary>Shopping cart</summary>
+<img src="">
+</details>
+
+<details><summary>Profile</summary>
+<img src="">
+</details>
+
+<details><summary>Contact us page</summary>
+<img src="">
+</details>
+
+<details><summary>Authentication pages</summary>
+<img src="">
+</details>
+
+<details><summary>Wishlist</summary>
+<img src="">
+</details>
+
+
+</details>
+
+***
+
+<details><summary>Medium screens</summary>
+
+<details><summary>Home page</summary>
+<img src="" >
+</details>
+
+<details><summary>Shop</summary>
+<img src="">
+</details>
+
+<details><summary> details</summary>
+<img src="">
+</details>
+
+<details><summary>Shopping cart</summary>
+<img src="">
+</details>
+
+<details><summary>Profile</summary>
+<img src="">
+</details>
+
+<details><summary>Contact us page</summary>
+<img src="">
+</details>
+
+<details><summary>Authentication pages</summary>
+<img src="">
+</details>
+
+<details><summary>Wishlist</summary>
+<img src="">
+</details>
+
+
+</details>
+
+***
+
+<details><summary>Small screens</summary>
+
+
+<details><summary>Home page</summary>
+<img src="" >
+</details>
+
+<details><summary>Shop</summary>
+<img src="">
+</details>
+
+<details><summary> details</summary>
+<img src="">
+</details>
+
+<details><summary>Shopping cart</summary>
+<img src="">
+</details>
+
+<details><summary>Profile</summary>
+<img src="">
+</details>
+
+<details><summary>Contact us page</summary>
+<img src="">
+</details>
+
+<details><summary>Authentication pages</summary>
+<img src="">
+</details>
+
+<details><summary>Wishlist</summary>
+<img src="">
+</details>
+
+
+
+
+</details>
+
+***
+
+
+##### Back to [top](#table-of-contents)
+
+## Agile Design
+
+## Technologies Used
+
+### Languages & Frameworks
+
+### Libraries & Tools
+
+
+## Features
+
+
+## Future features
+
+
+##### Back to [top](#table-of-contents)
+
+
+
+##### Back to [top](#table-of-contents)
+## Testing
+
+
+## Bugs
+
+## Deployment
+
+## Credits
+
+
+### Code
+
+
+
+### Tutorials
+
+### Imagery
+
+
+
+## Acknowledgements
+
+
