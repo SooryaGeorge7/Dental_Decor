@@ -107,37 +107,46 @@
 <details><summary>Big screens - laptop & desktop</summary>
 
 <details><summary>Home page</summary>
-<img src="" >
+<img src="docs/wireframes/desktop/homepage-deskop.png" >
+<img src="docs/wireframes/desktop/homepage-footer-desktop.png" >
 </details>
 
 <details><summary>Shop</summary>
-<img src="">
+<img src="docs/wireframes/desktop/shoppage-desktop.png">
 </details>
 
 <details><summary> details</summary>
-<img src="">
+<img src="docs/wireframes/desktop/">
 </details>
 
 <details><summary>Shopping cart</summary>
-<img src="">
+<img src="docs/wireframes/desktop/shoppingcartpage-desktop.png">
 </details>
 
 <details><summary>Profile</summary>
-<img src="">
+<img src="docs/wireframes/desktop/profilepage-desktop.png">
 </details>
 
 <details><summary>Contact us page</summary>
-<img src="">
+<img src="docs/wireframes/desktop/contactuspage-desktop.png">
 </details>
 
 <details><summary>Authentication pages</summary>
-<img src="">
+<img src="docs/wireframes/desktop/signuppage-desktop.png">
+<img src="docs/wireframes/desktop/signinpage-desktop.png">
+</details>
+
+<details><summary>checkout pages</summary>
+<img src="docs/wireframes/desktop/checkoutpage-desktop.png">
 </details>
 
 <details><summary>Wishlist</summary>
-<img src="">
+<img src="docs/wireframes/desktop/wishlistpage-desktop.png">
 </details>
 
+<details><summary>checkoutpage</summary>
+<img src="docs/wireframes/tablet/checkoutpage-tablet.png">
+</details>
 
 </details>
 
@@ -146,11 +155,12 @@
 <details><summary>Medium screens</summary>
 
 <details><summary>Home page</summary>
-<img src="" >
+<img src="docs/wireframes/tablet/homepage-tablet.png" >
+<img src="docs/wireframes/tablet/homepage-footer-tablet.png" >
 </details>
 
 <details><summary>Shop</summary>
-<img src="">
+<img src="docs/wireframes/tablet/shoppage-tablet.png">
 </details>
 
 <details><summary> details</summary>
@@ -158,23 +168,28 @@
 </details>
 
 <details><summary>Shopping cart</summary>
-<img src="">
+<img src="docs/wireframes/tablet/shoppingcartpage-tablet.png">
 </details>
 
 <details><summary>Profile</summary>
-<img src="">
+<img src="docs/wireframes/tablet/profilepage-tablet.png">
 </details>
 
 <details><summary>Contact us page</summary>
-<img src="">
+<img src="docs/wireframes/tablet/contactuspage-tablet.png">
 </details>
 
 <details><summary>Authentication pages</summary>
-<img src="">
+<img src="docs/wireframes/tablet/signinpage-tablet.png">
+<img src="docs/wireframes/tablet/signuppage-tablet.png">
 </details>
 
 <details><summary>Wishlist</summary>
-<img src="">
+<img src="docs/wireframes/tablet/wishlistpage-tablet.png">
+</details>
+
+<details><summary>checkoutpage</summary>
+<img src="docs/wireframes/tablet/checkoutpage-tablet.png">
 </details>
 
 
@@ -186,11 +201,12 @@
 
 
 <details><summary>Home page</summary>
-<img src="" >
+<img src="docs/wireframes/mobile/homepage-mobile.png" >
+<img src="docs/wireframes/mobile/homepage-footer-mobile.png" >
 </details>
 
 <details><summary>Shop</summary>
-<img src="">
+<img src="docs/wireframes/mobile/shoppage-mobile.png">
 </details>
 
 <details><summary> details</summary>
@@ -198,26 +214,29 @@
 </details>
 
 <details><summary>Shopping cart</summary>
-<img src="">
+<img src="docs/wireframes/mobile/shoppingcartpage-mobile.png">
 </details>
 
 <details><summary>Profile</summary>
-<img src="">
+<img src="docs/wireframes/mobile/profilepage-mobile.png">
 </details>
 
 <details><summary>Contact us page</summary>
-<img src="">
+<img src="docs/wireframes/mobile/contactuspage-mobile.png">
 </details>
 
 <details><summary>Authentication pages</summary>
-<img src="">
+<img src="docs/wireframes/mobile/signinpage-mobile.png">
+<img src="docs/wireframes/mobile/signuppage-mobile.png">
 </details>
 
 <details><summary>Wishlist</summary>
-<img src="">
+<img src="docs/wireframes/mobile/wishlistpage-mobile.png">
 </details>
 
-
+<details><summary>checkoutpage</summary>
+<img src="docs/wireframes/mobile/checkoutpage-mobile.png">
+</details>
 
 
 </details>
