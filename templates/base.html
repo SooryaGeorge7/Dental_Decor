@@ -36,7 +36,87 @@
     
   </head>
   <body>
-    <header class="container-fluid fixed-top"></header>
+    <header class="container-fluid ">
+      <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <div class="navbar-left navbar-expand">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="navbar-brand nav-link" href="#">DentalDecor</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>   
+                </ul>
+            </div>
+            <div class="navbar-right navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <div class="input-group">
+                                <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search">
+                                <div class="input-group-append">
+                                    <button class="btn btn-black border border-black rounded-0" type="submit">
+                                        <span class="icon">Search
+                                            <i class="fas fa-search"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <div class="nav-item dropdown">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Account<i class="bi bi-person"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            {% if request.user.is_authenticated %}
+                                {% if request.user.is_superuser %}
+                                <a href="" class="dropdown-item">Product Management</a>
+                                {% endif %}
+                                <a href="" class="dropdown-item">My Profile</a>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            {% else %}
+                               <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
+                               <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
+                            {% endif %}
+                          </ul>
+                        </div>
+                        
+                            
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><i class="bi bi-heart"></i></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+                            <div class="text-center">
+                                <p class="my-0">
+                                    {% if grand_total %}
+                                        ${{ grand_total|floatformat:2 }}
+                                    {% else %}
+                                        $0.00
+                                    {% endif %}|
+                                    <i class="bi bi-cart4"></i>
+                                </p>
+                            </div>
+                          </a>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </header>
 
     {% if messages %}
         <div class="message-container"></div>
