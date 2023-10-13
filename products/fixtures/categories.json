@@ -1,0 +1,40 @@
+[
+    {
+      "pk": 1,
+      "model": "products.category",
+      "fields": {
+        "name": "Wallart",
+        "notes": "Dental art which can be displayed on a wall",
+        "friendly_name": "Wallart"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.category",
+      "fields": {
+        "name": "Educational",
+        "notes":"Dental educational posters or pieces",
+        "friendly_name": "Educational"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.category",
+      "fields": {
+        "name": "Collectables",
+        "notes":"Dental sculptures or miniture models",
+        "friendly_name": "Collectables"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.category",
+      "fields": {
+        "name": "Custom",
+        "notes":"Dental products which can be personalised",
+        "friendly_name": "Custom"
+      }
+    }
+    
+    
+  ]

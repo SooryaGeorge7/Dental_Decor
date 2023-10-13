@@ -1,0 +1,589 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "category": 3,
+            "item_no": "",
+            "name": "Molar tooth figure",
+            "description": "3D printed molar tooth in ABS material with polish treatment",
+            "price": 8.50,
+            "image_url": "",
+            "image": "collectable2.webp"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "category": 3,
+            "item_no": "",
+            "name": "Tooth implant model",
+            "description": "A 3D model showcasing a tooth implant among 2 normal teeth",
+            "price": 10.50,
+            "image_url": "",
+            "image": "collectable3.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "category": 3,
+            "item_no": "",
+            "name": "Ceramic tooth vase",
+            "description": "Unique ceramic tooth vase planter for succulent",
+            "price": 20.69,
+            "image_url": "",
+            "image": "collectable4.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "category": 3,
+            "item_no": "",
+            "name": "Lego dentist operation chair",
+            "description": "dentist operation seat chair with syringe built of lego® bricks brickis",
+            "price": 39.90,
+            "image_url": "",
+            "image": "collectable5.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "category": 3,
+            "item_no": "",
+            "name": "Dollhouse miniture dental chair",
+            "description": "Dollhouse Miniature Modern Dental Chair with Light and Cuspidor",
+            "price": 70.90,
+            "image_url": "",
+            "image": "collectable6.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "category": 3,
+            "item_no": "",
+            "name": "Funny Dentist Mug",
+            "description": "Ceramic mug made with high quality gloss finish and ORCA Coating",
+            "price": 12.15,
+            "image_url": "",
+            "image": "collectable7.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "category": 3,
+            "item_no": "",
+            "name": "The dental collection charms",
+            "description": "20 Alloy material charms in antique silver/bronze colors",
+            "price": 7.29,
+            "image_url": "",
+            "image": "collectable10.jpg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Personalized dentist lamp",
+            "description": "This toothlamp features a replica of a tooth. The lamp is made of high quality polypropylene,alike.The base is made of real wood (beech). The LED lamp comes with a USB cable.",
+            "price": 26.34,
+            "image_url": "",
+            "image": "custom1.webp"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Dental minimalistic art sculpture",
+            "description": "The product is a 3D-printed PLA. It is an eco-friendly, biodegradable plastic derived from plant fibers. It is a light material.",
+            "price": 48.94,
+            "image_url": "",
+            "image": "custom2.jpg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Custom Dentist cartoon portrait",
+            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
+            "price": 10.22,
+            "image_url": "",
+            "image": "custom3.jpg"
+        }
+    }
+
+
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
