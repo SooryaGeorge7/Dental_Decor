@@ -3,6 +3,279 @@
         "pk": 1,
         "model": "products.product",
         "fields": {
+            "category": 1,
+            "item_no": "",
+            "name": "Molar Tooth Canvas Wall Art.",
+            "description": "High quality digital images printed on 100% artistic cotton canvas and stretched into 3cm pine frames.",
+            "price": 85.34,
+            "image_url": "",
+            "image": "wallart.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "category": 1,
+            "item_no": "",
+            "name": "Jaw Anatomy Art Print Dental Art Watercolor Poster",
+            "description": "The print is a museum-quality print made from an original painting. They are available as canvas print or poster print.",
+            "price": 24.05,
+            "image_url": "",
+            "image": "wallart2.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "category": 1,
+            "item_no": "",
+            "name": "Dental Tools One Line Art.",
+            "description": "You will receive 3 JPEG files in 300 dpi resolution in the following sizes:11x14,RATIO 4:5 SIZE FILE FOR PRINTING: 8x10”, 16x20, ISO PAPER SIZE FILE FOR PRINTING 5”x7”, A3, A4, A5, A2.",
+            "price": 3.62,
+            "image_url": "",
+            "image": "wallart3.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "category": 1,
+            "item_no": "",
+            "name": "Dentist wall clock",
+            "description": "3D SHADOW EFFECT - The sawtooth hanger keeps the wall clock 1 inch off the wall for added depth, dimension, and shadow.No smell and harmful chemicals involved.Product stands 1,5 (0.60) away from the wall.",
+            "price": 70.54,
+            "image_url": "",
+            "image": "wallart4.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "category": 1,
+            "item_no": "",
+            "name": "Dental Anatomy in Gold, Canvas",
+            "description": "1.25 thick Premium Canvas Gallery Wrap - 100% cotton canvas with 400gsm standard. Beautifully finished, taut corners that give a clean and crisp look.Vibrant Lifelong color.It Comes installed on the back of the canvas for a nearly effortless install process",
+            "price": 103.77,
+            "image_url": "",
+            "image": "wallart5.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "category": 1,
+            "item_no": "",
+            "name": "Tooth wall art sign 3D",
+            "description": "Huge and timeless wall art: Signs with a height of 6.6-11.5'' / 20-29cm and frames made of recyclable corn starch will impress your patients, friends, business partners and visitors.",
+            "price": 42.39,
+            "image_url": "",
+            "image": "wallart6.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "category": 1,
+            "item_no": "",
+            "name": "Minimalistic tooth set anatomical art",
+            "description": "Created with brush, pencil, precision and time . Inspired by my daily life as an artist,this piece shows off the beauty of the human body visible to young and old.",
+            "price": 18.45,
+            "image_url": "",
+            "image": "wallart7.jpg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "category": 1,
+            "item_no": "",
+            "name": "Dentist Decor quotes",
+            "description": "Apply this 3D wall art in any flat surface (walls, windows, etc).If you are looking for a piece of art in your office walls this wall art is a perfect choice.",
+            "price": 210.45,
+            "image_url": "",
+            "image": "wallart8.jpg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "category": 1,
+            "item_no": "",
+            "name": "Medical Teeth Posters, Navy Set of 3 Prints",
+            "description": "Dental office decor made to suit a Nay Blue Dentistry Surgery. Featuring gold and navy accents. Upon purchase you will receive Large Digital Printable Files that you can easily download, print, and hang to liven up your Medical Dentist Clinic Today",
+            "price": 10.63,
+            "image_url": "",
+            "image": "wallart9.jpg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "category": 1,
+            "item_no": "",
+            "name": "Waiting Room Posters for dentists",
+            "description": "Created with brush, pencil, precision and time.",
+            "price": 22.14,
+            "image_url": "",
+            "image": "wallart10.jpg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "category": 2,
+            "item_no": "",
+            "name": "X-ray safety poster for dentists",
+            "description": "This item is perfect for dental offices, medical offices, and educational settings! This easy-to-read info graphic poster will help educate your patients and clients on how oral health affects the rest of the body.",
+            "price": 36.62,
+            "image_url": "",
+            "image": "educational1.jpg"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "category": 2,
+            "item_no": "",
+            "name": "Anatomy of the Mouth Printables",
+            "description": "Dental Health and Anatomy Printable provides a detailed diagram of a tooth and its various parts, along with accompanying activities and exercises for students to understand and learn about tooth anatomy.",
+            "price": 4.27,
+            "image_url": "",
+            "image": "educational2.jpg"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "category": 2,
+            "item_no": "",
+            "name": "Teeth brushing chart",
+            "description": "Our Teeth Brushing Chart comes in a downloadable pdf or a made to order laminated poster that comes in a variety of sizes.",
+            "price": 13.42,
+            "image_url": "",
+            "image": "educational3.jpg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "category": 2,
+            "item_no": "",
+            "name": "Montessori TEETH BRUSHING TOY Teaching Aid",
+            "description": "Good teaching aid to help kids visualise what the purpose of each tooth is, and where the cavity is starting in their own set of teeth.",
+            "price": 19.00,
+            "image_url": "",
+            "image": "educational4.jpg"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "category": 2,
+            "item_no": "",
+            "name": "Set 6 of Vintage Dental Anatomy Art Posters.",
+            "description": " available as instant digital downloads in high resolution 300dpi in sizes 11 X 14 inches",
+            "price": 12.21,
+            "image_url": "",
+            "image": "educational5.jpg"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "category": 2,
+            "item_no": "",
+            "name": "Tooth numbering system diagram",
+            "description": "Dental Tooth Numbering Chart for dental assistants, students, and everyone.It has a comprehensive tooth chart that indicates tooth surfaces, root structure, common tooth names etc. in addition to the tooth numbers for primary and secondary dentition.",
+            "price": 18.29,
+            "image_url": "",
+            "image": "educational6.jpg"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "category": 2,
+            "item_no": "",
+            "name": "Dental Hygiene Educational DIGITAL DOWNLOAD Poster.",
+            "description": "This educational print is great for dental providers to decorate their space while educating their young patients! It can also be great to use in community outreach programs for dental offices that educate in elementary schools.",
+            "price": 4.87,
+            "image_url": "",
+            "image": "educational7.jpg"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "category": 2,
+            "item_no": "",
+            "name": "Brush Teeth Routine- Teach me- Learning- chart",
+            "description": "The Brush Teeth Routine Chart is here to help to make learning easy.",
+            "price": 3.47,
+            "image_url": "",
+            "image": "educational8.webp"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "category": 2,
+            "item_no": "",
+            "name": "Felt Educational toy brushing teeth.",
+            "description": "Extra large Flannel board Toothbrushing games for children Developmental games and toys. Children can practice directly how to brush their teeth properly and correctly.",
+            "price": 88.73,
+            "image_url": "",
+            "image": "educational9.jpg"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "category": 2,
+            "item_no": "",
+            "name": "Oral Health to Body Connection Poster.",
+            "description": "This easy-to-read info graphic poster will help educate your patients and clients on how oral health affects the rest of the body.",
+            "price": 36.62,
+            "image_url": "",
+            "image": "educational10.jpg"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "category": 3,
+            "item_no": "",
+            "name": "Custom Dental Clinic LED Neon Sign",
+            "description": "Acrylic, Neon flex dental sign.Available in Cool White, Warm White, Red, Blue, Ice Blue, Yellow, Pink, Purple, Green, Orange.Sign Cut to shape (by default) rectangle, square, heart, round backboard.",
+            "price": 67.39,
+            "image_url": "",
+            "image": "collectable1.jpg"
+        }
+    },
+    {
+        "pk":22,
+        "model": "products.product",
+        "fields": {
             "category": 3,
             "item_no": "",
             "name": "Molar tooth figure",
@@ -13,7 +286,7 @@
         }
     },
     {
-        "pk": 2,
+        "pk": 23,
         "model": "products.product",
         "fields": {
             "category": 3,
@@ -26,7 +299,7 @@
         }
     },
     {
-        "pk": 3,
+        "pk": 24,
         "model": "products.product",
         "fields": {
             "category": 3,
@@ -39,7 +312,7 @@
         }
     },
     {
-        "pk": 4,
+        "pk": 25,
         "model": "products.product",
         "fields": {
             "category": 3,
@@ -52,7 +325,7 @@
         }
     },
     {
-        "pk": 5,
+        "pk": 26,
         "model": "products.product",
         "fields": {
             "category": 3,
@@ -65,7 +338,7 @@
         }
     },
     {
-        "pk": 6,
+        "pk": 27,
         "model": "products.product",
         "fields": {
             "category": 3,
@@ -78,7 +351,33 @@
         }
     },
     {
-        "pk": 7,
+        "pk": 28,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": " Dentist gift funny enamel pin",
+            "description": "Made of durable and high-quality hard enamel,Rubber or metal backing.It can be placed on your jean, sweaters, hats, backpacks, totes, messenger bags or displayed just to collect",
+            "price": 2.96,
+            "image_url": "",
+            "image": "collectable8.webp"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "products.product",
+        "fields": {
+            "category": 4,
+            "item_no": "",
+            "name": "Dentist puzzle",
+            "description": " This puzzle includes some teeth, smiles, dental tools, toothpaste, tooth brush, floss, dental chair, and more. At least 4 different woods are used in the puzzle, and may include Cherry, Mahogany, Alder, Maple, Oak, Hickory, Walnut & others. Comes with base and cover. Measures about 7.5 inches across in the cover.",
+            "price": 45.11,
+            "image_url": "",
+            "image": "collectable9.jpg"
+        }
+    },
+    {
+        "pk": 30,
         "model": "products.product",
         "fields": {
             "category": 3,
@@ -91,7 +390,7 @@
         }
     },
     {
-        "pk": 8,
+        "pk": 31,
         "model": "products.product",
         "fields": {
             "category": 4,
@@ -104,7 +403,7 @@
         }
     },
     {
-        "pk": 9,
+        "pk": 32,
         "model": "products.product",
         "fields": {
             "category": 4,
@@ -114,305 +413,6 @@
             "price": 48.94,
             "image_url": "",
             "image": "custom2.jpg"
-        }
-    },
-    {
-        "pk": 10,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
-        }
-    },
-    {
-        "pk": 11,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
-        }
-    },
-    {
-        "pk": 12,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
-        }
-    },
-    {
-        "pk": 13,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
-        }
-    },
-    {
-        "pk": 14,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
-        }
-    },
-    {
-        "pk": 15,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
-        }
-    },
-    {
-        "pk": 16,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
-        }
-    },
-    {
-        "pk": 17,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
-        }
-    },
-    {
-        "pk": 18,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
-        }
-    },
-    {
-        "pk": 19,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
-        }
-    },
-    {
-        "pk": 20,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
-        }
-    },
-    {
-        "pk": 21,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
-        }
-    },
-    {
-        "pk": 22,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
-        }
-    },
-    {
-        "pk": 23,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
-        }
-    },
-    {
-        "pk": 24,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
-        }
-    },
-    {
-        "pk": 25,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
-        }
-    },
-    {
-        "pk": 26,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
-        }
-    },
-    {
-        "pk": 27,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
-        }
-    },
-    {
-        "pk": 28,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
-        }
-    },
-    {
-        "pk": 29,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
-        }
-    },
-    {
-        "pk": 30,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
-        }
-    },
-    {
-        "pk": 31,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
-        }
-    },
-    {
-        "pk": 32,
-        "model": "products.product",
-        "fields": {
-            "category": 4,
-            "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
-            "image_url": "",
-            "image": "custom3.jpg"
         }
     },
     {
@@ -434,11 +434,11 @@
         "fields": {
             "category": 4,
             "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
+            "name": "Personalized LED dentist tooth metal sign",
+            "description": "LED sign is crafted from high-quality 16-gauge steel and Powder Coated for Long-Lasting Durability.",
+            "price": 36.62,
             "image_url": "",
-            "image": "custom3.jpg"
+            "image": "custom4.webp"
         }
     },
     {
@@ -447,11 +447,11 @@
         "fields": {
             "category": 4,
             "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
+            "name": "Dentist desk name sign with cartoon",
+            "description": "In the photo you send, only the head area will be made into a cartoon and added to the design.The product is made of natural stone material.",
+            "price": 53.71,
             "image_url": "",
-            "image": "custom3.jpg"
+            "image": "custom5.webp"
         }
     },
     {
@@ -460,11 +460,11 @@
         "fields": {
             "category": 4,
             "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
+            "name": "Metal Dentist wall clock",
+            "description": "Dentist Metal Wall Clock made of Metal laser cut made with Black electrostatic paint",
+            "price": 67.52,
             "image_url": "",
-            "image": "custom3.jpg"
+            "image": "custom6.jpg"
         }
     },
     {
@@ -473,11 +473,11 @@
         "fields": {
             "category": 4,
             "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
+            "name": "Custom Dentist Bobblehead",
+            "description": "These bobbleheads are 100% handmade using traditional sculpting and molding techniques.The doll prototype is made with clay and porcelain,and hand painted in rich colors. ",
+            "price": 95.11,
             "image_url": "",
-            "image": "custom3.jpg"
+            "image": "custom7.jpg"
         }
     },
     {
@@ -486,11 +486,11 @@
         "fields": {
             "category": 4,
             "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
+            "name": "Tooth be told mug with personalization",
+            "description": "Personilization printed on high quality ceramic mugs.The print will not fade when washed.",
+            "price": 16.44,
             "image_url": "",
-            "image": "custom3.jpg"
+            "image": "custom8.jpg"
         }
     },
     {
@@ -499,11 +499,11 @@
         "fields": {
             "category": 4,
             "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
+            "name": "Custom Dentist desk plaque decor",
+            "description": "This Desk sign is made up of 16 gauge steel and walnut wood",
+            "price": 80.23,
             "image_url": "",
-            "image": "custom3.jpg"
+            "image": "custom9.jpg"
         }
     },
     {
@@ -512,15 +512,13 @@
         "fields": {
             "category": 4,
             "item_no": "",
-            "name": "Custom Dentist cartoon portrait",
-            "description": "You will receive a high resolution JPEG or PDF file so you can print it in any resolution up to A3 (11 x 16 inches). And on a separate request, I can send you a file for printing on large formats.",
-            "price": 10.22,
+            "name": "Custom Socks for dentists",
+            "description": "These high-quality polyester socks with sublimated print provide optimum comfort with style wherever one might go.",
+            "price": 12.21,
             "image_url": "",
-            "image": "custom3.jpg"
+            "image": "custom10.jpg"
         }
     }
-
-
 ]
 
 
