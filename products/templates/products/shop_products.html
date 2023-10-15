@@ -6,41 +6,93 @@
     <div class="row mt-3 mb-3">
         <div class="col text-center">
             <h2 class="logo-font">Dental Decor Products</h2>
-            
+
         </div>
     </div>
     <div class="row mb-5">
         <div class="col d-flex justify-content-center">
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="filterDropdown" data-bs-toggle="dropdown">
-                    Category
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="filterDropdown"
+                    data-bs-toggle="dropdown">
+                    {% if current_categories %}
+                        {% for c in current_categories %}
+
+                            <span class="p-2 mt-2  rounded-0 ">
+                            {{ c.friendly_name}}</span>
+
+                        {% endfor %}
+                    {% else %}
+                       <span class="p-2 mt-2  rounded-0 ">All</span>
+                    {% endif %}
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="filterDropdown">
                     <li><a class="dropdown-item" href="{% url 'shop_products' %}?category=Wallart">Wall Art</a></li>
                     <li><a class="dropdown-item" href="{% url 'shop_products' %}?category=Custom">Custom</a></li>
-                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?category=Collectables">Collectibles</a></li>
-                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?category=Educational">Educational</a></li>
+                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?category=Collectables">Collectibles</a>
+                    </li>
+                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?category=Educational">Educational</a>
+                    </li>
+                    <li><a class="dropdown-item" href="{% url 'shop_products' %}">All</a>
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="col d-flex justify-content-center">
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="sortDropdown" data-bs-toggle="dropdown">
-                    Sort 
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="sortDropdown"
+                    data-bs-toggle="dropdown">
+                    {% if current_sorting != 'None_None' %}
+                    {% if current_sorting == 'price_asc' %}
+                    Price (low to high)
+                    {% elif current_sorting == 'price_desc' %}
+                    Price (high to low)
+                    {% elif current_sorting == 'name_asc' %}
+                    Name (A-Z)
+                    {% elif current_sorting == 'name_desc' %}
+                    Name (Z-A)
+                    {% elif current_sorting == 'category_asc' %}
+                    Category (A-Z)
+                    {% elif current_sorting == 'category_desc' %}
+                    Category (Z-A)
+                    {% endif %}
+                    {% else %}
+                    Sort by...
+                    {% endif %}
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="sortDropdown">
-                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?sort=price&direction=asc">Price (Lowest to Highest)</a></li>
-                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?sort=price&direction=desc">Price (Highest to Lowest)</a></li>
-                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?sort=name&direction=asc">Alphabet (A-Z)</a></li>
-                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?sort=name&direction=desc">Alphabet (Z-A)</a></li>
-                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?sort=category&direction=asc">Category (A-Z)</a></li>
-                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?sort=category&direction=desc">Category (Z-A)</a></li>
+                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?sort=price&direction=asc">Price (Lowest
+                            to Highest)</a></li>
+                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?sort=price&direction=desc">Price
+                            (Highest to Lowest)</a></li>
+                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?sort=name&direction=asc">Alphabet
+                            (A-Z)</a></li>
+                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?sort=name&direction=desc">Alphabet
+                            (Z-A)</a></li>
+                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?sort=category&direction=asc">Category
+                            (A-Z)</a></li>
+                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?sort=category&direction=desc">Category
+                            (Z-A)</a></li>
                     <li><a class="dropdown-item" href="{% url 'shop_products' %}">All</a></li>
                 </ul>
+
             </div>
+
+        </div>
+        <div class="col d-flex justify-content-center">
+            <div class="col-12 col-md-6 order-md-first">
+                <p class="text-muted mt-3 text-center text-md-left">
+                    {% if search_term or current_categories or current_sorting != 'None_None' %}
+                    <span class="small"><a href="{% url 'shop_products' %}">Products Home</a> | </span>
+                    {% endif %}
+                    {{ products|length }} Products
+                    {% if search_term %} found for <strong>"{{ search_term }}"</strong>
+                    {% endif %}
+                </p>
+            </div>
+
         </div>
     </div>
-    
+
     <div class="row">
         {% for product in products %}
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-3">
@@ -57,7 +109,8 @@
                     </a>
                     {% endif %}
                     <div class="position-absolute top-0 end-0 p-3">
-                        <a href="{% url 'product_detail' product.id %}" class="btn btn-dark"><i class="bi bi-zoom-in"></i></a>
+                        <a href="{% url 'product_detail' product.id %}" class="btn btn-dark"><i
+                                class="bi bi-zoom-in"></i></a>
                     </div>
                 </div>
                 <div class="card-footer bg-white border-0 text-left">
@@ -65,10 +118,18 @@
                         <div class="col">
                             <p class="mb-0">{{ product.name }}</p>
                             <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                            {% if product.category %}
+                            <p class="small mt-1 mb-0">
+                                <a class="text-muted"
+                                    href="{% url 'shop_products' %}?category={{ product.category.name }}">
+                                    <i class="bi bi-tag-fill"></i>{{ product.category.friendly_name }}
+                                </a>
+                            </p>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
         {% endfor %}
