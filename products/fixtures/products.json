@@ -354,7 +354,7 @@
         "pk": 28,
         "model": "products.product",
         "fields": {
-            "category": 4,
+            "category": 3,
             "sku": "DEP-800",
             "name": " Dentist gift funny enamel pin",
             "description": "Made of durable and high-quality hard enamel,Rubber or metal backing.It can be placed on your jean, sweaters, hats, backpacks, totes, messenger bags or displayed just to collect",
@@ -367,7 +367,7 @@
         "pk": 29,
         "model": "products.product",
         "fields": {
-            "category": 4,
+            "category": 3,
             "sku": "DPP-900",
             "name": "Dentist puzzle",
             "description": " This puzzle includes some teeth, smiles, dental tools, toothpaste, tooth brush, floss, dental chair, and more. At least 4 different woods are used in the puzzle, and may include Cherry, Mahogany, Alder, Maple, Oak, Hickory, Walnut & others. Comes with base and cover. Measures about 7.5 inches across in the cover.",

@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
-from .models import Product
+from .models import Product, Category
 from django.db.models import Q
 
 # Create your views here.
@@ -8,8 +8,15 @@ def shop_products(request):
 
     products = Product.objects.all()
     query = None
+    categories = None
 
     if request.GET:
+        if 'category' in request.GET:
+            categories = request.GET['category'].split(',')
+            products = products.filter(category__name__in=categories)
+            categories = Category.objects.filter(name__in=categories)
+
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -23,6 +30,7 @@ def shop_products(request):
     context = {
         'products': products,
         'search_term': query,
+        'current_categories': categories,
     }
 
     return render(request, 'products/shop_products.html', context)
