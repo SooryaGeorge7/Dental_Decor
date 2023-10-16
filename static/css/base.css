@@ -12,7 +12,23 @@ body {
     color: #333333;
     font-family: 'Lato';
 }
+.navbar-brand {
+    color:#006666;
+    font-weight: bold;
+    font-size: 2rem;
+}
 
+.footer-div {
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: #006666;
+}
+
+.search-btn {
+    color:#006666;
+}
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -27,6 +43,31 @@ body {
 .carousel-item {
     max-height: 35rem;
 }
+
+.carousal-image {
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    position: relative;
+}
+
+.carousal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/**Buttons**/
+
+.dental-decorbtn {
+    background-color: #D87559;
+    color: #FFFFF0;
+    z-index: 2;
+}
+
 
 /* .carousel-item img {
     object-fit: contain;
