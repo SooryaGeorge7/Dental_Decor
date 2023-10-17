@@ -113,7 +113,7 @@
               <a class="nav-link" href="#"><i class="bi bi-heart"></i></a>
             </li>
             <li class="nav-item">
-              <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+              <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_shoppingbag' %}">
                   <p class="my-0">
                     {% if grand_total %}
                     ${{ grand_total|floatformat:2 }}
