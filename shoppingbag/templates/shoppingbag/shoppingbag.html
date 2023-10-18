@@ -13,10 +13,7 @@
     <div class="row">
         <div class="col">
             {% if shoppingbag_items %}
-            {{ shoppingbag_items }}
-            <br>
-            <br>
-            {{ request.session.shoppingbag }}
+            
             <div class="table-responsive rounded">
                 <table class="table table-sm table-borderless">
                     <thead class="text-black">
@@ -43,7 +40,44 @@
                             <p class="my-0">${{ item.product.price }}</p>
                         </td>
                         <td class="py-3 w-25">
-                            <p class="my-0">{{ item.quantity }}</p>
+                            <form class="form update-form" method="POST" action="">
+                                {% csrf_token %}
+                                
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button class="decrement-qty btn btn-sm btn-black rounded-0" 
+                                                data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                                                <span>
+                                                    <i class="bi bi-dash-circle"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <input class="form-control form-control-sm qty_input" type="number"
+                                            name="quantity" value="{{ item.quantity }}" min="1" max="99"
+                                            data-item_id="{{ item.item_id }}"
+                                            id="id_qty_{{ item.item_id }}">
+                                        <div class="input-group-append">
+                                            <button class="increment-qty btn btn-sm btn-black rounded-0"
+                                                data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                                                <span>
+                                                    <i class="bi bi-plus-circle"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                        {% if item.product.has_sizes %}
+                                            <input type="hidden" name="product_size" value="{{ item.size }}">
+                                        {% endif %}
+                                    </div>
+                                
+                            </form>
+                            <div class="d-flex justify-content-between mt-2">
+                                <a class="update-link text-info" href="">
+                                    <small>Update</small>
+                                </a>
+                                <a class="remove-item text-danger" href="" id="remove_{{ item.item_id }}" data-size="{{ item.size }}">
+                                    <small>Remove</small>
+                                </a>
+                            </div>
                         </td>
                         <td class="py-3">
                             <p class="my-0">${{ item.product.price }}</p>
@@ -85,4 +119,12 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+
+{% include 'products/includes/quantity_input_script.html' %}
+{% include 'shoppingbag/includes/crud_script.html' %}
+
 {% endblock %}
