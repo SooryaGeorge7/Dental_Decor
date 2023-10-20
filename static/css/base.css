@@ -68,6 +68,10 @@ footer {
     z-index: 2;
 }
 
+.update-link, .remove-item {
+    cursor:pointer;
+
+}
 
 /* .carousel-item img {
     object-fit: contain;
