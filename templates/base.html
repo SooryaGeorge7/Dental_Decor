@@ -35,7 +35,7 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
+  
   <link rel="icon" href="/media/favicon.svg" sizes="any">
   {% endblock %}
 
@@ -130,7 +130,21 @@
   </header>
 
   {% if messages %}
-  <div class="message-container"></div>
+  <div class="message-container">
+    {% for message in messages %}
+                {% with message.level as level %}
+                    {% if level == 40 %}
+                        {% include 'includes/toasts/toast_error.html' %}
+                    {% elif level == 30 %}
+                        {% include 'includes/toasts/toast_warning.html' %}
+                    {% elif level == 25 %}
+                        {% include 'includes/toasts/toast_success.html' %}
+                    {% else %}
+                        {% include 'includes/toasts/toast_info.html' %}
+                    {% endif %}
+                {% endwith %}
+      {% endfor %}
+  </div>
   {% endif %}
 
   {% block page_header %}
@@ -139,8 +153,7 @@
   {% block content %}
   {% endblock %}
 
-  {% block postloadjs %}
-  {% endblock %}
+  
 
   <footer class="text-center text-light">
     <div class="container py-3">
@@ -152,6 +165,14 @@
       <p>Copyright@DentalDecor. All rights reserved.</p>
     </div>
   </footer>
+
+  {% block postloadjs %}
+  <script type="text/javascript">
+     $(document).ready(function() {
+            $('.toast').toast('show');
+        });
+  </script>
+  {% endblock %}
 </body>
 
 </html>
