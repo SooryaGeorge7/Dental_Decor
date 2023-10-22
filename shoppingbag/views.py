@@ -78,3 +78,4 @@ def remove_from_shoppingbag(request, item_id):
     except Exception as e:
         return HttpResponse(status=500)
 
+ 
