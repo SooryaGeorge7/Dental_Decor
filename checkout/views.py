@@ -48,7 +48,11 @@ def checkout(request):
         }
         order_form = OrderForm(form_data)
         if order_form.is_valid():
-            order = order_form.save()
+            order = order_form.save(commit=False)
+            pid = request.POST.get('client_secret').split('_secret')[0]
+            order.stripe_pid = pid
+            order.original_shoppingbag = json.dumps(shoppingbag)
+            order.save()
             for item_id, item_data in shoppingbag.items():
                 try:
                     product = Product.objects.get(id=item_id)
@@ -86,8 +90,8 @@ def checkout(request):
         if not shoppingbag:
             messages.error(request, "There's nothing in your bag at the moment")
             return redirect(reverse('shop_products'))
-        current_bag = shoppingbag_contents(request)
-        total = current_bag['total']
+        current_shoppingbag = shoppingbag_contents(request)
+        total = current_shoppingbag['total']
         stripe_total = round(total * 100)
         stripe.api_key = stripe_secret_key
         intent = stripe.PaymentIntent.create(
