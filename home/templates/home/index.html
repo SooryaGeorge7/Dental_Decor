@@ -31,4 +31,52 @@
 
     
   </div>
+  <section class="bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>About Us</h2>
+                <p>
+                    Welcome to Dental Decor! We are a dedicated team passionate about providing top-quality dental art products to our customers. Our mission is to ensure that you find art that inspire you for your clinic or private practice.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="/media/carousal5.jpg" alt="About Us Image" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-white py-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+            <img src="/media/contact-us.webp" alt="contact us" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+              <h2>Contact Us</h2>
+              <p>
+                  Have questions or need assistance? Feel free to reach out to our friendly support team. We're here to help!
+              </p>
+              <form action="" method="post">
+                  {% csrf_token %}
+                  <div class="mb-3">
+                      <label for="name" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="name" name="name" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+          
+      </div>
+  </div>
+</section>
 {% endblock %}
