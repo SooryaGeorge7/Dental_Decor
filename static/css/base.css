@@ -44,7 +44,7 @@ input[name='q']::placeholder {
 }
 
 .carousel-item {
-    max-height: 35rem;
+    max-height: 40rem;
 }
 
 .carousal-image {
