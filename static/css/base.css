@@ -47,6 +47,11 @@ footer {
 	z-index: -1;
 }
 
+h1, h2, h3, h4 {
+    color:#006666;
+    font-weight: bold;
+}
+
 input[name='q']::placeholder {
     color: #aab7c4;
 }
@@ -69,7 +74,16 @@ input[name='q']::placeholder {
     width: 100%;
     height: 100%;
 }
+.carousal-border {
+    border-top: 0.125rem solid #006666;
+    border-bottom: 0.125rem solid #006666;
+}
 
+.zoom-image {
+    height: 15rem; 
+    object-fit: cover; 
+    object-position: center center;
+}
 /**Buttons**/
 
 .dental-decorbtn {

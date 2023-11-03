@@ -2,27 +2,29 @@
 {% load static %}
 
 {% block content %}
-<div class="container">
+<div class="container carousal-border">
     <div class="row mt-3 mb-3">
         <div class="col text-center">
-            <h2 class="logo-font">Dental Decor Products</h2>
+            <h1 class="logo-font">Dental Decor Products</h1>
 
         </div>
     </div>
     <div class="row mb-5">
         <div class="col d-flex justify-content-center">
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="filterDropdown"
+                <button class="btn btn-secondary dropdown-toggle dental-decorbtn" type="button" id="filterDropdown"
                     data-bs-toggle="dropdown">
                     {% if current_categories %}
-                        {% for c in current_categories %}
+                    {% for c in current_categories %}
 
-                            <span class="p-2 mt-2  rounded-0 ">
-                            {{ c.friendly_name}}</span>
+                    <span class="p-2 mt-2  rounded-0 ">
+                        {{ c.friendly_name}}</span>
 
-                        {% endfor %}
+                    {% endfor %}
                     {% else %}
-                       <span class="p-2 mt-2  rounded-0 ">All</span>
+                    <span class="p-2 mt-2  rounded-0 ">
+                        Categories <i class="bi bi-app-indicator"></i>
+                    </span>
                     {% endif %}
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="filterDropdown">
@@ -39,7 +41,7 @@
         </div>
         <div class="col d-flex justify-content-center">
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="sortDropdown"
+                <button class="btn btn-secondary dropdown-toggle dental-decorbtn" type="button" id="sortDropdown"
                     data-bs-toggle="dropdown">
                     {% if current_sorting != 'None_None' %}
                     {% if current_sorting == 'price_asc' %}
@@ -56,7 +58,7 @@
                     Category (Z-A)
                     {% endif %}
                     {% else %}
-                    Sort by...
+                    Sort by...<i class="bi bi-funnel"></i>
                     {% endif %}
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="sortDropdown">
@@ -96,21 +98,27 @@
     <div class="row">
         {% for product in products %}
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-3">
-            <div class="card h-100 border-0 position-relative">
-                <div class="overlay position-absolute w-100 h-100"></div>
+            <div class="card h-100 shadow">
+
                 <div class="card-body d-flex flex-column justify-content-between">
-                    {% if product.image %}
-                    <a href="{% url 'product_detail' product.id %}">
-                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                    </a>
-                    {% else %}
-                    <a href="{% url 'product_detail' product.id %}">
-                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                    </a>
-                    {% endif %}
-                    <div class="position-absolute top-0 end-0 p-3">
-                        <a href="{% url 'product_detail' product.id %}" class="btn btn-dark"><i
-                                class="bi bi-zoom-in"></i></a>
+                    <div class="position-relative">
+                        <div>
+                            {% if product.image %}
+                            <a href="{% url 'product_detail' product.id %}">
+                                <img class="card-img-top img-fluid zoom-image " src="{{ product.image.url }}"
+                                    alt="{{ product.name }}">
+                            </a>
+                            {% else %}
+                            <a href="{% url 'product_detail' product.id %}">
+                                <img class="card-img-top img-fluid zoom-image" src="{{ MEDIA_URL }}noimage.png"
+                                    alt="{{ product.name }}">
+                            </a>
+                            {% endif %}
+                        </div>
+                        <div class="position-absolute top-0 end-0 ">
+                            <a href="{% url 'product_detail' product.id %}" class="btn btn-dark"><i
+                                    class="bi bi-zoom-in"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="card-footer bg-white border-0 text-left">
@@ -127,10 +135,10 @@
                             </p>
                             {% endif %}
                             {% if request.user.is_superuser %}
-                                <small class="ml-3">
-                                    <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                                </small>
+                            <small class="ml-3">
+                                <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                                <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                            </small>
                             {% endif %}
                         </div>
                     </div>
@@ -142,7 +150,7 @@
     </div>
     <div class="position-fixed bottom-0 end-0 p-3 m-3">
         <a class="btn fw-bold" href="{% url 'shop_products' %}" id="scroll-to-top">
-            <i class="bi bi-arrow-up-circle "></i> 
+            <i class="bi bi-arrow-up-circle "></i>
         </a>
     </div>
 </div>
