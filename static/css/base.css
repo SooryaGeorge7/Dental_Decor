@@ -32,6 +32,11 @@ footer {
 .search-btn {
     color:#006666;
 }
+
+.search-field {
+    margin-right: 0.25rem;
+    
+}
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -72,7 +77,10 @@ input[name='q']::placeholder {
     color: #FFFFF0;
     z-index: 2;
 }
-
+.dental-decor-actionbtn {
+    background-color: #006666;
+    color:#FFFFF0;
+}
 .update-link, .remove-item {
     cursor:pointer;
 
