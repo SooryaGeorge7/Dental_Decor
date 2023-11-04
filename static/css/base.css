@@ -47,7 +47,7 @@ footer {
 	z-index: -1;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     color:#006666;
     font-weight: bold;
 }
@@ -98,6 +98,20 @@ input[name='q']::placeholder {
 .update-link, .remove-item {
     cursor:pointer;
 
+}
+
+.zoom-button {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: #006666;
+}
+
+.card:hover .zoom-button {
+    visibility: visible;
 }
 /*  bootstrap toasts */
 
