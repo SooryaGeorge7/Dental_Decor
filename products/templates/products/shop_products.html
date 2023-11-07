@@ -114,13 +114,16 @@
                                     alt="{{ product.name }}">
                             </a>
                             {% endif %}
+
                         </div>
-                        <div class="position-absolute top-50 start-50 translate-middle">
-                            <a href="{% url 'product_detail' product.id %}" class="btn btn-dark zoom-button">
-                                <i class="bi bi-binoculars"></i>
-                            </a>
+                        <div class="product-overlay">
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <a href="{% url 'product_detail' product.id %}" class="btn btn-dark zoom-button">
+                                    <i class="bi bi-binoculars"></i>
+                                </a>
+                            </div>
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="card-footer bg-white border-0 text-left">
@@ -136,27 +139,32 @@
                                 </a>
                             </p>
                             {% endif %}
-                            
+
                         </div>
                         <div class="row">
                             <div class="col">
-                            {% if request.user.is_superuser %}
-                            <div class="d-flex justify-content-start">
-                            <small class="ml-3">
-                                <a href="{% url 'edit_product' product.id %}" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="bi bi-pencil-square"></i></a> |
-                                <a class="text-danger" href="{% url 'delete_product' product.id %}" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><i class="bi bi-trash3"></i></a> |
-                                
-                            </small>
-                            </div>
-                            {% endif %}
+                                {% if request.user.is_superuser %}
+                                <div class="d-flex justify-content-start">
+                                    <small class="ml-3">
+                                        <a href="{% url 'edit_product' product.id %}" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" title="Edit"><i class="bi bi-pencil-square"></i></a>
+                                        |
+                                        <a class="text-danger" href="{% url 'delete_product' product.id %}"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><i
+                                                class="bi bi-trash3"></i></a> |
+
+                                    </small>
+                                </div>
+                                {% endif %}
                             </div>
                             <div class="col">
                                 <div class="d-flex justify-content-end">
-                                <small class="ml-3">
-                               
-                                    <a class="text-success" href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Add to wishlist"><i class="bi bi-heart"></i></a>
-                                </small>
-                            </div>
+                                    <small class="ml-3">
+
+                                        <a class="text-success" href="" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="Add to wishlist"><i class="bi bi-heart"></i></a>
+                                    </small>
+                                </div>
                             </div>
                         </div>
                     </div>
