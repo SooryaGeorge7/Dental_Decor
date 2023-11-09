@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['dental-decor-ee0d87f16edf.herokuapp.com','8000-sooryageorg-dentaldecor-9bhdpnovlkj.ws-eu105.gitpod.io',
                 '8000-sooryageorg-dentaldecor-9bhdpnovlkj.ws-eu106.gitpod.io']
