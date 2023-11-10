@@ -1,6 +1,5 @@
 from django import forms
 from reviews.models import Review
-from django.forms import HiddenInput
 
 
 class RatingForm(forms.ModelForm):
@@ -17,7 +16,7 @@ class RatingForm(forms.ModelForm):
             'comment_text',
             ]
         widgets = {
-            'product_rating': HiddenInput(),
+            
             'comment_text': forms.Textarea(
                 attrs={'placeholder': 'Type in a review here...',
                        'class': 'responsive-textarea',

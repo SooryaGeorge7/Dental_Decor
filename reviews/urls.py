@@ -3,9 +3,9 @@ from . import views
 
 urlpatterns = [
     path(
-        "addreview/",
-        views.addreview,
-        name="review",
+        "addreview/<int:product_id>/",
+        views.add_review,
+        name="add_review",
     ),
     
 ]
