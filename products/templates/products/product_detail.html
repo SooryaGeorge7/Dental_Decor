@@ -2,6 +2,8 @@
 {% load static %}
 
 {% block content %}
+
+
 <div class="overlay"></div>
 <div class="container">
     <div class="row">
@@ -119,33 +121,34 @@
         <div class="col-12 col-md-6 col-lg-4">
             <h2 class="mb-3">Product Reviews</h2>
 
-            {% if reviews  %}
+            {% if reviews %}
             {% for review in reviews %}
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ review.user.username }}</h5>
-                        <p class="card-text">{{ review.product_rating }}</p>
-                        <p class="card-text">{{ review.comment_text }}</p>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        {% if request.user == review.user %}
-                        <button class="btn" aria-label="edit-review-button"  >
-                            <i class="bi bi-pencil-square"></i>
-                        </button>
-                        <button class="btn" aria-label="delete-review" >
-                            <i class="bi bi-trash3"></i>
-                        </button>
-                        {% else %}
-                        {% endif %}
-                    </div>
+            
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{ review.user.username }}</h5>
+                    <p class="card-text">{{ review.product_rating }}</p>
+                    <p class="card-text">{{ review.comment_text }}</p>
                 </div>
+                <div class="d-flex justify-content-end">
+                    {% if request.user == review.user %}
+
+                    <a href="{% url 'edit_review' review.id %}" >Edit Review</a>
+                        
+                    <button class="btn" aria-label="delete-review">
+                        <i class="bi bi-trash3"></i>
+                    </button>
+                    {% else %}
+                    {% endif %}
+                </div>
+            </div>
             {% endfor %}
             {% else %}
-                <p>No reviews yet.</p>
+            <p>No reviews yet.</p>
             {% endif %}
 
         </div>
-        
+
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addReviewModal">
             Add a Review
         </button>
@@ -160,18 +163,22 @@
                 </div>
                 <div class="modal-body">
                     <!-- Add a form for users to submit reviews -->
-                    <form  method="post" action="{% url 'add_review' product.id %}" enctype="multipart/form-data">
+                    <form method="post" action="{% url 'add_review' product.id %}" enctype="multipart/form-data">
                         {% csrf_token %}
                         {{ rating_form }}
-                        
+
                         <button type="submit" class="btn btn-primary">Submit Review</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    
+
+
 
 </div>
+
 
 {% endblock %}
 

@@ -24,3 +24,31 @@ def add_review(request, product_id):
             messages.error(request, "Error submitting the review. Please check the form.")
 
     return redirect('product_detail', product_id=product_id)
+
+@login_required
+def edit_review(request, review_id):
+    
+    review = get_object_or_404(Review, id=review_id)
+    product = review.product
+    reviews = Review.objects.filter(product=product)
+
+    if request.method == 'POST':
+        rating_form = RatingForm(request.POST, instance=review)
+        if rating_form.is_valid():
+            product_rating = rating_form.save(commit=False)
+            product_rating.save()
+            messages.success(request, "Review updated successfully.")
+            return redirect('product_detail', product_id=product.id)
+        else:
+            messages.error(request, "Error updating the review. Please check the form.")
+    else:
+        rating_form = RatingForm(instance=review)
+
+    context = {
+        'product': product,
+        'rating_form': rating_form,
+        'reviews': reviews,
+    }
+
+    return render(request, 'reviews/edit_review_modal.html', context)
+         

@@ -1,0 +1,33 @@
+{% include 'products/product_detail.html' %}
+{% if reviews %}
+{% for review in reviews %}
+
+<div class="modal fade" id="editReviewModal{{ review.id }}" tabindex="-1"
+    aria-labelledby="editReviewModalLabel{{ review.id }}" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editReviewModalLabel{{ review.id }}">Edit Review</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ rating_form }}
+                    <button type="submit" class="btn btn-primary">Submit Changes</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endif %}
+{% for review in reviews %}
+<script>
+    $(document).ready(function () {
+        
+        $('#editReviewModal{{ review.id }}').modal('show');
+        
+    });
+</script>
+{% endfor %}
