@@ -66,6 +66,8 @@ def product_detail(request, product_id):
     reviews = Review.objects.filter(product=product)
     rating_form = RatingForm()
 
+    
+
     context = {
         'product': product,
         'rating_form': rating_form,

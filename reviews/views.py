@@ -52,3 +52,18 @@ def edit_review(request, review_id):
 
     return render(request, 'reviews/edit_review_modal.html', context)
          
+@login_required()
+def delete_review(request,  review_id):
+    """
+    This function handles deleting of review for a particular restaurant.
+    """
+    user = request.user
+    review = get_object_or_404(Review, id=review_id)
+    product = review.product
+    review.delete()
+    messages.success(
+            request,
+            f"Your review for {product.name} has been deleted {user.username}"
+        )
+
+    return redirect('product_detail', product_id=product.id)
