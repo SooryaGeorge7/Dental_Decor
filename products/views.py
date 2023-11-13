@@ -66,12 +66,21 @@ def product_detail(request, product_id):
     reviews = Review.objects.filter(product=product)
     rating_form = RatingForm()
 
-    
+    user_reviewed = False
+    if request.user.is_authenticated:
+        user_review = Review.objects.filter(
+            product=product, user=request.user
+        )
+        if user_review.exists():
+            user_reviewed = True
+            
+
 
     context = {
         'product': product,
         'rating_form': rating_form,
         'reviews': reviews,
+        "user_reviewed": user_reviewed,
     }
 
     return render(request, 'products/product_detail.html', context)
