@@ -11,10 +11,38 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form method="POST" enctype="multipart/form-data">
+                <form method="POST" class="editreviewform" enctype="multipart/form-data">
                     {% csrf_token %}
-                    {{ rating_form }}
-                    <button type="submit" class="btn btn-primary">Submit Changes</button>
+                    <div class="card shadow p-1 bg-body-tertiary rounded mb-3">
+                        <div class="card-body">
+                            <h2 class=" fw-bold">{{ product.name }}</h2>
+                            <p> Rate the product out of 5 stars!</p>
+                            <div class="rating taste">{{rating_form.product_rating}}
+    
+                                <h4 class="text-light">Product Rating</h4>
+                                <a class="btn"><i class="bi bi-star-fill" id="product-first"></i></a>
+                                <a class="btn"><i class="bi bi-star-fill" id="product-second"></i></a>
+                                <a class="btn"><i class="bi bi-star-fill" id="product-third"></i></a>
+                                <a class="btn"><i class="bi bi-star-fill" id="product-fourth"></i></a>
+                                <a class="btn"><i class="bi bi-star-fill" id="product-fifth"></i></a>
+                            </div>
+                            
+    
+                        </div>
+    
+                        <!-- Comment Box -->
+    
+                        <div class="card-body">
+                            <h5 class="card-title">Leave a Review!</h5>
+                            <div class="form-group ">
+                                <label for="id_comment_text" class="visually-hidden">Review:</label>
+                                {{ rating_form.comment_text   }}
+    
+                            </div>
+                            <small class="form-text text-muted">{{ rating_form.comment_text.help_text }}</small>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Update Review</button>
+                    </div>
                 </form>
             </div>
         </div>

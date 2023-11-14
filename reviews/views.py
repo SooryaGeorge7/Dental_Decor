@@ -44,10 +44,19 @@ def edit_review(request, review_id):
     else:
         rating_form = RatingForm(instance=review)
 
+    user_reviewed = False
+    if request.user.is_authenticated:
+        user_review = Review.objects.filter(
+            product=product, user=request.user
+        )
+        if user_review.exists():
+            user_reviewed = True
+
     context = {
         'product': product,
         'rating_form': rating_form,
         'reviews': reviews,
+        "user_reviewed": user_reviewed,
     }
 
     return render(request, 'reviews/edit_review_modal.html', context)

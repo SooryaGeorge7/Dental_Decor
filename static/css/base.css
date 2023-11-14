@@ -147,6 +147,8 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+
+
 /* .carousel-item img {
     object-fit: contain;
     height:33rem;

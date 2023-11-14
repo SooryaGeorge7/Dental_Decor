@@ -1,7 +1,12 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock %}
+
 {% block content %}
+
 
 {% include 'reviews/delete_review_modal.html' %}
 <div class="overlay"></div>
@@ -135,8 +140,7 @@
 
                     <a href="{% url 'edit_review' review.id %}">Edit Review</a>
 
-                    <button class="btn" data-bs-toggle="modal"
-                        data-bs-target="#deleteReviewModal{{ review.id }}" >
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#deleteReviewModal{{ review.id }}">
                         <i class="bi bi-trash3"></i>
                     </button>
                     {% else %}
@@ -150,13 +154,12 @@
 
         </div>
 
-        
-        {% if user_reviewed == True %}
-        <p>You have already rated this product</p>
-        {% else %}
+
+        {% if user_reviewed == False %}
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addReviewModal">
             Add a Review
         </button>
+
         {% endif %}
 
     </div>
@@ -169,15 +172,45 @@
                 </div>
                 <div class="modal-body">
                     <!-- Add a form for users to submit reviews -->
-                    <form method="post" action="{% url 'add_review' product.id %}" enctype="multipart/form-data">
+                    <form method="post" action="{% url 'add_review' product.id %}" class="reviewform"
+                        enctype="multipart/form-data">
                         {% csrf_token %}
-                        {{ rating_form }}
+                        <div class="card shadow p-1 bg-body-tertiary rounded mb-3">
+                            <div class="card-body">
+                                
+                                <h2 class=" fw-bold">{{ product.name }}</h2>
+                                <p> Rate the product out of 5 stars!</p>
+                                <div class="rating product_rating">{{rating_form.product_rating}}
 
-                        <button type="submit" class="btn btn-primary">Submit Review</button>
+                                    <h4 class="text-light">Product Rating</h4>
+                                    <a class="btn"><i class="bi bi-star-fill checked" id="product_rating-first"></i></a>
+                                    <a class="btn"><i class="bi bi-star-fill" id="product_rating-second"></i></a>
+                                    <a class="btn"><i class="bi bi-star-fill" id="product_rating-third"></i></a>
+                                    <a class="btn"><i class="bi bi-star-fill" id="product_rating-fourth"></i></a>
+                                    <a class="btn"><i class="bi bi-star-fill" id="product_rating-fifth"></i></a>
+                                </div>
+
+
+                            </div>
+
+                            <!-- Comment Box -->
+
+                            <div class="card-body">
+                                <h5 class="card-title">Leave a Review!</h5>
+                                <div class="form-group ">
+                                    <label for="id_comment_text" class="visually-hidden">Review:</label>
+                                    {{ rating_form.comment_text }}
+
+                                </div>
+                                <small class="form-text text-muted">{{ rating_form.comment_text.help_text }}</small>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Review</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
+
     </div>
 
 
@@ -186,9 +219,13 @@
 </div>
 
 
+
 {% endblock %}
 
 {% block postloadjs %}
-{{ block.super }}
-{% include 'products/includes/quantity_input_script.html' %}
+    {{ block.super }}
+    <script src="{% static 'products/js/add_rating.js' %}">
+        
+    </script>
+    {% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}
