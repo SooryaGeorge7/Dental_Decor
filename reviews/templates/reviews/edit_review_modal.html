@@ -1,4 +1,5 @@
 {% include 'products/product_detail.html' %}
+{% load static %}
 {% if reviews %}
 {% for review in reviews %}
 
@@ -17,27 +18,27 @@
                         <div class="card-body">
                             <h2 class=" fw-bold">{{ product.name }}</h2>
                             <p> Rate the product out of 5 stars!</p>
-                            <div class="rating taste">{{rating_form.product_rating}}
-    
+                            <div class="rating product_rating">{{rating_form.product_rating}}
+
                                 <h4 class="text-light">Product Rating</h4>
-                                <a class="btn"><i class="bi bi-star-fill" id="product-first"></i></a>
-                                <a class="btn"><i class="bi bi-star-fill" id="product-second"></i></a>
-                                <a class="btn"><i class="bi bi-star-fill" id="product-third"></i></a>
-                                <a class="btn"><i class="bi bi-star-fill" id="product-fourth"></i></a>
-                                <a class="btn"><i class="bi bi-star-fill" id="product-fifth"></i></a>
+                                <a class="btn updated"><i class="bi bi-star-fill" id="product_rating-sixth"></i></a>
+                                <a class="btn updated"><i class="bi bi-star-fill" id="product_rating-seventh"></i></a>
+                                <a class="btn updated"><i class="bi bi-star-fill" id="product_rating-eighth"></i></a>
+                                <a class="btn updated"><i class="bi bi-star-fill" id="product_rating-ninth"></i></a>
+                                <a class="btn updated"><i class="bi bi-star-fill" id="product_rating-tenth"></i></a>
                             </div>
-                            
-    
+
+
                         </div>
-    
+
                         <!-- Comment Box -->
-    
+
                         <div class="card-body">
                             <h5 class="card-title">Leave a Review!</h5>
                             <div class="form-group ">
                                 <label for="id_comment_text" class="visually-hidden">Review:</label>
-                                {{ rating_form.comment_text   }}
-    
+                                {{ rating_form.comment_text }}
+
                             </div>
                             <small class="form-text text-muted">{{ rating_form.comment_text.help_text }}</small>
                         </div>
@@ -53,9 +54,11 @@
 {% for review in reviews %}
 <script>
     $(document).ready(function () {
-        
+
         $('#editReviewModal{{ review.id }}').modal('show');
-        
+
     });
+    
 </script>
+<script src="{% static 'products/js/add_rating.js' %}"></script>
 {% endfor %}
