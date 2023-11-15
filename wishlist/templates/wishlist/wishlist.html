@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<h1>Your Wishlist</h1>
+
+{% if wish_items  %}
+    <ul>
+        {% for item in wish_items  %}
+            <li>{{ item.product.name }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>Your wishlist is empty.</p>
+{% endif %}
+
+{% endblock %}
