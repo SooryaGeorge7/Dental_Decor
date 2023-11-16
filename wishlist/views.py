@@ -19,17 +19,25 @@ def wishlist(request):
 
 def add_to_wishlist(request, product_id):
     
-    wish_items = Wishlist.objects.filter(user=request.user)
     product = get_object_or_404(Product, id=product_id)
 
-
     try:
-        if wish_items.product.filter(id=product.id).exists():
-            messages.info(request, f'{product.name} is already in your wishlist.')
-    except :
+        wish_item = Wishlist.objects.get(user=request.user, product=product)
+        messages.info(request, f'{product.name} is already in your wishlist.')
+    except Wishlist.DoesNotExist:
        
         Wishlist.objects.create(user=request.user, product=product)
         messages.success(request, f'{product.name} added to wishlist')
            
 
     return redirect('product_detail', product_id=product.id)
+
+def remove_from_wishlist(request, product_id):
+    wishlist = Wishlist.objects.filter(user=request.user)
+    product = get_object_or_404(Product, id=product_id)
+
+    if request.method == 'POST':
+        Wishlist.objects.filter(id=product.id).delete()
+        messages.success(request, f'{product.name} removed from your wishlist.')
+
+    return redirect('wishlist')

@@ -7,7 +7,14 @@
 {% if wish_items  %}
     <ul>
         {% for item in wish_items  %}
-            <li>{{ item.product.name }}</li>
+            <li>{{ item.product.name }}
+                {% include 'wishlist/remove_item_modal.html' %}
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#removeModal{{ item.product.id }}">
+                    Remove
+                </button>
+                
+
+            </li>
         {% endfor %}
     </ul>
 {% else %}
