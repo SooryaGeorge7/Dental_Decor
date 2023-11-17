@@ -18,7 +18,7 @@ def add_to_shoppingbag(request, item_id):
     if 'product_size' in request.POST:
         size = request.POST['product_size']
     shoppingbag = request.session.get('shoppingbag', {})
-
+    
     if size:
         if item_id in list(shoppingbag.keys()):
             if size in shoppingbag[item_id]['items_by_size'].keys():
@@ -40,7 +40,7 @@ def add_to_shoppingbag(request, item_id):
 
 
     request.session['shoppingbag'] = shoppingbag
-    print(request.session['shoppingbag'])
+    
     return redirect(redirect_url)
 
 def update_shoppingbag(request, item_id):
