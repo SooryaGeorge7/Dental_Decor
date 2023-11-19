@@ -1,0 +1,63 @@
+{% include 'products/product_detail.html' %}
+{% load static %}
+
+
+<div class="modal fade" id="addReviewModal" tabindex="-1" aria-labelledby="addReviewModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addReviewModalLabel">Add a Review</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body"> 
+                    <!-- Add a form for users to submit reviews -->
+                    <form method="post"  class="reviewform"enctype="multipart/form-data">
+                        
+                        {% csrf_token %}
+                        <div class="card shadow p-1 bg-body-tertiary rounded mb-3">
+                            <div class="card-body">
+                                
+                                <h2 class=" fw-bold">{{ product.name }}</h2>
+                                <p> Rate the product out of 5 stars!</p>
+                                <div class="rating product_rating">{{rating_form.product_rating}}
+
+                                    <h4 class="text-light">Product Rating</h4>
+                                    <a class="btn"><i class="bi bi-star-fill checked" id="product_rating-first"></i></a>
+                                    <a class="btn"><i class="bi bi-star-fill" id="product_rating-second"></i></a>
+                                    <a class="btn"><i class="bi bi-star-fill" id="product_rating-third"></i></a>
+                                    <a class="btn"><i class="bi bi-star-fill" id="product_rating-fourth"></i></a>
+                                    <a class="btn"><i class="bi bi-star-fill" id="product_rating-fifth"></i></a>
+                                </div>
+
+
+                            </div>
+
+                            <!-- Comment Box -->
+
+                            <div class="card-body">
+                                <h5 class="card-title">Leave a Review!</h5>
+                                <div class="form-group ">
+                                    <label for="id_comment_text" class="visually-hidden">Review:</label>
+                                    {{ rating_form.comment_text }}
+
+                                </div>
+                                <small class="form-text text-muted">{{ rating_form.comment_text.help_text }}</small>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Review</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+</div>
+<script>
+    $(document).ready(function () {
+
+        $('#addReviewModal').modal('show');
+
+    });
+    
+</script>
+<script src="{% static 'products/js/add_rating.js' %}">
+</script>

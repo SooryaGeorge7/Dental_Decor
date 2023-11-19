@@ -154,25 +154,30 @@
 
         </div>
 
-
         {% if user_reviewed == False %}
+
+        <a class="btn" href="{% url 'add_review' product.id %}">Add Review</a>
+        {% endif %}
+
+
+        <!-- {% if user_reviewed == False %}
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addReviewModal">
             Add a Review
         </button>
 
-        {% endif %}
+        {% endif %} -->
 
     </div>
-    <div class="modal fade" id="addReviewModal" tabindex="-1" aria-labelledby="addReviewModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="addReviewModal" tabindex="-1" aria-labelledby="addReviewModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="addReviewModalLabel">Add a Review</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body"> -->
                     <!-- Add a form for users to submit reviews -->
-                    <form method="post" action="{% url 'add_review' product.id %}" class="reviewform"
+                    <!-- <form method="post" action="{% url 'add_review' product.id %}" class="reviewform"
                         enctype="multipart/form-data">
                         {% csrf_token %}
                         <div class="card shadow p-1 bg-body-tertiary rounded mb-3">
@@ -191,10 +196,10 @@
                                 </div>
 
 
-                            </div>
+                            </div> -->
 
                             <!-- Comment Box -->
-
+<!-- 
                             <div class="card-body">
                                 <h5 class="card-title">Leave a Review!</h5>
                                 <div class="form-group ">
@@ -211,7 +216,7 @@
             </div>
         </div>
 
-    </div>
+    </div> -->
 
 
 

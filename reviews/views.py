@@ -11,7 +11,7 @@ from django.contrib import messages
 
 def add_review(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
-    
+    reviews = Review.objects.filter(product=product)
     if request.method == 'POST':
         rating_form = RatingForm(request.POST)
         if rating_form.is_valid():
@@ -20,10 +20,21 @@ def add_review(request, product_id):
             review.product = product
             review.save()
             messages.success(request, f"Your review for {product.name} has been submitted.")
+            return redirect('product_detail', product_id=product.id)
         else:
             messages.error(request, "Error submitting the review. Please check the form.")
 
-    return redirect('product_detail', product_id=product_id)
+    else:
+        rating_form = RatingForm()
+
+    context = {
+        'product': product,
+        'reviews': reviews,
+        
+        'rating_form': rating_form,
+        
+    }
+    return render(request, 'reviews/review.html', context)
 
 @login_required
 def edit_review(request, review_id):
