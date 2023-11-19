@@ -11,7 +11,7 @@
                 </div>
                 <div class="modal-body"> 
                     <!-- Add a form for users to submit reviews -->
-                    <form method="post"  class="reviewform"enctype="multipart/form-data">
+                    <form method="post"  class="reviewform" enctype="multipart/form-data">
                         
                         {% csrf_token %}
                         <div class="card shadow p-1 bg-body-tertiary rounded mb-3">
@@ -22,7 +22,7 @@
                                 <div class="rating product_rating">{{rating_form.product_rating}}
 
                                     <h4 class="text-light">Product Rating</h4>
-                                    <a class="btn"><i class="bi bi-star-fill checked" id="product_rating-first"></i></a>
+                                    <a class="btn"><i class="bi bi-star-fill" id="product_rating-first"></i></a>
                                     <a class="btn"><i class="bi bi-star-fill" id="product_rating-second"></i></a>
                                     <a class="btn"><i class="bi bi-star-fill" id="product_rating-third"></i></a>
                                     <a class="btn"><i class="bi bi-star-fill" id="product_rating-fourth"></i></a>
@@ -51,6 +51,9 @@
         </div>
 
 </div>
+
+<script src="{% static 'products/js/add_rating.js' %}">
+</script>
 <script>
     $(document).ready(function () {
 
@@ -58,6 +61,4 @@
 
     });
     
-</script>
-<script src="{% static 'products/js/add_rating.js' %}">
 </script>

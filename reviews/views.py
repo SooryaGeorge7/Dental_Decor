@@ -70,7 +70,7 @@ def edit_review(request, review_id):
         "user_reviewed": user_reviewed,
     }
 
-    return render(request, 'reviews/edit_review_modal.html', context)
+    return render(request, 'reviews/review.html', context)
          
 @login_required()
 def delete_review(request,  review_id):
