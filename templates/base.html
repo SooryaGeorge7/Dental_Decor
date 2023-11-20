@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
 
-  
+
   {% endblock %}
 
   {% block extra_css %}
@@ -30,12 +30,14 @@
 
   {% block core_js %}
   <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
   <link rel="icon" href="/media/favicon.svg" sizes="any">
 
   <script src="https://js.stripe.com/v3/"></script>
@@ -110,19 +112,27 @@
                 {% endif %}
               </ul>
             </div>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'wishlist' %}" ><i class="bi bi-heart"></i></a>
+            <li class="nav-item position-relative">
+              <a class="nav-link" href="{% url 'wishlist' %}"><i class="bi bi-heart"></i>
+                {% if wishlist_count > 0 %}
+                <span class="badge bg-danger  badge-sm rounded-pill position-absolute  translate-middle">{{ wishlist_count }}</span>
+                {% endif %}
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="{% if total %}text-success fw-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_shoppingbag' %}">
-                  <p class="my-0">
-                    {% if total %}
-                    ${{ total|floatformat:2 }}
-                    {% else %}
-                    $0.00
-                    {% endif %}|
-                    <i class="bi bi-cart4"></i>
-                  </p>
+            <li class="nav-item position-relative">
+              <a class="{% if total %}text-success fw-bold{% else %}text-black{% endif %} nav-link"
+                href="{% url 'view_shoppingbag' %}">
+                <p class="my-0">
+                  {% if total %}
+                  ${{ total|floatformat:2 }}
+                  {% else %}
+                  $0.00
+                  {% endif %}|
+                  <i class="bi bi-cart4"></i>
+                  {% if product_count > 0 %}
+                  <span class="badge bg-success badge-sm rounded-pill position-absolute  translate-middle">{{ product_count }}</span>
+                  {% endif %}
+                </p>
               </a>
             </li>
           </ul>
@@ -134,18 +144,18 @@
   {% if messages %}
   <div class="message-container">
     {% for message in messages %}
-                {% with message.level as level %}
-                    {% if level == 40 %}
-                        {% include 'includes/toasts/toast_error.html' %}
-                    {% elif level == 30 %}
-                        {% include 'includes/toasts/toast_warning.html' %}
-                    {% elif level == 25 %}
-                        {% include 'includes/toasts/toast_success.html' %}
-                    {% else %}
-                        {% include 'includes/toasts/toast_info.html' %}
-                    {% endif %}
-                {% endwith %}
-      {% endfor %}
+    {% with message.level as level %}
+    {% if level == 40 %}
+    {% include 'includes/toasts/toast_error.html' %}
+    {% elif level == 30 %}
+    {% include 'includes/toasts/toast_warning.html' %}
+    {% elif level == 25 %}
+    {% include 'includes/toasts/toast_success.html' %}
+    {% else %}
+    {% include 'includes/toasts/toast_info.html' %}
+    {% endif %}
+    {% endwith %}
+    {% endfor %}
   </div>
   {% endif %}
 
@@ -155,7 +165,7 @@
   {% block content %}
   {% endblock %}
 
-  
+
 
   <footer class="text-center text-light">
     <div class="container py-3">
@@ -170,9 +180,9 @@
 
   {% block postloadjs %}
   <script type="text/javascript">
-     $(document).ready(function() {
-            $('.toast').toast('show');
-        });
+    $(document).ready(function () {
+      $('.toast').toast('show');
+    });
   </script>
   {% endblock %}
 </body>
