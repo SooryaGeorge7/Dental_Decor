@@ -93,6 +93,8 @@ input[name='q']::placeholder {
     object-fit: cover; 
     object-position: center center;
 }
+
+
 /**Buttons**/
 
 .dental-decorbtn {
@@ -101,7 +103,7 @@ input[name='q']::placeholder {
     z-index: 2;
 }
 .dental-decor-actionbtn {
-    background-color: #006666;
+    background-color: #003333;
     color:#FFFFF0;
 }
 .update-link, .remove-item {
