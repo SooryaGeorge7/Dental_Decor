@@ -13,17 +13,29 @@ body {
     font-family: 'Lato';
 }
 .navbar-brand {
-    color:#006666;
+    color:#003333;
     font-weight: bold;
     font-size: 2rem;
 }
+.count {
+    color: #FFFFF0;
+    background-color: #006666;
+    z-index: -1;
+    font-size: 0.75rem;
+}
+
+.navbar-price {
+    font-size: 0.75rem;
+    text-align: center;
+}
+
 
 .footer-div {
     font-size: 1.5rem;
 }
 
 footer {
-    background-color: #006666;
+    background-color: #003333;
 }
 
 .dental-decorbg {
@@ -56,7 +68,7 @@ input[name='q']::placeholder {
 }
 
 .carousel-item {
-    max-height: 40rem;
+    max-height: 30rem;
 }
 
 .carousal-image {
@@ -93,17 +105,27 @@ input[name='q']::placeholder {
     object-fit: cover; 
     object-position: center center;
 }
-
-
+.contact-image {
+    height:40rem;
+    object-fit: cover; 
+    object-position: center center;
+}
+.about-section {
+    background-color: #006666;
+}
 /**Buttons**/
 
 .dental-decorbtn {
-    background-color: #D87559;
+    background-color: #003333;
     color: #FFFFF0;
     z-index: 2;
 }
 .dental-decor-actionbtn {
     background-color: #003333;
+    color:#FFFFF0;
+}
+.dental-decor-actionbtn:hover {
+    background-color: #006666;
     color:#FFFFF0;
 }
 .update-link, .remove-item {
