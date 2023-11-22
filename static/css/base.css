@@ -85,6 +85,17 @@ input[name='q']::placeholder {
     width: 100%;
     height: 100%;
 }
+.carousal-text {
+    left: 15%;
+    top:55%;
+    border-radius: 1rem;
+    padding:1.5rem;
+}
+
+.carousal-text p{
+    font-size: 2rem;
+    font-style: italic;
+}
 
 .product-overlay {
     position: absolute;
@@ -116,7 +127,7 @@ input[name='q']::placeholder {
 /**Buttons**/
 
 .dental-decorbtn {
-    background-color: #003333;
+    background-color: #006666;
     color: #FFFFF0;
     z-index: 2;
 }
