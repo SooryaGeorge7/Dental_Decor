@@ -23,7 +23,7 @@
                     {% endfor %}
                     {% else %}
                     <span class="p-2 mt-2  rounded-0 ">
-                        Categories <i class="bi bi-grid-3x3-gap"></i>
+                        <i class="bi bi-ui-checks-grid"></i> Categories 
                     </span>
                     {% endif %}
                 </button>
@@ -58,7 +58,7 @@
                     Category (Z-A)
                     {% endif %}
                     {% else %}
-                    Sort by...<i class="bi bi-funnel"></i>
+                    <i class="bi bi-funnel"></i> Sort by...
                     {% endif %}
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="sortDropdown">
@@ -117,56 +117,52 @@
 
                         </div>
                         <div class="product-overlay">
-                            <div class="position-absolute top-50 start-50 translate-middle">
-                                <a href="{% url 'product_detail' product.id %}" class="btn btn-dark zoom-button">
-                                    <i class="bi bi-binoculars"></i>
+                            <div >
+                                <a href="{% url 'product_detail' product.id %}" class="btn btn-dark fw-bold zoom-button">
+                                    See More
                                 </a>
                             </div>
+                        </div>
+                        <div class="position-absolute top-0 end-0">
+                            <a class="dental-decorbtn rounded-circle p-2 fs-4" href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Add to wishlist"><i class="bi bi-suit-heart "></i></a>
                         </div>
 
                     </div>
                 </div>
                 <div class="card-footer bg-white border-0 text-left">
                     <div class="row">
+                    <h5 class="fw-bold fs-4">{{ product.name }}</h5>
+                    </div>
+                    <div class="row">
+                        
                         <div class="col">
-                            <h5 class="mb-0">{{ product.name }}</h5>
-                            <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                            <p class="lead mb-0 text-left fw-bold fs-4">€{{ product.price }}</p>
                             {% if product.category %}
                             <p class="small mt-1 mb-0">
+                                <i class="bi bi-ui-checks-grid"></i>  
                                 <a class="text-muted"
                                     href="{% url 'shop_products' %}?category={{ product.category.name }}">
-                                    <i class="bi bi-grid-3x3-gap"></i> {{ product.category.friendly_name }}
+                                    {{ product.category.friendly_name }}
                                 </a>
                             </p>
                             {% endif %}
 
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                {% if request.user.is_superuser %}
-                                <div class="d-flex justify-content-start">
-                                    <small class="ml-3">
-                                        <a href="{% url 'edit_product' product.id %}" data-bs-toggle="tooltip"
+                        {% if request.user.is_superuser %}
+                                <div class="d-flex justify-content-between">
+                                    
+                                        <a class=" fs-5" href="{% url 'edit_product' product.id %}" data-bs-toggle="tooltip"
                                             data-bs-placement="top" title="Edit"><i class="bi bi-pencil-square"></i></a>
-                                        |
-                                        <a class="text-danger" href="{% url 'delete_product' product.id %}"
+                                        
+                                        <a class="text-danger fs-5" href="{% url 'delete_product' product.id %}"
                                             data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><i
-                                                class="bi bi-trash3"></i></a> |
+                                                class="bi bi-trash3"></i></a> 
 
-                                    </small>
+                                    
                                 </div>
-                                {% endif %}
-                            </div>
-                            <div class="col">
-                                <div class="d-flex justify-content-end">
-                                    <small class="ml-3">
-
-                                        <a class="text-success" href="" data-bs-toggle="tooltip" data-bs-placement="top"
-                                            title="Add to wishlist"><i class="bi bi-heart"></i></a>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
+                        {% endif %}
+                        
                     </div>
                 </div>
 

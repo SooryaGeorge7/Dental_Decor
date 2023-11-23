@@ -137,7 +137,7 @@ input[name='q']::placeholder {
 }
 /**Buttons**/
 
-.dental-decorbtn {
+.dental-decorbtn  {
     background-color: #006666;
     color: #FFFFF0;
     z-index: 2;
@@ -147,11 +147,11 @@ input[name='q']::placeholder {
     color: #006666;
     z-index: 2;
 }
-.dental-decor-actionbtn {
+.dental-decor-actionbtn, .zoom-button {
     background-color: #003333;
     color:#FFFFF0;
 }
-.dental-decor-actionbtn:hover {
+.dental-decor-actionbtn:hover, .zoom-button:hover {
     background-color: #006666;
     color:#FFFFF0;
 }
@@ -167,7 +167,6 @@ input[name='q']::placeholder {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    background-color: #006666;
 }
 
 
