@@ -86,20 +86,35 @@
           <ul class="navbar-nav">
 
             <li class="nav-item">
+              
+              <div class="d-flex flex-sm-row flex-md-column align-items-center justify-content-evenly">
               <a class="nav-link fs-4" href="{% url 'home' %}"><i class="bi bi-house"></i></a>
+              <p class=" navbar-title d-md-none"> Home </p>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-4" href="{% url 'shop_products' %}"><i class="bi bi-shop"></i></a>
+              <div class="d-flex flex-sm-row flex-md-column align-items-center justify-content-evenly">
+                <a class="nav-link fs-4" href="{% url 'shop_products' %}"><i class="bi bi-shop"></i></a>
+                <p class=" navbar-title d-md-none"> Shop </p>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-4" href="#"><i class="bi bi-telephone"></i></a>
+              <div class="d-flex flex-sm-row flex-md-column align-items-center justify-content-evenly">
+                <a class="nav-link fs-4" href="#"><i class="bi bi-telephone"></i></a>
+                <p class=" navbar-title d-md-none"> Contact</p>
+              </div>
             </li>
-            <div class="nav-item dropdown">
-              <a class="nav-link fs-4 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <i class="bi bi-person"></i> 
-              </a>
-              <ul class="dropdown-menu">
+            <div class="nav-item dropdown ">
+              <div class="d-flex flex-sm-row flex-md-column align-items-center justify-content-evenly">
+                <a class="nav-link fs-4 dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-person"></i>
+
+                </a>
+                <p class=" navbar-title d-md-none"> Account</p>
+              
+              
+              <ul class="dropdown-menu ">
                 {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
                 <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
@@ -112,32 +127,46 @@
                 {% endif %}
               </ul>
             </div>
+            
+            
+            </div>
             <li class="nav-item position-relative">
+              <div class="d-flex flex-sm-row flex-md-column align-items-center justify-content-evenly">
               <a class="nav-link fs-4" href="{% url 'wishlist' %}"><i class="bi bi-suit-heart "></i>
                 {% if wishlist_count > 0 %}
-                <span class="badge count  badge-sm rounded-pill position-absolute  translate-middle">{{ wishlist_count }}</span>
+                <span class="badge count  badge-sm rounded-pill position-absolute  translate-middle">{{ wishlist_count}}</span>
                 {% endif %}
               </a>
+              <p class=" navbar-title d-md-none"> Wishlist</p>
+            </div>
             </li>
             <li class="nav-item position-relative">
+              <div class="d-flex flex-sm-row flex-md-column align-items-center justify-content-evenly">
               <a class="{% if total %} fw-bold{% else %}text-black{% endif %} nav-link fs-4 "
                 href="{% url 'view_shoppingbag' %}">
-                
-                  
+
+
                 <i class="bi bi-cart3"></i>
-                  {% if product_count > 0 %}
-                  <span class="badge count badge-sm rounded-pill position-absolute  translate-middle">{{ product_count }}</span>
+                {% if product_count > 0 %}
+                <span class="badge count badge-sm rounded-pill position-absolute  translate-middle">{{ product_count}}</span>
+                {% endif %}
+                <div class="navbar-price text-warning position-absolute start-0 d-none d-md-block">
+                  {% if total %}
+                  €{{ total|floatformat:2 }}
+                  {% else %}
+                  €0.00
                   {% endif %}
-                  <div class="navbar-price text-warning position-absolute start-0">
-                    {% if total %}
-                      €{{ total|floatformat:2 }}
-                    {% else %}
-                      €0.00
-                    {% endif %}
-                  </div>
-                
+                </div>
+
               </a>
-              
+              <p class=" navbar-title text-warning d-md-none"> 
+                {% if total %}
+                €{{ total|floatformat:2 }}
+                {% else %}
+                €0.00
+                {% endif %}</p>
+            </div>
+
             </li>
           </ul>
         </div>

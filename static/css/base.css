@@ -24,9 +24,18 @@ body {
     font-size: 0.75rem;
 }
 
-.navbar-price {
-    font-size: 0.75rem;
+.navbar-title {
+    font-size: 1.5rem;
     text-align: center;
+    margin: 1rem;
+    color:#003333;
+    font-weight: bold;
+}
+
+.navbar-price {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
 }
 
 
