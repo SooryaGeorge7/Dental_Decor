@@ -12,6 +12,13 @@ from django.contrib import messages
 def add_review(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     reviews = Review.objects.filter(product=product)
+
+    user_review = reviews.filter(user=request.user).exists()
+
+    if user_review:
+        messages.error(request, "You have already submitted a review for this product.")
+        return redirect('product_detail', product_id=product.id)
+
     if request.method == 'POST':
         rating_form = RatingForm(request.POST)
         if rating_form.is_valid():

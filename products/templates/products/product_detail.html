@@ -120,7 +120,7 @@
                                     <span class="icon">
                                         <i class="bi bi-caret-left"></i>
                                     </span>
-                                    <span class="text-uppercase">Keep Browsing</span>
+                                    <span class="text-uppercase">Browse</span>
                                 </a>
                                 <input type="submit" class="btn dental-decorbtn shopping-bag rounded-0 text-uppercase" value="Add to Bag &#xF244;">
                             </div>
@@ -169,12 +169,13 @@
             {% else %}
             <p>No reviews yet.</p>
             {% endif %}
+            <a class="btn btn-success d-flex justify-content-center" href="{% url 'add_review' product.id %}">ADD REVIEW</a>
 
         </div>
 
         
 
-        <a class="btn btn-success" href="{% url 'add_review' product.id %}">Add Review</a>
+        
         
 
 
