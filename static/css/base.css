@@ -58,6 +58,10 @@ footer {
     margin-right: 0.25rem;
     
 }
+
+.shopping-bag {
+    font-family: bootstrap-icons;
+  }
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -126,6 +130,12 @@ input[name='q']::placeholder {
     height: 15rem; 
     object-fit: cover; 
     object-position: center center;
+}
+.product-image {
+    height: 20rem;
+    object-fit: cover; 
+    object-position: center center;
+    
 }
 .contact-image {
     height:40rem;
