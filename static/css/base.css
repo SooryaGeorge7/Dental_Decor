@@ -207,7 +207,11 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-
+.responsive-textarea {
+    width: 100%; 
+    max-width: 100%; 
+    height: auto; 
+}
 
 /* .carousel-item img {
     object-fit: contain;
