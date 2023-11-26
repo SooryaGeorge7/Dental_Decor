@@ -131,6 +131,12 @@ input[name='q']::placeholder {
     object-fit: cover; 
     object-position: center center;
 }
+
+.wishlist-image {
+    
+    object-fit: cover; 
+    object-position: center center;
+}
 .product-image {
     height: 20rem;
     object-fit: cover; 
