@@ -33,7 +33,9 @@ def add_to_wishlist(request, product_id):
 def remove_from_wishlist(request, product_id):
     
     product = get_object_or_404(Product, id=product_id)
+    print(product)
     wish_item = Wishlist.objects.get(user=request.user, product=product)
+    print(wish_item)
 
     if request.method == 'POST':
         wish_item.delete()
