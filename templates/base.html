@@ -38,7 +38,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-  <link rel="icon" href="/media/favicon.ico" sizes="any">
+  <link rel="icon" href="{{ MEDIA_URL }}favicon.ico" sizes="any">
 
   <script src="https://js.stripe.com/v3/"></script>
   {% endblock %}
@@ -55,7 +55,7 @@
     <nav class="navbar navbar-expand-md navbar-light ">
       <div class="container">
         <a class="navbar-brand nav-link" href="#">
-          <img src="/media/favicon.ico" alt="" class=""> | DentalDecor
+          <img src="{{ MEDIA_URL }}favicon.ico" alt="" class=""> | DentalDecor
         </a>
 
         <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -200,7 +200,7 @@
 
 
 
-  <footer class="text-center text-light">
+  <footer class="text-center text-light ">
     <div class="container py-3">
       <div class="footer-div text-light">
         <a href="#" class="me-3 text-light"><i class="bi bi-facebook"></i></a>

@@ -5,13 +5,7 @@
     <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
 {% endblock %}
 
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
-{% endblock %}
+
 
 {% block content %}
     <div class="overlay"></div>
@@ -65,7 +59,7 @@
                                             {% endfor %}
                                         </ul>
                                     </td>
-                                    <td>${{ order.grand_total }}</td>
+                                    <td>€ {{ order.grand_total }}</td>
                                 </tr>
                             {% endfor %}
                         </tbody>
