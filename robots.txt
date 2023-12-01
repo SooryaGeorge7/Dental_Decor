@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:/accounts/
+Sitemap:https://dental-decor-ee0d87f16edf.herokuapp.com/sitemap.xml
