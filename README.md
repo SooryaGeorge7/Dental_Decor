@@ -50,9 +50,30 @@ It's important to note that the payment system is designed exclusively for testi
 
 Dental Decor aims to provide not only a seamless shopping experience but also a platform where dental art enthusiasts can explore and appreciate the craftsmanship of our curated collection. 
 
-## Project (Site owner) Goals
+## Site owner Goals
+
+* To allow customers on website to have options to purchase products with ease.
+* To ensure users have a great UX and UI when visiting the website.
+* To showcase features for registered and unregistered customers.
+* To give users visiting the website the option to regsiter an account.
+* To ensure customers can leave a product review.
+* To allow registered customers to add product to a wishlist for future purchases. 
+* To ensure sufficient website traffic is generated with Search engine optimization and social media marketting.
 
 ### User Goals
+
+* Users should understand the website purpose on homepage with ease. 
+* Users should achieve intuitive navigation. 
+* Users are able to filter and sort products. 
+* Users can search for specific products. 
+* Users can view details for each product shown on website. 
+* Users can edit their profile and reviews made by them. 
+* Users can see other user's reviews 
+* Users are able to successfully purchase a product with ease. 
+* Users can add items to wishlist if they wish purchase at a later stage. 
+* Users can contact site staff by sending a query via the contact us form. 
+* Users can sign up for newspaper subscriptions.
+* Users can visit social media pages of the business. 
 
 ## Business Model
 
