@@ -305,8 +305,31 @@ All the product images and carousal images were sourced from [Etsy](https://www.
 
 ### Languages & Frameworks
 
+* HTML5
+* CSS3
+* Javascript
+* Python 3.10
+* Django 3.2
+
 ### Libraries & Tools
 
+
+* [Bootstrap5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)- Used for front end development.
+* [Bootstrap icons](https://icons.getbootstrap.com/)- Used for all the icons used in the website.
+* [ElephantSQL](https://www.elephantsql.com/)-  Manages PostgreSQL databases.
+* [GitHub](https://github.com/)- Used to store and manage repository.
+* [Git](https://git-scm.com/)- Used for version control
+* [Balsamiq](https://balsamiq.com/)- Used to develop wireframes for project 
+* [SVG grepo](https://www.svgrepo.com/svg/284261/tooth)- To make svg icons
+* [Birme](https://www.birme.net/)- Used to format images
+* [Real Favicon Generator](https://realfavicongenerator.net/)- Generator for favicon
+* [Am i responsive](https://ui.dev/amiresponsive)- Used to see website in different devices at once.
+* [Pexels](https://www.pexels.com/)- Free image source.
+* [AWS](https://aws.amazon.com/)- Used to host images.
+* [Heroku](https://www.heroku.com/)- For deployment.
+* [Stripe](https://stripe.com/ie)- Used for payment for purchases.
+* [Google fonts](https://fonts.google.com/)- Used to select font used in website.
+* [Diagram net](https://www.diagrams.net/)- Used to draw out Entity diagram.
 
 ## Features
 
@@ -317,8 +340,6 @@ All the product images and carousal images were sourced from [Etsy](https://www.
 ##### Back to [top](#table-of-contents)
 
 
-
-##### Back to [top](#table-of-contents)
 ## Testing
 
 
