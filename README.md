@@ -77,7 +77,24 @@ Dental Decor aims to provide not only a seamless shopping experience but also a 
 
 ## Business Model
 
+I have developed an e-commerce Django website that sells dental art that involves the following factors:
+
+1. Product:Dental Decor products are categorized into wall art, collectables , educational and custom pieces, created to attract dental professionals or businesses.
+2. Target:Any individuals in a dental community or someone who'd want to gift a dental professional.
+3. Features:Dental decor customers should be able to browse, select and purchase products, add products to wishlist, see and add reviews, sign up for newspaper susbscription and would be able to make contact with the business by sending a query via contact form.
+5. Marketing and Branding:This implemented through social media such as facebook, instagram
+6. Customer Engagement:
+Business is able to engage with customers through newsletters, contact form or via social media.
+
 ### SEO
+
+
+### Marketing
+
+* Facebook page- A facebook page was made for the website 
+
+![Facebook images](docs/marketing/facebook-page.png)
+![Facebook images2](docs/marketing/facebook-page2.png)
 
 ### Target audience
 
