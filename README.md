@@ -93,12 +93,31 @@ Dental Decor aims to provide not only a seamless shopping experience but also a 
 
 
 ## Design
-***
-### Colors
+
+Design of website was thoughtout through color scheme, typography and imagery.It was carried out through the entirety of the website.
+
+### ColorScheme
+
+The following color palette was chosen initially .
+![Color Palette](docs/color-scheme/DentalDecorColors.png)
+During development of the website #FFA70A was left out at the end because of contrast errors. The website colors was kept more simple with the main color being a darker version of #008080. 
+The final colors of the website is shown as following: 
+
+Main colors: #003333 and #006666
+Background: #F5F5F5
+Text colors: #333333 & #FFFFF0
 
 
-### Fonts
+### Typography 
 
+For Dental Decor:
+"Lato" font was used
+This font family was used because of its modern and professional feel. It is often used for website because of its Versatility in width and style. 
+![Lato font](docs/typography/lato-typography.png)
+
+### Imagery
+
+All the product images and carousal images were sourced from [Etsy](https://www.etsy.com/ie/market/dentist_clinic_decor?ref=return_to_search). My Code institute facilitator had mentioned to us that sourcing images from amazon or etsy were perfectly okay as long as this was credited in Readme. All other images were sourced from free image sources such as pexels. Please see [Acknowledgment Secion](#acknowledgements) below.
 
 ##### Back to [top](#table-of-contents)
 
