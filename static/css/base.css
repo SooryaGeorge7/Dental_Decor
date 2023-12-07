@@ -38,9 +38,37 @@ body {
 }
 
 .navbar-price {
-    font-size: 1rem;
+    font-size: 0.75rem;
     text-align: center;
     font-weight: bold;
+    padding-left: 0.25rem;
+}
+
+.nav-link:hover {
+    color:#006666;
+
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color:#006666 !important;
+
+
+}
+
+
+.dropdown-item.active{
+    background-color: #FFFFFF;
+    color: #006666;
+}
+.dropdown-item:hover{
+    background-color: #FFFFFF;
+    color: #006666;
+}
+.dropdown-item:focus{
+    color: #006666;
+    background-color: #FFFFFF;
+    
 }
 
 
@@ -249,6 +277,9 @@ input[name='q']::placeholder {
 @media (min-width: 1200px) {
     .container {
         max-width: 80%;
+    }
+    .navbar-price {
+        font-size: 1rem;
     }
 }
 
