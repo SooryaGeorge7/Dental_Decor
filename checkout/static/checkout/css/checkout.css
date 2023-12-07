@@ -61,3 +61,15 @@ select option[value=""] {
     margin: 0;
     height: 100%;
 }
+
+
+
+.spinning-icon {
+  animation: spinIcon 2s linear infinite; 
+  font-size: 10rem;
+}
+
+@keyframes spinIcon {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
