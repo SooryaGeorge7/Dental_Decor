@@ -12,10 +12,15 @@ body {
     color: #333333;
     font-family: 'Lato', open-sans;
 }
+
+.logo-image {
+    height: 2rem;
+
+}
 .navbar-brand {
     color:#003333;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 .count {
     color: #FFFFF0;
@@ -353,5 +358,13 @@ input[name='q']::placeholder {
         font-size: 2rem;
         font-style: italic;
         text-shadow: 0.1rem 0.1rem 0.2rem rgb(44, 62, 80)
+    }
+
+    .logo-image {
+        height: 2.5rem;
+    
+    }
+    .navbar-brand {
+        font-size: 2rem;
     }
 }

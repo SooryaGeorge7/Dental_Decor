@@ -54,8 +54,8 @@
   <header>
     <nav class="navbar navbar-expand-md navbar-light ">
       <div class="container">
-        <a class="navbar-brand nav-link" href="#">
-          <img src="{{ MEDIA_URL }}favicon.ico" alt="" class=""> | DentalDecor
+        <a class="navbar-brand nav-link" href="{% url 'home' %}">
+          <img src="{{ MEDIA_URL }}favicon.ico" alt="" class="img-fluid logo-image"> | DentalDecor
         </a>
 
         <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -151,7 +151,7 @@
                 {% endif %}
                 <div class="navbar-price text-warning position-absolute start-0 d-none d-md-block">
                   {% if total %}
-                  €{{ total|floatformat:2 }}
+                   €{{ total|floatformat:2 }}
                   {% else %}
                   €0.00
                   {% endif %}
