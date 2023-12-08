@@ -117,15 +117,37 @@
             </div>
         </div>
         {% endfor %}
+        <div class="col-12 text-center"> 
+            <a href="{% url 'shop_products' %}" class="btn mb-1  btn-outline-secondary me-1 ">
+                <span class="icon">
+                    <i class="bi bi-caret-left"></i>
+                </span>
+                <span class="text-uppercase ">Keep Browsing</span>
+            </a>
+        </div>
+    </div>
+    
+    
+    <div class="position-fixed bottom-0 end-0 p-3 m-3">
+        <a class="btn fw-bold" href="{% url 'wishlist' %}" id="scroll-to-top">
+            <i class="bi bi-arrow-up-circle "></i>
+        </a>
+    </div>
+
+    {% else %}
+    <div class="carousal-border container">
+    <div class="col-md-8 mx-auto min-vh-100 d-flex flex-column align-items-center justify-content-center ">
+        <h2 class="text-center fw-bold">Your wishlist is empty.</h2>
+        <div>
         <a href="{% url 'shop_products' %}" class="btn mb-1  btn-outline-secondary me-1">
             <span class="icon">
                 <i class="bi bi-caret-left"></i>
             </span>
             <span class="text-uppercase ">Keep Browsing</span>
         </a>
+        </div>
     </div>
-    {% else %}
-    <p>Your wishlist is empty.</p>
+    </div>
     {% endif %}
 </div>
 {% endblock %}
