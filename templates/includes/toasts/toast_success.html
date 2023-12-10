@@ -1,10 +1,10 @@
 
-<div class="toast custom-toast rounded-0 border-top-0" data-bs-autohide="false">
-    <div class="arrow-up arrow-danger"></div>
-    <div class="w-100 toast-capper bg-danger"></div>
+<div class="toast custom-toast rounded-0 border-top-0 border-success" data-bs-autohide="false">
+    <div class="arrow-up arrow-success"></div>
+    <div class="w-100 toast-capper bg-success"></div>
     <div class="toast-header bg-white text-dark">
-        <strong class="mr-auto">Success!</strong>
-        <button type="button" class="ml-2 mb-1 btn-close text-dark" data-bs-dismiss="toast" aria-label="Close">
+        <strong class="me-auto">Success!</strong>
+        <button type="button" class="ml-2 mb-1  btn-close text-dark" data-bs-dismiss="toast" aria-label="Close"  >
             <!-- <span aria-hidden="true">&times;</span> -->
         </button>
     </div>
@@ -16,7 +16,7 @@
             </div>
         </div>
         {% if total and not on_profile_page %}
-            <p class="logo-font bg-white text-black py-1">Your Bag ({{ product_count }})</p>
+            <p class="logo-font bg-success p-2 bg-opacity-50 rounded text-black py-1">Your Bag ({{ product_count }})</p>
             <div class="bag-notification-wrapper">
                 {% for item in shoppingbag_items %}
                     <div class="row">
@@ -36,13 +36,14 @@
                 {% endfor %}
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col mt-1">
                     
-                    <a href="{% url 'view_shoppingbag' %}" class="btn btn-black btn-block rounded-0">
-                        <span class="text-uppercase">Go To Secure Checkout</span>
+                    <a href="{% url 'view_shoppingbag' %}" class="btn btn-warning btn-outline-dark ">
                         <span class="icon">
-                            <i class="fas fa-lock"></i>
+                            <i class="bi bi-shield-lock"></i>
                         </span>
+                        <span class="text-uppercase">Go To Secure Checkout</span>
+                        
                     </a>
                 </div>
             </div>
