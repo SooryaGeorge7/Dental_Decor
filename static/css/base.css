@@ -240,7 +240,9 @@ input[name='q']::placeholder {
 .toast-capper {
     height: 2px;
 }
-
+.toast-image {
+    height:1rem;
+}
 /* .arrow-up {
     width: 0; 
     height: 0; 
