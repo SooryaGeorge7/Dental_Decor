@@ -6,11 +6,13 @@
 
 {% block content %}
 
-<section class="d-flex justify-content-center align-items-center dbneats-background min-vh-100">
-  <div class="container ">
+<section class="d-flex justify-content-center align-items-center dbneats-background carousal-border min-vh-100">
+  <div class="container my-1">
       <div class="row mx-2 justify-content-center text-center">
           <div class=" card shadow bg-body-tertiary rounded col-lg-5 col-md-7 login-forms p-5 bg-light">
-            <h1 class="logo-font mb-4">{% trans "Sign Up" %}</h1>
+            <h1 class="logo-font mb-4">
+              <img src="{{ MEDIA_URL }}favicon.ico" alt="" class="mt-0 logo-image"> | {% trans "Sign Up" %}
+            </h1>
             <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
             <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
             {% csrf_token %}
@@ -18,8 +20,8 @@
             {% if redirect_field_value %}
             <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
             {% endif %}
-            <a class="btn btn-danger rounded-0" href="{% url 'account_login' %}">Back to Login</a>
-            <button class="btn btn-success rounded-0" type="submit">{% trans "Sign Up" %}</button>
+            <a class="btn btn-danger " href="{% url 'account_login' %}">Back to Login</a>
+            <button class="btn btn-success dental-decorbtn" type="submit">{% trans "Sign Up" %}</button>
             </form>
           </div>
       </div>

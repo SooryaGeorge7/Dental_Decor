@@ -8,11 +8,13 @@
 {% block content %}
 
   
-<section class="d-flex justify-content-center align-items-center min-vh-100">
+<section class="d-flex justify-content-center align-items-center carousal-border min-vh-100">
   <div class="container ">
     <div class="row mx-2 justify-content-center ">
         <div class=" card shadow bg-body-tertiary rounded col-lg-5 col-md-7 login-forms p-5 bg-light">
-           <h2 class="logo-font mb-4">{% trans "Log In" %}</h2>
+           <h2 class="logo-font mb-4 text-center">
+            <img src="{{ MEDIA_URL }}favicon.ico" alt="" class="mt-0 logo-image"> | {% trans "Log In" %}
+           </h2>
            {% get_providers as socialaccount_providers %}
            {% if socialaccount_providers %}
            <p>{% blocktrans with site.name as site_name %}Please log in with one 
@@ -35,8 +37,8 @@
                {% if redirect_field_value %}
                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                {% endif %}
-              <a class="btn  btn-outline-danger rounded-0" href="{% url 'home' %}">Home</a>
-              <button class="primaryAction btn btn-success rounded-0" type="submit">{% trans "Log In" %}</button>
+              <a class="btn  btn-danger " href="{% url 'home' %}">Cancel</a>
+              <button class="primaryAction btn dental-decorbtn" type="submit">{% trans "Log In" %}</button>
               <p class="mt-2">
                   <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
               </p>
