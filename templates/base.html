@@ -104,7 +104,7 @@
                 
               </div>
             </li>
-            <div class="nav-item dropdown text-center ">
+            <li class="nav-item dropdown text-center ">
               <div class="flex-sm-row flex-md-column align-items-center justify-content-evenly">
                 <a class="nav-link fs-4 dropdown-toggle
                 {% if request.resolver_match.url_name ==  'add_product' %}active{% endif %}
@@ -122,10 +122,10 @@
               <ul class="dropdown-menu ">
                 {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
-                <a href="{% url 'add_product' %}" class="dropdown-item {% if request.resolver_match.url_name ==  'add_product' %}active{% endif %}">Product Management</a>
+                <li><a href="{% url 'add_product' %}" class="dropdown-item {% if request.resolver_match.url_name ==  'add_product' %}active{% endif %}">Product Management</a></li>
                 {% endif %}
-                <a href="{% url 'profile' %}" class="dropdown-item {% if request.resolver_match.url_name == 'profile' %}active{% endif %}">My Profile</a>
-                <a href="{% url 'account_logout' %}" class="dropdown-item {% if request.resolver_match.url_name == 'account_logout' %}active{% endif %}">Logout</a>
+                <li><a href="{% url 'profile' %}" class="dropdown-item {% if request.resolver_match.url_name == 'profile' %}active{% endif %}">My Profile</a></li>
+                <li><a href="{% url 'account_logout' %}" class="dropdown-item {% if request.resolver_match.url_name == 'account_logout' %}active{% endif %}">Logout</a></li>
                 {% else %}
                 <li><a class="dropdown-item {% if request.resolver_match.url_name == 'account_login' %}active{% endif %}" href="{% url 'account_login' %}">Login</a></li>
                 <li><a class="dropdown-item {% if request.resolver_match.url_name == 'account_signup' %}active{% endif %}" href="{% url 'account_signup' %}">Register</a></li>
@@ -134,7 +134,7 @@
             </div>
             
             
-            </div>
+          </li>
             <li class="nav-item position-relative text-center">
               <div class=" flex-sm-row flex-md-column align-items-center justify-content-evenly">
               <a class="nav-link fs-4 {% if request.resolver_match.url_name == 'wishlist' %}active{% endif %}" href="{% url 'wishlist' %}"><i class="bi bi-suit-heart "></i>
@@ -219,7 +219,7 @@
   </footer>
 
   {% block postloadjs %}
-  <script type="text/javascript">
+  <script >
     $(document).ready(function () {
       $('.toast').toast('show');
     });
