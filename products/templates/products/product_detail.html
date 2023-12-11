@@ -124,7 +124,7 @@
                                     </span>
                                     <span class="text-uppercase">Browse</span>
                                 </a>
-                                <input type="submit" class="btn dental-decorbtn shopping-bag rounded-0 text-uppercase" value="Add to Bag &#xF244;">
+                                <input type="submit" class="btn dental-decorbtn shopping-bag rounded-0 text-uppercase" value="Add to Bag ">
                             </div>
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
@@ -157,7 +157,7 @@
                     {% if request.user == review.user %}
 
                     <a  class="btn btn-warning me-1" href="{% url 'edit_review' review.id %}">
-                        Edit<i class="bi bi-pencil-square"></i></a>
+                        Edit<i class="bi bi-pencil-square"></i>
                     </a>
 
                     <button class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#deleteReviewModal{{ review.id }}">
