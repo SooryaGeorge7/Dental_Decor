@@ -17,6 +17,7 @@ def wishlist(request):
 
     return render(request, 'wishlist/wishlist.html', context)
 
+@login_required
 def add_to_wishlist(request, product_id):
     
     product = get_object_or_404(Product, id=product_id)
