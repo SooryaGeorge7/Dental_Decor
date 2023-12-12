@@ -8,8 +8,21 @@
         <div class="row">
             <div class="col-12 col-md-6 mx-auto">
                 <h2 class="logo-font my-4 text-center">Product Management</h2>
-                <h5 class="text-muted">Edit a Product</h5>
+                <h5 class="text-muted ">Edit a Product</h5>
+                <div class="w-75 d-flex justify-content-center ">
+                {% if product.image %}
+                <a href="{{ product.image.url }}" target="_blank">
+
+                <img class=" mb-5 mb-md-0 img-thumbnail" src="{{ product.image.url }}" alt="{{ product.name }}">
+                </a>
+                {% else %}
+                <a href="{{ MEDIA_URL }}no_image.jpg" target="_blank">
+                    <img class=" mb-5 mb-md-0" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                </a>
+                {% endif %}
             </div>
+            </div>
+            
         </div>
 
         <div class="row">
@@ -17,11 +30,9 @@
                 <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
-                        {% if field.name != 'image' %}
+                        
                             {{ field | as_crispy_field }}
-                        {% else %}
-                            {{ field }}
-                        {% endif %}
+                        
                     {% endfor %}
                     <div class="text-right">
                         <a class="btn btn-danger" href="{% url 'shop_products' %}">Cancel</a>
@@ -33,12 +44,3 @@
     </div>
 {% endblock %}
 
-{% block postloadjs %}
-    {{ block.super }}
-    <script type="text/javascript">
-        $('#new-image').change(function() {
-            var file = $('#new-image')[0].files[0];
-            $('#filename').text(`Image will be set to: ${file.name}`);
-        });
-    </script>
-{% endblock %}

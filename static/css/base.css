@@ -390,6 +390,7 @@ input[name='q']::placeholder {
 .btn-file {
     position: relative;
     overflow: hidden;
+    border: 0.125rem solid #333333 !important;
 }
 
 .btn-file input[type="file"] {
