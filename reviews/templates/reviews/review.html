@@ -1,5 +1,12 @@
-{% include 'products/product_detail.html' %}
+
+{% extends 'products/product_detail.html' %}
 {% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock %}
+
+{% block additional_content %}
 
 
 <div class="modal fade" id="addReviewModal" tabindex="-1" aria-labelledby="addReviewModalLabel" aria-hidden="true">
@@ -63,8 +70,24 @@
         </div>
 
 </div>
+{% endblock %}
 
-<script src="{% static 'products/js/add_rating.js' %}">
+{% block postloadjs %}
+    {{ block.super }}
+    <script src="{% static 'products/js/add_rating.js' %}">
+    </script>
+    
+    {% include 'products/includes/quantity_input_script.html' %}
+    <script>
+        $(document).ready(function () {
+    
+            $('#addReviewModal').modal('show');
+    
+        });
+        
+    </script>
+{% endblock %}
+<!-- <script src="{% static 'products/js/add_rating.js' %}">
 </script>
 <script>
     $(document).ready(function () {
@@ -73,4 +96,4 @@
 
     });
     
-</script>
+</script> -->
