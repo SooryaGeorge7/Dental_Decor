@@ -1,5 +1,4 @@
 from django.db import models
-
 from django.contrib.auth.models import User
 from products.models import Product
 from django.core.validators import MaxLengthValidator
@@ -27,7 +26,7 @@ class Review(models.Model):
     )
 
     product_rating = models.IntegerField(choices=Rating, default=0)
-    
+
     comment_text = models.TextField(
         null=True,
         blank=True,

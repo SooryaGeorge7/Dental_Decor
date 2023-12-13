@@ -2,6 +2,7 @@ from django import forms
 from reviews.models import Review
 from django.forms import HiddenInput
 
+
 class RatingForm(forms.ModelForm):
     """
     Form to edit and delete reviews

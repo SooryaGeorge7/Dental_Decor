@@ -3,7 +3,8 @@ from .forms import RatingForm
 from .models import Review
 from products.models import Product
 from django.contrib.auth.models import User
-from django.shortcuts import render, get_object_or_404, redirect, reverse
+from django.shortcuts import (render, get_object_or_404,
+                              redirect, reverse)
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
@@ -16,7 +17,10 @@ def add_review(request, product_id):
     user_review = reviews.filter(user=request.user).exists()
 
     if user_review:
-        messages.error(request, "You have already submitted a review for this product.")
+        messages.error(
+            request,
+            "You have already submitted a review for this product."
+        )
         return redirect('product_detail', product_id=product.id)
 
     if request.method == 'POST':
@@ -26,10 +30,16 @@ def add_review(request, product_id):
             review.user = request.user
             review.product = product
             review.save()
-            messages.success(request, f"Your review for {product.name} has been submitted.")
+            messages.success(
+                request,
+                f"Your review for {product.name} has been submitted."
+            )
             return redirect('product_detail', product_id=product.id)
         else:
-            messages.error(request, "Error submitting the review. Please check the form.")
+            messages.error(
+                request,
+                "Error submitting the review. Please check the form."
+            )
 
     else:
         rating_form = RatingForm()
@@ -37,15 +47,14 @@ def add_review(request, product_id):
     context = {
         'product': product,
         'reviews': reviews,
-        
         'rating_form': rating_form,
-        
     }
     return render(request, 'reviews/review.html', context)
 
+
 @login_required
 def edit_review(request, review_id):
-    
+
     review = get_object_or_404(Review, id=review_id)
     product = review.product
     reviews = Review.objects.filter(product=product)
@@ -58,7 +67,10 @@ def edit_review(request, review_id):
             messages.success(request, "Review updated successfully.")
             return redirect('product_detail', product_id=product.id)
         else:
-            messages.error(request, "Error updating the review. Please check the form.")
+            messages.error(
+                request,
+                "Error updating the review. Please check the form."
+            )
     else:
         rating_form = RatingForm(instance=review)
 
@@ -78,7 +90,8 @@ def edit_review(request, review_id):
     }
 
     return render(request, 'reviews/review.html', context)
-         
+
+
 @login_required()
 def delete_review(request,  review_id):
     """
