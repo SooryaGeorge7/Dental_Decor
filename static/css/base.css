@@ -208,6 +208,12 @@ input[name='q']::placeholder {
     background-color: #006666;
     color:#FFFFF0;
 }
+.dentaldecor-link {
+    color:#006666 !important;
+}
+.dentaldecor-link:hover {
+    color:#003333 !important;
+}
 .update-link, .remove-item {
     cursor:pointer;
 
