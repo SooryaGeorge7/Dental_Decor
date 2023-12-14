@@ -14,12 +14,12 @@
             <div class="modal-content">
                 {% if user_reviewed == True %}
                 <div class="modal-header">
-                    <h5 class="modal-title " id="addReviewModalLabel">Edit Review</h5>
+                    <h2 class="modal-title " id="addReviewModalLabel">Edit Review</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 {% else %}
                 <div class="modal-header">
-                    <h5 class="modal-title " id="addReviewModalLabel">Add a Review</h5>
+                    <h2 class="modal-title " id="addReviewModalLabel">Add a Review</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div> 
                 {% endif %}
@@ -32,7 +32,7 @@
                         <div class="card shadow p-1 bg-body-tertiary rounded mb-3">
                             <div class="card-body">
                                 
-                                <h2 class=" fw-bold text-center">{{ product.name }}</h2>
+                                <h3 class=" fw-bold text-center">{{ product.name }}</h3>
                                 <p class="text-center"> Rate the product out of 5 stars!</p>
                                 <div class="rating product_rating text-center">{{rating_form.product_rating}}
 
@@ -50,7 +50,7 @@
                             <!-- Comment Box -->
 
                             <div class="card-body">
-                                <h5 class="text-center">Leave a Review!</h5>
+                                <h4 class="text-center">Leave a Review!</h4>
                                 <div class="form-group ">
                                     <label for="id_comment_text" class="visually-hidden">Review:</label>
                                     {{ rating_form.comment_text }}

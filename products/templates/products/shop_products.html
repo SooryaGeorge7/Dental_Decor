@@ -118,21 +118,21 @@
                         </div>
                         <div class="product-overlay">
                             <div >
-                                <a href="{% url 'product_detail' product.id %}" class="btn btn-dark fw-bold zoom-button">
+                                <a href="{% url 'product_detail' product.id %}" aria-label="product details link" class="btn btn-dark fw-bold zoom-button">
                                     See More
                                 </a>
                             </div>
                         </div>
                         <div class="position-absolute top-0 end-0">
                             <a class="dental-decorbtn rounded-circle p-2 fs-4" href="{% url 'add_to_wishlist' product.id %}" data-bs-toggle="tooltip" data-bs-placement="top"
-                                title="Add to wishlist"><i class="bi bi-suit-heart "></i></a>
+                                title="Add to wishlist" aria-label="wishlist link"><i class="bi bi-suit-heart "></i></a>
                         </div>
 
                     </div>
                 </div>
                 <div class="card-footer bg-white border-0 text-left">
                     <div class="row">
-                    <h5 class="fw-bold fs-4">{{ product.name }}</h5>
+                    <h2 class="fw-bold fs-4">{{ product.name }}</h2>
                     </div>
                     <div class="row">
                         
@@ -159,7 +159,7 @@
         {% endfor %}
     </div>
     <div class="position-fixed bottom-0 end-0 p-3 m-3">
-        <a class="btn fw-bold" href="{% url 'shop_products' %}" id="scroll-to-top">
+        <a class="btn fw-bold" href="{% url 'shop_products' %}" id="scroll-to-top" aria-label="shop page link">
             <i class="bi bi-arrow-up-circle "></i>
         </a>
     </div>
