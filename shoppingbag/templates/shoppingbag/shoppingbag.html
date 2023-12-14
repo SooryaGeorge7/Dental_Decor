@@ -42,18 +42,19 @@
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <button class="decrement-qty btn btn-outline-danger border-0 rounded-circle"
-                                        data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                                        data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}" aria-label="Decrease button">
                                         <span>
                                             <i class="bi bi-dash-circle"></i>
                                         </span>
                                     </button>
                                 </div>
+                                <label for="id_qty_{{ item.item_id }}" class="visually-hidden">Full name</label>
                                 <input class="form-control form-control-sm qty_input" type="number" name="quantity"
                                     value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}"
                                     id="id_qty_{{ item.item_id }}">
                                 <div class="input-group-append">
                                     <button class="increment-qty btn btn-outline-success border-0 rounded-circle"
-                                        data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                                        data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}" aria-label="Increase button">
                                         <span>
                                             <i class="bi bi-plus-circle"></i>
                                         </span>
@@ -82,19 +83,19 @@
 
                 <div class="row mt-auto">
                     <div class="col text-end ">
-                        <h4><strong>Total: € {{ total|floatformat:2 }}</strong></h4>
+                        <h2><strong>Total: € {{ total|floatformat:2 }}</strong></h2>
 
                     </div>
                 </div>
                 <div class="row mt-3">
                     <div class="col text-end">
-                        <a href="{% url 'shop_products' %}" class="btn btn-outline-secondary rounded-0 me-1">
+                        <a href="{% url 'shop_products' %}" class="btn btn-outline-dark rounded-0 me-1" aria-label="shop page link">
                             <span class="icon">
                                 <i class="bi bi-caret-left"></i>
                             </span>
                             <span class="text-uppercase">Browse</span>
                         </a>
-                        <a href="{% url 'shop_checkout' %}" class="btn btn-dark rounded-0 ">
+                        <a href="{% url 'shop_checkout' %}" class="btn btn-dark rounded-0 " aria-label="checkout page link">
                             <i class="bi bi-shield-lock"></i>
                             <span class="text-uppercase"> Proceed to Checkout</span>
 
@@ -107,8 +108,8 @@
             <div class="row mt-5">
                 <div class="col-12 d-flex justify-content-center align-items-center flex-column mt-5">
                     <h2 class="fs-1 lead mb-4">Your bag is empty.</h2>
-                    <a href="{% url 'shop_products' %}" class="btn btn-outline-secondary rounded-0 me-1">
-                        <i class="bi bi-caret-left"></i> Keep Shopping
+                    <a href="{% url 'shop_products' %}" class="btn btn-outline-dark rounded-0 me-1" aria-label="shop page link">
+                        <i class="bi bi-caret-left"></i> Browse
                     </a>
                 </div>
             </div>
