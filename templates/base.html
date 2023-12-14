@@ -66,12 +66,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <form method="GET" action="{% url 'shop_products' %}" class="form-inline">
+              <form method="GET" action="{% url 'shop_products' %}" class="form-inline" >
                 <div class="input-group w-100">
+                  <label for="search" class="visually-hidden">Search</label>
                   <input class="form-control rounded-5 border search-field " type="text" name="q"
-                    placeholder="Search our site">
+                    placeholder="Search our site" id="search">
                   <div class="input-group-append ">
-                    <button class="form-control btn  border dental-decor-actionbtn rounded-5" type="submit">
+                    <button class="form-control btn  border dental-decor-actionbtn rounded-5" type="submit" aria-label="search button">
                       <span class="icon  fw-bold">
                         <i class="bi bi-search"></i>
                       </span>
@@ -155,14 +156,14 @@
                 {% if product_count > 0 %}
                 <span class="badge count badge-sm rounded-pill position-absolute  translate-middle">{{ product_count}}</span>
                 {% endif %}
-                <div class="navbar-price text-warning position-absolute start-0 d-none d-md-block">
+                <div class="navbar-price  position-absolute start-0 d-none d-md-block badge-sm rounded-pill text-bg-warning">
                   {% if total %}
                    €{{ total|floatformat:2 }}
                   {% else %}
                   €0.00
                   {% endif %}
                 </div>
-                <span class="d-md-none text-warning">
+                <span class="d-md-none  navbar-price badge-sm rounded-pill text-bg-warning ">
                   {% if total %}
                     €{{ total|floatformat:2 }}
                   {% else %}
@@ -210,9 +211,9 @@
   <footer class="text-center text-light ">
     <div class="container py-3">
       <div class="footer-div text-light">
-        <a href="#" class="me-3 text-light"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="me-3 text-light"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="me-3 text-light"><i class="bi bi-github"></i></a>
+        <a href="https://www.facebook.com/" class="me-3 text-light" aria-label="facebook link"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/" class="me-3 text-light" aria-label="instagram link"><i class="bi bi-instagram"></i></a>
+        <a href="https://github.com/" class="me-3 text-light" aria-label="github link"><i class="bi bi-github" aria-label="github link"></i></a>
       </div>
       <p>Copyright@DentalDecor. All rights reserved.</p>
     </div>

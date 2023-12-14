@@ -42,6 +42,9 @@ body {
     text-align: center;
     font-weight: bold;
     padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    color:#003333;
+    
 }
 
 .nav-link:hover {
@@ -195,6 +198,7 @@ input[name='q']::placeholder {
     background-color: #FFFFF0;
     color: #006666;
     z-index: 2;
+    border:0.125rem solid #006666;
 }
 .dental-decor-actionbtn, .zoom-button {
     background-color: #003333;
@@ -310,6 +314,7 @@ input[name='q']::placeholder {
     font:14px Helvetica,Arial,sans-serif; 
 }
 
+/* checkout page*/
 
                     /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
                        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
@@ -328,7 +333,7 @@ input[name='q']::placeholder {
         max-width: 80%;
     }
     .navbar-price {
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
 
 }
