@@ -204,6 +204,7 @@ User can click on checkout button | User is redirected to checkout page if shopp
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
+User can click on save details button | Details should be saved in User profile | As expected 
 
 <details><summary>Screenshot</summary>
 
@@ -216,6 +217,8 @@ User can click on checkout button | User is redirected to checkout page if shopp
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
+User can naviagte to account navlink dropdown with register link | Directed to Singup page | As expected 
+User can click signup button after entering details | User is sent verification link via email | As expected 
 
 <details><summary>Screenshot</summary>
 
@@ -228,8 +231,12 @@ User can click on checkout button | User is redirected to checkout page if shopp
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
+User can navigate to checkout page frm  checkout  button on shopping bag page , or from secure checkout page from toast | checkout page loads| As expected 
+User can enter valid card details in checkout form | Validation error if incorrect card details are given | As expected 
+
 
 <details><summary>Screenshot</summary>
+
 
 </details>
 
@@ -240,6 +247,7 @@ User can click on checkout button | User is redirected to checkout page if shopp
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
+User can navigate to profile navigation tab | Orders purchased can be viewed in profile page | As expected 
 
 <details><summary>Screenshot</summary>
 
@@ -251,6 +259,7 @@ User can click on checkout button | User is redirected to checkout page if shopp
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
+User can click on complete order button on checkout page | If user hasnt put in card details, form will request user to enter card details | As expected 
 
 <details><summary>Screenshot</summary>
 
@@ -263,6 +272,8 @@ User can click on checkout button | User is redirected to checkout page if shopp
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
+User click on add review button in product details page | Add review modal pops up If user hasnt added a review for a product yet | As expected 
+User click on add review button but they have already added review for particular product | Error toast pops up saying user has already reviewed product | As expected 
 
 <details><summary>Screenshot</summary>
 
@@ -276,6 +287,7 @@ User can click on checkout button | User is redirected to checkout page if shopp
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
+User can click on edit review button for their reviews | Edit review modal pops up for user to edit their existing review | As expected
 
 <details><summary>Screenshot</summary>
 
@@ -288,6 +300,9 @@ User can click on checkout button | User is redirected to checkout page if shopp
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
+User can click on delete button for user's reviews | Delete review modal pops up to confirm user's actions | As expected 
+User can click on delete button on delete review modal | Review made by user is then deleted | As expected
+
 
 <details><summary>Screenshot</summary>
 
@@ -299,6 +314,8 @@ User can click on checkout button | User is redirected to checkout page if shopp
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
+User can click on heart button in shop products page | Product is added to wishlist page | As expected 
+User can click on heart button in product details page | Product is added to wishlist page | As expected 
 
 <details><summary>Screenshot</summary>
 
@@ -309,13 +326,14 @@ User can click on checkout button | User is redirected to checkout page if shopp
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
+User can click on "X" button for products in wishlist | remove modal pops up for user to confirm removal of product from wishlist | As expected  
 
 <details><summary>Screenshot</summary>
 
 </details>
 
 ### user story:Contact Us
-[#21]As a User i can Send a Contact us Query so that *i can have the necessary information i require regarding the products or the website information
+[#21]As a User i can Send a Contact us Query so that i can have the necessary information i require regarding the products or the website information
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
