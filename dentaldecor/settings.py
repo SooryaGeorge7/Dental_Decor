@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG ='DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['dental-decor-ee0d87f16edf.herokuapp.com','8000-sooryageorg-dentaldecor-9bhdpnovlkj.ws-eu105.gitpod.io',
+ALLOWED_HOSTS = ['dental-decor-ee0d87f16edf.herokuapp.com','8000-sooryageorg-dentaldecor-9bhdpnovlkj.ws-eu107.gitpod.io',
                 '8000-sooryageorg-dentaldecor-9bhdpnovlkj.ws-eu106.gitpod.io']
 
 

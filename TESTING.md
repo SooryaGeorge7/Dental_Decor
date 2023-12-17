@@ -44,6 +44,9 @@
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
+User can navigate to [Home Page](https://dental-decor-ee0d87f16edf.herokuapp.com/) | Dental Decor home page loads | As Expected 
+User can access all home page features. ie: carousal, shop now button, newsletter sub, Contact me form, social media links | All buttons, links, features work | As expected 
+User should experince the home page to be responsive | App works on different device sizes | As expected
 
 <details><summary>Screenshot</summary>
 
@@ -57,6 +60,10 @@
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
+User can navigate through website  | Navigation is intuitive | As expected
+User Can click on navbar links in different screens | Navbar is responsive | As expected 
+
+
 
 <details><summary>Screenshot</summary>
 
@@ -69,6 +76,8 @@
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
+User can click on login button  | User can only login once registered | As expected
+User can click on register button | User can register if they have not before | As expected
 
 <details><summary>Screenshot</summary>
 
@@ -81,6 +90,8 @@
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
+User can scroll down to footer | footer is available on all pages | As expected
+User can click on links on footer | Links can redirect user to relevant pages | As expected 
 
 <details><summary>Screenshot</summary>
 
@@ -93,6 +104,8 @@
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
+User can click on shop button on navigation bar | Navigation link leads to products page | As expected 
+User can click on shop now button on carousal in home page | Button redirects to shop products page | As expected 
 
 <details><summary>Screenshot</summary>
 
@@ -105,6 +118,7 @@
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
+User can click on see more button on each product card | User is directed to product details page | As expected 
 
 <details><summary>Screenshot</summary>
 
@@ -117,6 +131,8 @@
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
+User can click on dropdowns in products page |Product page Dropdowns allow users to categrorize or sort products | As expected 
+User can see the amount of products for each category | Amount of products can be seen on top right corner of product page | As expected
 
 <details><summary>Screenshot</summary>
 
@@ -129,6 +145,8 @@
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
+User can click on add to bag button from product details page | The product added can now be seen in shopping bag, and navbar total will change accordingly | As expected
+User can click on add to bag button from wishlist page | The product added can be seen in shopping bag| As expected 
 
 <details><summary>Screenshot</summary>
 
@@ -141,6 +159,8 @@
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
+User can click on add to bag buttons for multiple products from product details page | The products can be seen in shopping bag page | As expected 
+User can click on add to bag buttons for multiple products from wishlist page | The products can be seen in shopping bag page | As expected
 
 <details><summary>Screenshot</summary>
 
@@ -153,6 +173,12 @@
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
+User can click in increment button in product details page | increase the amount of product that you want to add to shopping bag | as expected 
+User can click in decrement button in product details page | decrease the amount of product that you want to add to shopping bag | as expected
+User can click in increment button in wishlist page | increase the amount of product that you want to add to shopping bag | as expected
+User can click in decrement button in wishlist page | decrease the amount of product that you want to add to shopping bag | as expected
+User can click in increment button in shoppingbag page | increase the amount of product that you want to add to shopping bag if user presses updated button | as expected
+User can click in decrement button in shoppingbag page | decrease the amount of product that you want to add to shopping bag if user clicks on updated button | as expected
 
 <details><summary>Screenshot</summary>
 
@@ -165,6 +191,7 @@
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
+User can click on checkout button | User is redirected to checkout page if shopping bag has products | As expected
 
 <details><summary>Screenshot</summary>
 
