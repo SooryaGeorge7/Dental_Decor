@@ -393,6 +393,663 @@ All the product images and carousal images were sourced from [Etsy](https://www.
 
 ## Features
 
+1. **REGISTERED USER FEATURES**
+
+Registered users for DublinEats would be able to access all features available.
+
+**Across All Pages**
+
+***Navbar***
+
+Users would be able to naviagate the website so that they can find any information they are looking for.
+
+<details><summary>Navbar in desktop</summary>
+
+![Desktop navbar]()
+
+![Desktop open navbar]()
+
+</details>
+<details><summary>Navbar in Mobile devices</summary>
+
+In smaller devices a hamburger toggle button appears, where user can click on to show the navigation links.
+
+![Mobile Navbar]()
+
+![Mobile open navbar]()
+
+</details>
+
+<details><summary>Navbar Superuser logged in</summary>
+
+Navbar will look different to superuser slightly. They will have access to product management page in navbar.
+
+![Superuser loggedin navbar]()
+
+</details>
+
+<details><summary>Navbar logged out</summary>
+
+Navbar will look different to users if they have logged out or havnt signed up for website yet. They will not have a profile tab and a logout tab, instead they will have access to login tab and register tab on navbar.
+
+![Loggedout navbar]()
+
+</details>
+<details><summary>Dental Decor logo</summary>
+
+User can click on logo at any point, and the user will be redirected to the home page
+
+![Dental Decor Logo]()
+
+</details>
+
+<details><summary>Search feature</summary>
+
+Users has access to search feature on navbar.
+
+![Search feature]()
+
+</details>
+
+<details><summary>Search validation</summary>
+
+Users who inserts an input and clicks search button would not be able to search with numbers, special charectors , zero input or blank spaces. 
+
+![Search blank validation]()
+
+</details>
+***Footer***
+
+Footer contains copyright statement and link to social media accounts and my(Soorya George's) github profile.
+
+<details><summary>Footer on desktop</summary>
+
+![Footer desktop]()
+
+</details>
+
+<details><summary>Footer on mobiles</summary>
+
+![Footer mobile]()
+
+</details>
+
+**Home Page & features**
+
+Home page contains a carousal, helpful texts, buttons redirecting user to shop products pages, about us section, contact us form and newspaper subscription .
+
+<details><summary>Home page desktop</summary>
+
+![Home page desktop]()
+
+</details>
+
+<details><summary>Home page mobile</summary>
+
+![Home page mobile]()
+
+</details>
+
+<details><summary>Carousal feature</summary>
+
+Users can click the next buttons to see some products sold on website.
+
+![Home page Carousal]()
+
+</details>
+
+<details><summary>Shop now button</summary>
+
+Users are redirected to products page.
+
+![Shop Now Button]()
+
+</details>
+
+<details><summary>About us section </summary>
+
+
+![About section]()
+
+</details>
+
+<details><summary>Newsletter subscription</summary>
+
+Users can add their email addresses to receive newsletter
+![Newsletter subscription]()
+
+</details>
+
+<details><summary>Contact Us Section</summary>
+
+Users can send a query to site owner by filling out contact us form and pressing send query button. User will recieve a email confirming message sent.
+![Contact us form]()
+
+</details>
+
+**Shop products page & features**
+
+When user clicks on shop icon on navbar, user is redirected to products page which contains all the products sold in website.
+The products page has 2 dropdowns, 1 for categorsing products and other for sorting products
+
+<details><summary>Products page desktop</summary>
+
+For desktop - User is shown 4 product cards displayed in a row.Each card contains more information about the particular product such as price and category.
+
+![Products page desktop]()
+
+</details>
+
+<details><summary>Products page mobile</summary>
+
+For mobile- User is shown 1product displayed as a card in a row.As you can see, a go up button is available to user to allow user to go up the page if they wanted to at any point.
+
+![Product page mobile]()
+
+</details>
+
+<details><summary>Products page Add to wishlist button</summary>
+
+Users are allowed to add products to wishlist with this button
+
+![Add to wishlist button]()
+
+</details>
+
+<details><summary>Product page Add to wishlist error</summary>
+
+Users will be notified if users have already added a product to wishlist page
+
+![Add to wishlist error]()
+
+</details>
+
+<details><summary>Product page categories dropdown feature</summary>
+
+Users can links on this dropdown to view products according to the categories available
+
+![Categories dropdown]()
+
+</details>
+
+<details><summary>Product page sort by dropdown feature</summary>
+
+Users can links on this dropdown to sort products according to how you would like to view the products.
+
+![Sort by dropdown]()
+
+</details>
+
+
+<details><summary>Product card  "See More" button</summary>
+
+Users will be able to access more details of each product when user clicks on see more button
+
+![See more button]()
+
+</details>
+
+<details><summary>Products page go up button</summary>
+
+When users access this page, a go up button will appear which allow users to go to the top of the page by clicking on the button which will help user experience.
+
+![Go up button ]()
+
+</details>
+
+
+
+
+**Product Details page and its features**
+
+Users are redirected to product details page when they click on "See More" button of a product card in the shop products page.
+
+<details><summary>Product Details page desktop</summary>
+
+![Product Details page desktop]()
+
+</details>
+
+<details><summary>Product Details mobile</summary>
+
+![Product Details mobile]()
+
+</details>
+
+<details><summary>Super user product edit button</summary>
+
+When superuser clicks on edit button on product page, they are redirected to edit product page.
+
+![Product edit button]()
+
+</details>
+
+<details><summary>Superuser product delete button</summary>
+
+When superuser clicks on delete button on product page, a delete product confirmation modal pops up.
+
+![Product delete button]()
+
+</details>
+
+<details><summary>Add to bag feature</summary>
+
+Users can add these products with this button to shopping bag so users can checkout and buy the products.
+
+![Add to bag]()
+
+</details>
+
+<details><summary>Add to wishlist feature</summary>
+
+Users would be able to Add products to wishlist from product details page for future buys. 
+
+![Add to wishlist -details]()
+
+</details>
+
+<details><summary>Size Dropdown feature</summary>
+
+Users would be able to choose the particular size that they want if product has size options
+
+![Product size dropdown]()
+
+</details>
+
+<details><summary>Quantity buttons to increase or decrease</summary>
+
+Users would be able to use increment and decrement button to change the quantity of products that they want to add to shopping bag.
+
+![Quantity buttons]()
+
+</details>
+
+
+<details><summary>See reviews section</summary>
+
+Users can see reviews of each product in product details page
+
+![See reviews section]()
+
+</details>
+
+<details><summary>Add review button</summary>
+
+Users would be able to click Add review button, and a modal will pop up for users to add comments and rate products out of 5 stars as a review for each product.Users will be shown a error message if users try to review products that they have already.
+
+![Add review button]()
+
+</details>
+
+<details><summary>Edit review button</summary>
+
+User would be able to edit the reviews that they have added in product details page. An edit review modal will pop up for user to change their existing review.
+
+![Edit review button]()
+
+</details>
+
+<details><summary>Delete review button</summary>
+
+Users are able to delete reviews that they have added in product details page. An delete review modal will pop up for user to confirm deletion of review
+
+![Delete review button]()
+
+</details>
+
+<details><summary>Review form validation</summary>
+
+Users can only submit review if they have filled the form.
+
+![Review form validation]()
+
+</details>
+
+**Wishlist page**
+
+Users can click on heart icon on navbar for users to be redirected to wishlist page. Wishlist page basically works the same as product details page. There is an add to bag button for each product shown and users are able to remove products from wishlist when they want to.The wishlist products will be saved for each user so they can still be seen if user logs out and then logs in at a later stage.
+
+<details><summary>Wishlist page desktop</summary>
+
+![Wishlist desktop]()
+
+</details>
+
+<details><summary>Wishlist page mobile</summary>
+
+![Wishlist mobile]()
+
+</details>
+
+<details><summary>Remove wishlist item button</summary>
+
+User can remove product from wishlist by clicking this button. The action will allow a remove wishlist item modal to pop up to confirm wishlist product removal from wishlist.
+
+![Remove item button]()
+
+</details>
+
+<details><summary>Add to bag button</summary>
+
+Users can add wishlist items to shopping bag by clicking on add to bag button for each product.
+
+![All reviews go up button]()
+
+</details>
+
+<details><summary>Keep Browsing button</summary>
+
+Users are directed to shop products page.
+
+![Keep browsing button]()
+
+</details>
+
+
+
+**Shopping bag page and features**
+
+Users would be able to see all the products they have added to shopping bag from wishlist or product details page. Users can then proceed to checkout page if they are happy to proceed.
+
+<details><summary>Shopping bag Desktop</summary>
+
+![Shopping bag Desktop]()
+
+</details>
+
+<details><summary>Shopping bag mobile</summary>
+
+![Shopping bag mobile]()
+
+</details>
+
+<details><summary> Update button</summary>
+
+For each product in shopping bag, Users would be able to change the quantity of the product by using the increase or decrease buttons and then the update button.
+
+![Update button]()
+
+</details>
+
+<details><summary>Remove button</summary>
+
+Users would be able to remove shopping bag product from this page when user clicks on this button. A delete shopping bag item modal will pop up for user to confirm removal of item.
+
+![Remove shopping bag item]()
+
+</details>
+
+<details><summary>Proceed to Checkout button</summary>
+
+Users will be able to proceed to checkout page by clicking on this button if there are shopping bag items.
+
+![Checkout button]()
+
+</details>
+
+<details><summary>Keep browsing button</summary>
+
+Users will be able to go back to products page by clicking the keep browsing button.
+
+![Keep browsing button]()
+
+</details>
+
+**Checkout page features**
+
+Users can add their details such as name, email, address for delivery and card details to complete their order. Users also has the option to save their details to their profile if they click on save details button.The order summary is shown in this page as well but no changes can be made to the order in this page.
+
+<details><summary>Checkout page Desktop</summary>
+
+
+![Checkout page desktop]()
+
+</details>
+
+<details><summary>Checkout page mobile</summary>
+
+
+![Checkout page mobile]()
+
+</details>
+
+<details><summary>Delivery section</summary>
+
+Users can enter their address and phone number here.
+
+![Delivery section]()
+
+</details>
+
+<details><summary>Payment section</summary>
+
+Users would be able to add the card details here and users are also shown how much would be charged in red here.
+
+![Payment section]()
+
+</details>
+
+<details><summary>Adjust bag button</summary>
+
+Users can go back to adjust the products in shopping bag if user isnt happy about order right now
+
+![Adjust bag button]()
+
+</details>
+
+<details><summary>Complete order button.</summary>
+
+Once user is happy about the order and have correctly filled in checkout form, User can click complete order button to complete the payment transaction. A loading overlay will be displayed on screen until user is directed to checkout success page
+
+![Complete order button]()
+
+</details>
+
+**Checkout success page**
+
+<details><summary>Checkout success page Desktop</summary>
+
+![Checkout success desktop]()
+
+</details>
+
+<details><summary>Checkout success page mobile</summary>
+
+![Checkout success mobile]()
+
+</details>
+
+**Profile page**
+
+<details><summary>Profile page desktop</summary>
+
+![Profile desktop]()
+
+</details>
+
+<details><summary>Profile page mobile</summary>
+
+![Profile mobile]()
+
+</details>
+
+<details><summary>Profile page update information feature</summary>
+
+User would be able to change their details in this page
+
+![Profile update button]()
+
+</details>
+
+<details><summary>Order history feature</summary>
+
+Users would be able to go to the order checkout success page for each order that was placed.
+
+![Order history feature]()
+
+</details>
+
+
+**Signup page features**
+
+<details><summary>Sign up page</summary>
+
+![Sign up page]()
+
+</details>
+
+<details><summary>Sign up button + verfication email </summary>
+
+![Sign up button]()
+
+</details>
+
+<details><summary>Signup success</summary>
+
+![Sign up success]()
+
+</details>
+
+**login page features**
+
+<details><summary>Login page</summary>
+
+![Sign up page]()
+
+</details>
+
+<details><summary>Log in button + success</summary>
+
+![Sign up success]()
+
+</details>
+
+<details><summary>Forgot password feature</summary>
+ User can click on forgot password link
+![Forgot password]()
+
+</details>
+
+<details><summary>Password reset form</summary>
+
+ User can given in their email address here and a link will be sent to your email to change password.
+![Password reset form]()
+
+</details>
+
+<details><summary>Change password form</summary>
+
+Users can change their password here, and a success message is shown to user.
+
+![Change password form]()
+
+</details>
+
+**logout page features**
+
+<details><summary>Logout page</summary>
+
+![Sign up page]()
+
+</details>
+
+<details><summary>Confirm button + success</summary>
+
+![Sign up success]()
+
+</details>
+
+
+**Superuser features**
+
+I have included front end superuser features for product management.
+
+<details><summary>Superuser all account nav dropdown </summary>
+
+Superusers would are able to navigate to product management page from navbar drop down from navlink "Account"
+
+![Account dropdown superuser]()
+
+</details>
+
+<details><summary>Superuser Add product page</summary>
+
+Superusers would be able to go to this page from product management link from the navbar.
+
+![Add product page]()
+
+</details>
+
+<details><summary>Add product button</summary>
+
+Superusers would be able to add a new product by filling in the form correctly and clicking on this button
+
+![Add product button]()
+
+</details>
+
+<details><summary>Superuser edit product page</summary>
+
+Superusers would be able to click on edit button on product details page which will redirect user to edit product page. 
+
+![Superuser edit product page]()
+
+</details>
+
+<details><summary>Superuser Update product button</summary>
+
+Superusers would be able to click on update button in edit product page if they want to make any changes to a particular product that exists.. 
+
+![Superuser Update product button]()
+
+</details>
+
+<details><summary>Superuser delete product feature</summary>
+
+Superusers would be able to click on delete button on product details page where a delete product confirmation modal will pop up for user to confirm deletion.
+
+![Superuser delete product modal]()
+![Superuser delete product confirmation]()
+
+</details>
+
+
+
+
+**Error pages**
+
+
+
+<details><summary>404 error page</summary>
+
+This page appears when a page is not found.
+
+![]()
+
+</details>
+
+2. **UNREGISTERED USER ACCESS**
+
+**Can Access**
+
+Unregistered users can access all features of website except wishlist page, the ability to rate products, profile page or save the ability to save their details for future purchases.
+
+**Cant Access**
+
+<details><summary>Unable to add products to wishlist without loging in.</summary>
+
+![unable to add to wishlist]()
+
+
+</details>
+
+<details><summary>Unable to rate products without loging in</summary>
+
+![Unable to rate]()
+
+</details>
+
+
 
 ## Future features
 
