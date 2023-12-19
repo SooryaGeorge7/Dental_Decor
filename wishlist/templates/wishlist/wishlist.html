@@ -7,7 +7,7 @@
 {% if wish_items %}
 <div class="carousal-border container">
     <div class="row  ">
-        <h1>Your Wishlist</h1>
+        <h1 class="mt-4 mb-4">Your Wishlist</h1>
         {% for item in wish_items %}
         <h2>{{ forloop.counter }}.</h2>
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2 mb-4 ">
@@ -136,7 +136,8 @@
 
     {% else %}
     <div class="carousal-border container">
-    <div class="col-md-8 mx-auto min-vh-100 d-flex flex-column align-items-center justify-content-center ">
+        <h1 class="mt-4 ">Your Wishlist</h1>
+    <div class="col-12 mx-auto min-vh-100 d-flex flex-column align-items-center justify-content-center ">
         <h2 class="text-center fw-bold">Your wishlist is empty.</h2>
         <div>
         <a href="{% url 'shop_products' %}" class="btn mb-1  btn-outline-secondary me-1" aria-label="shop page link">
