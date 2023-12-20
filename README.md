@@ -184,34 +184,143 @@ All the product images and carousal images were sourced from [Etsy](https://www.
 ## Database
 ***
 
+<details><summary>(ERD)Physical database model</summary>
+<img src=>
+</details>
+
 ### Data Models
 
 #### User model
 
+- User model as part of the Django allauth library contains  following fields:
+username, password,email
 
 
 
 ####  Product
 
+- Product model made to represent dental decor product containing all relevant fields giving user information they need to make a  purchase
+
+| Name          | Database Key  | Field Type    | Validation |
+| ------------- | ------------- | ------------- | ---------- |
+|category       | category      | ForeignKey| 'Category', null=True, blank=True, on_delete=models.SET_NULL|
+|sku    | sku   | SlugField| default=unique_sku,unique=True|
+|name   | name   | CharField| max_length=254 |
+|description     | description    | TextField|  |
+|has_sizes     | has_sizes | BooleanField| default=False, null=True, blank=True |
+| price      |  price     | DecimalField| max_digits=6, decimal_places=2|
+|image_url      | image_url   | URLField|  max_length=1024, null=True, blank=True|
+|image      | image   | ImageField| null=True, blank=True|
 
 
 ####  Category
 
+- Model made to clearly categorise/divide products in shop
+
+| Name          | Database Key  | Field Type    | Validation |
+| ------------- | ------------- | ------------- | ---------- |
+|name      | name   | CharField|  max_length=254|
+|notes       |notes     | TextField|  |
+|friendly_name      | friendly_name    | CharField|  max_length=254, null=True, blank=True|
 
 
-####  CustomerProfile
+####  UserProfile
+
+- Model representing an account of a registered user containing
+following fields:
+
+| Name          | Database Key  | Field Type    | Validation |
+| ------------- | ------------- | ------------- | ---------- |
+|user       | user     | OneToOneField|  User, on_delete=models.CASCADE|
+|default_phone_number      | default_phone_number     | CharField|  max_length=20, null=True, blank=True|
+|default_street_address1       | default_street_address1     | CharField| max_length=80, null=True, blank=True|
+|default_street_address2       | default_street_address2     | CharField| max_length=80, null=True, blank=True|
+|default_town_or_city       | default_town_or_city     | CharField| max_length=40, null=True, blank=True|
+|default_county       | default_county     | CharField| max_length=80, null=True, blank=True|
+|default_country       |default_country    | CountryField|  blank_label='Country *', null=True, blank=True|
+|default_postcode       | default_postcode     | CharField| max_length=20, null=True, blank=True|
+
 
 
 
 #### Contact
 
+- Model made with purpose of storing contact info between user and business with following stated fields:
+
+
+
+| Name          | Database Key  | Field Type    | Validation |
+| ------------- | ------------- | ------------- | ---------- |
+|name        |name      | CharField|  max_length=50|
+|email       |email      | EmailField|  max_length=50|
+|phone      |phone     | CharField|  max_length=20|
+| message      | message     | TextField|  max_length=500|
+| sent_time     | sent_time   | DateTimeField|  auto_now_add=True|
+
 
 
 #### Order
 
+- Model storing information relevant to customer dental decor shop order ,containing following
+fields:
+
+| Name          | Database Key  | Field Type    | Validation |
+| ------------- | ------------- | ------------- | ---------- |
+|order_number       | order_number     | CharField|  max_length=32, null=False, editable=False|
+|user_profile        |user_profile       | ForeignKey|  UserProfile,on_delete=models.SET_NULL,
+null=True, blank=True, related_name='orders'|
+|full_name        | full_name    | CharField|  max_length=50, null=False, blank=False|
+| email     | email    | EmailField| max_length=254, null=False, blank=False|
+|phone_number       | phone_number     | CharField|  max_length=20, null=False, blank=False|
+| country       | country      | CountryField|  blank_label='Country *', null=False, blank=False|
+| postcode      | postcode     | CharField|  max_length=20, null=True, blank=True|
+| town_or_city      |  town_or_city    | CharField|  max_length=40, null=False, blank=False|
+|street_address1       | street_address1     | CharField|  max_length=80, null=False, blank=False|
+|street_address2       | street_address2     | CharField|  max_length=80, null=False, blank=False|
+|county        | county      | CharField|  max_length=80, null=True, blank=True|
+|date       | date     | DateTimeField|  auto_now_add=True|
+|order_total       | order_total     | DecimalField|  max_digits=10, decimal_places=2, null=False, default=0|
+|grand_total       | grand_total     | DecimalField|  max_digits=10, decimal_places=2, null=False, default=0|
+|original_shoppingbag       | original_shoppingbag     | TextField|  null=False, blank=False, default=''|
+|stripe_pid       | stripe_pid     | CharField|  max_length=254, null=False, blank=False, default=''|
 
 
 ####  OrderLineItem
+
+- model representing single product in an order
+
+| Name          | Database Key  | Field Type    | Validation |
+| ------------- | ------------- | ------------- | ---------- |
+| order      | order     | ForeignKey|  Order, null=False, blank=False, on_delete=models.CASCADE,
+related_name='lineitems'|
+|product       | product    | ForeignKey|  Product, null=False,blank=False, on_delete=models.CASCADE|
+|product_size       | product_size    | CharField|  max_length=20, null=True, blank=True|
+|quantity       | quantity     | IntegerField|  null=False, blank=False, default=0|
+|lineitem_total      | lineitem_total    | DecimalField|  max_digits=6,decimal_places=2, null=False blank=False, editable=False|
+
+
+
+####  Review
+
+- model representing reviews for each product
+
+| Name          | Database Key  | Field Type    | Validation |
+| ------------- | ------------- | ------------- | ---------- |
+| user     | user    | ForeignKey|  User,on_delete=models.CASCADE|
+|product      | product     |ForeignKey|  Product, on_delete=models.CASCADE|
+|product_rating      | product_rating     | IntegerField|  choices=Rating, default=0|
+|comment_text      | comment_text    | TextField|  null=True, blank=True,validators=[MaxLengthValidator(500)],|
+|created_on       | created_on     | DateTimeField|  auto_now_add=True, null=True|
+
+####  Wishlist
+
+- model representing wishlist for products user favorites
+
+| Name          | Database Key  | Field Type    | Validation |
+| ------------- | ------------- | ------------- | ---------- |
+| user     | user    | ForeignKey|  User,on_delete=models.CASCADE|
+|product      | product     |ForeignKey|  Product, on_delete=models.CASCADE|
+
 
 
 ### Wireframes
