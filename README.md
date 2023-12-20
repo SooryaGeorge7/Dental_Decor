@@ -86,7 +86,14 @@ I have developed an e-commerce Django website that sells dental art that involve
 6. Customer Engagement:
 Business is able to engage with customers through newsletters, contact form or via social media.
 
+
+
 ### SEO
+
+ I executed a  SEO plan to enhance the online presence of the dental decor websitet. The initial phase involved e keyword research to pinpoint relevant long and short-tail keywords associated with my products. I optimized title tags, meta descriptions, and URLs by incorporating these keywords, thereby boosting the web-shop's visibility in search engine results.I created high-quality content that seamlessly integrated the identified keywords. To optimize images, I employed descriptive file names and alt tags, contributing to an overall improvement in search engine rankings. The ultimate goal was to attract potential customers actively searching for products within the same category, thus increasing the visibility and reach of the website.
+
+    ![SEO  HTML]()
+
 
 
 ### Marketing
@@ -97,6 +104,10 @@ Business is able to engage with customers through newsletters, contact form or v
 ![Facebook images2](docs/marketing/facebook-page2.png)
 
 ### Target audience
+
+- Dental professionls who are looking for art for their business or clinic.
+- Dental professionals or friends/ family of dental professionals looking for a unique piece of dental art to gift another fellow dental professional.
+
 
 ##### Back to [top](#table-of-contents)
 ## User Experience
