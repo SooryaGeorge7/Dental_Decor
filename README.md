@@ -1440,16 +1440,32 @@ Your application is now successfully deployed!
 ## Credits
 
 
-### Code
+### **Code Used**
 
+* The steps to connect to a Heroku Postgres database and deploy were adapted from the Code Institute 'Boutique Ado' tutorial. This includes defining DATABASE_URL and SECRET_KEY environment variables in an env.py file in the local environment and adding corresponding config variables in the Heroku dashboard, using dj_database_url to create a URL from the database URL in settings.py, updating ALLOWED_HOSTS in settings.py with the deployed Heroku URL and adding the templates path to a TEMPLATES_DIR variable in settings.py
+* The Bootstrap 5 documentation was extensively referenced for guidance on implementing navbars and modal dialogs.
+* This repository was created using the template provided by Code Institute.
+* Thanks to the Django docs which were also used as a step-by-step while going through the project to ensure everything was set up correctly
+* [Learnt how to implement star rating using javascript here](https://www.codingnepalweb.com/star-rating-html-css-javascript-2/)
+* [Learnt to use css on active nav links here](https://stackoverflow.com/questions/32931436/active-tag-on-bootstrap-with-django/47530688#47530688)
+* [Learnt how to implement wishlist here](https://www.youtube.com/watch?v=pdttUeJi7j8)
 
+### **Content**
 
-### Tutorials
-
-### Imagery
-
+* All project product photos and carousal in home page were sourced from [Etsy](https://www.etsy.com/ie/search?q=dentist+everyday&ref=search_bar), I had asked my ucd facilitator Chris Quinn if this was allowed, and he said it was perfectly okay as long as i credited the site in my README.
+* About us photo was sourced from [here](https://www.pexels.com/photo/group-of-people-standing-infront-of-blackboard-3184432/)
+* All icons used were from [Bootstrap icons](https://icons.getbootstrap.com/?q=globe)
+* The logo image was created Realfavicon generator to fit the theme of the website.
 
 
 ## Acknowledgements
 
+I would like to acknowledge the following people in helping with my project one way or another:
+
+* My husband for supporting me through my decision to do this course and through all the late nights and meltdowns so far especially knowing that 
+  this will only get worse through the course of the year. :D
+* My friends ,family and colleagues who have tested my site on their devices to make sure all looks and works well.
+* My Mentor Brian O'Hare for guiding me and giving constructive criticism in our 6 mentor sessions so far.
+* UCD academy november private group in slack for our almost weekly facilitator sessions that have helped me in getting some our doubts cleared with regards to the project.
+* Chris Quinn for delivering our facilitator and master classes so far which has helped me to not feel completely alone in this journey.
 
