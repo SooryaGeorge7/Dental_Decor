@@ -481,6 +481,99 @@ related_name='lineitems'|
 
 ## Agile Design
 
+## Agile Design
+
+### Overview
+
+Agile Methodology were followed more closely in this project compared to my last project. Although this was my second attempt in implementing and prioritizing tasks, changes were made on th way to accomodate project needs. I have used milestones as Epics , Userstories to implement the project tasks and see through user stories.My kanban board are constructed by sprints this time.This allowed me a regularly correct and improve where needed.Overall, .By implementing Agile principles and design, I was confident in delivering a high-quality and user-centric e-commerce website.
+
+### Epics(Milestones)
+- The GitHub's 'Milestones' feature was used to connect user stories to their corresponding tasks,A set of 6 epics for this project.
+
+<details><summary>See epics</summary>
+
+</details>
+
+
+
+### Moscow prioritization
+
+- This prioritization technique was used to to efficiently sort and handle project requirements based on their importance and urgency.
+It  proved valuable in ensuring that the most critical requirements received prompt attention and were addressed as a priority
+
+<details><summary> Moscow </summary>
+</details>
+
+### Iterations(Sprints)
+
+- As a solo developer in my project, sprints  provided structured and manageable periods of work. I was able to plan and execute tasks within these iterations, ensuring focused progress. At the end of each sprint, I tried to review the completed work and adapt my plan based on feedback and changing priorities.
+
+#### 1st sprint
+
+I used the 1st sprint to set up the project and have the basic framework such as base.html to work. This allowed me to establish a solid foundation for the project and lay the devlopment groundwork for future tasks.
+
+[Link to 1st Sprint Kanban board.]()
+
+
+<details><summary>See 1st sprint progress</summary>
+
+</details>
+
+#### 2nd sprint
+
+During my second sprint, my primary focus was to add all the products in database. To add the products app and its functionality such as shop product page, and product details page. 
+
+[Link to 2nd Sprint Kanban board.]()
+
+<details><summary>See 2nd sprint progress</summary>
+
+</details>
+
+
+#### 3nd sprint
+
+For my 3rd sprint, i implemented shopping cart functionality and completing a portion of the checkout process with payment. This involved allowing users to add items to shopping bag, update quantities, and initiate the checkout process. 
+
+
+
+[Link to 3rd Sprint Kanban board.]()
+
+<details><summary>See 3nd sprint progress</summary>
+
+</details>
+
+
+
+#### 4th sprint
+
+In the fourth sprint, my main objective was to finalize the Payment epic, ensuring a smooth and secure payment process for users. I dedicated my efforts to testing the payment functionality by following Stripe documentation and implementing webhooks functionality to guarantee its reliability.
+
+
+
+[Link to the 4th Sprint Kanban board.]()
+
+<details><summary>See 4th sprint progress</summary>
+
+</details>
+
+
+#### 5th sprint
+
+
+For my 5th, I implemented  various other features such as reviews, wishlist and contact us form.
+I also used this sprint to track my documentation process.
+
+[Link to the 5th Sprint Kanban board.]()
+
+<details><summary>See 5th sprint progress</summary>
+
+</details>
+
+#### Agile Conclusion 
+
+Leveraging Agile methodologies across the 5 sprints of my  e-commerce project, I experienced consistent advancement through the systematic breakdown of tasks into manageable components. This method allowed me to prioritize and roll out essential features one by one. By embracing mentor feedback, I enhanced the development process, integrated important functionalities, and crafted an intuitive e-commerce platform for users. The Agile framework emerged as a vital tool, steering me through challenges,  and placing user satisfaction at the forefront of the project's priorities.
+
+
 ## Technologies Used
 
 ### Languages & Frameworks
