@@ -1182,6 +1182,20 @@ Unregistered users can access all features of website except wishlist page, the 
 
 ## Bugs
 
+## **Bugs & Fixes**
+
+| **Bug** | **Resolution** |
+|---------|----------------|
+| The textarea for leave a review was overflowing in smaller screens  | I managed to add a class to Rating form in forms.py where i can style the class in stylesheet to make textarea responsive. [See solution here]()|
+| The navbar looked very crowded in bigger devices when the navlink icons have description | I managed to hide the descriptions in bigger screens [See solution here]()|
+| The review modals were not popping up when user clicked on the buttons because the review.html contained the review modal while the buttons were located in the product details page | I managed to extend the product details page in review.html and adding javascript to help with this modal poppup up[See solution here]()|
+
+
+## **Unresolved Bugs/Issues**
+
+* Search query doesn’t have to make sense to return a result. If user types in “uherge” this will return some products regardless of there is result for that exact query. This is due to the fact the results rendered are not strict to query but rather "could be related" to query.
+* I realized this too late but the add review and edit review modal keeps popping up everytime the product details page the user is already on is reloaded but only if user has clicked on add review or edit review button already.[see bug here]()
+
 ## Deployment
 
 ### Create Application
