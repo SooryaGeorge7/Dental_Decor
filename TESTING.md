@@ -6,9 +6,16 @@
 
 1. [Responsiveness](#responsiveness)
 2. [Manual Testing](#manual-testing-of-user-stories)
+3. [Validators](#validators)
+    - [CI Python Linter](#ci-python-linter)
+    - [JSHint](#jshint)
+    - [W3C CSS Validator](#w3c-css-validator)
+    - [W3C Markup Validator](#w3c-markup-validator)
+    - [Lighthouse](#lighthouse)
+    - [Lighthouse Errors](#lighthouse-errors)
+    - [Wave Accessibility Tests](#wave-accessibility-tests)
 
 ## Note
-
 
 
 ***
@@ -44,11 +51,6 @@ User can navigate to [Home Page](https://dental-decor-ee0d87f16edf.herokuapp.com
 User can access all home page features. ie: carousal, shop now button, newsletter sub, Contact me form, social media links | All buttons, links, features work | As expected 
 User should experince the home page to be responsive | App works on different device sizes | As expected
 
-<details><summary>Screenshot</summary>
-
-
-</details>
-
 ***
 
 ### User story:Navigation
@@ -57,13 +59,10 @@ User should experince the home page to be responsive | App works on different de
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
 User can navigate through website  | Navigation is intuitive | As expected
-User Can click on navbar links in different screens | Navbar is responsive | As expected 
+User Can click on navbar links in different screen sizes | Navbar is responsive | As expected 
+User Can hover over navlinks | Navbar icons change color | As expected 
 
 
-
-<details><summary>Screenshot</summary>
-
-</details>
 
 ***
 
@@ -74,10 +73,8 @@ User Can click on navbar links in different screens | Navbar is responsive | As 
 ------------ | ------------ | ------------ |
 User can click on login button  | User can only login once registered | As expected
 User can click on register button | User can register if they have not before | As expected
-
-<details><summary>Screenshot</summary>
-
-</details>
+User can click on forgot password link  | User can change password | As expected
+User can clicks on register button but have already registered | User is informed that the email has already been registered | As expected
 
 ***
 
@@ -89,9 +86,6 @@ User can click on register button | User can register if they have not before | 
 User can scroll down to footer | footer is available on all pages | As expected
 User can click on links on footer | Links can redirect user to relevant pages | As expected 
 
-<details><summary>Screenshot</summary>
-
-</details>
 
 ***
 
@@ -100,12 +94,9 @@ User can click on links on footer | Links can redirect user to relevant pages | 
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-User can click on shop button on navigation bar | Navigation link leads to products page | As expected 
+User can click on shop button/icon on navigation bar | Navigation link leads to shop products page | As expected 
 User can click on shop now button on carousal in home page | Button redirects to shop products page | As expected 
 
-<details><summary>Screenshot</summary>
-
-</details>
 
 *** 
 
@@ -114,11 +105,8 @@ User can click on shop now button on carousal in home page | Button redirects to
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-User can click on see more button on each product card | User is directed to product details page | As expected 
-
-<details><summary>Screenshot</summary>
-
-</details>
+User can click on "see more" button on each product card | User is directed to product details page | As expected 
+User can scroll down product details page to view product information | User can see the sizes available and what the product is made of in details page| As expected 
 
 ***
 
@@ -130,9 +118,6 @@ User can click on see more button on each product card | User is directed to pro
 User can click on dropdowns in products page |Product page Dropdowns allow users to categrorize or sort products | As expected 
 User can see the amount of products for each category | Amount of products can be seen on top right corner of product page | As expected
 
-<details><summary>Screenshot</summary>
-
-</details>
 
 ***
 
@@ -141,12 +126,9 @@ User can see the amount of products for each category | Amount of products can b
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-User can click on add to bag button from product details page | The product added can now be seen in shopping bag, and navbar total will change accordingly | As expected
-User can click on add to bag button from wishlist page | The product added can be seen in shopping bag| As expected 
+User can click on add to bag button from product details page | The product added can now be seen in shopping bag, and navbar total will change accordingly next to  cart | As expected
+User can click on add to bag button from wishlist page | The product added can be seen in shopping bag page and in success toast| As expected 
 
-<details><summary>Screenshot</summary>
-
-</details>
 
 ***
 
@@ -155,12 +137,9 @@ User can click on add to bag button from wishlist page | The product added can b
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-User can click on add to bag buttons for multiple products from product details page | The products can be seen in shopping bag page | As expected 
+User can click on add to bag buttons for multiple products from product details page | The products that are added can be seen in shopping bag page | As expected 
 User can click on add to bag buttons for multiple products from wishlist page | The products can be seen in shopping bag page | As expected
 
-<details><summary>Screenshot</summary>
-
-</details>
 
 ***
 
@@ -176,9 +155,6 @@ User can click in decrement button in wishlist page | decrease the amount of pro
 User can click in increment button in shoppingbag page | increase the amount of product that you want to add to shopping bag if user presses updated button | as expected
 User can click in decrement button in shoppingbag page | decrease the amount of product that you want to add to shopping bag if user clicks on updated button | as expected
 
-<details><summary>Screenshot</summary>
-
-</details>
 
 ***
 
@@ -187,11 +163,7 @@ User can click in decrement button in shoppingbag page | decrease the amount of 
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-User can click on checkout button | User is redirected to checkout page if shopping bag has products | As expected
-
-<details><summary>Screenshot</summary>
-
-</details>
+User can click on proceed to checkout button | User is redirected to checkout page if shopping bag has products | As expected
 
 ***
 
@@ -201,10 +173,8 @@ User can click on checkout button | User is redirected to checkout page if shopp
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
 User can click on save details button | Details should be saved in User profile | As expected 
+User does not click on save details button | Details are not saved in User profile | As expected 
 
-<details><summary>Screenshot</summary>
-
-</details>
 
 ***
 
@@ -215,10 +185,8 @@ User can click on save details button | Details should be saved in User profile 
 ------------ | ------------ | ------------ |
 User can naviagte to account navlink dropdown with register link | Directed to Singup page | As expected 
 User can click signup button after entering details | User is sent verification link via email | As expected 
+User can click link to confirm verification | User is shown success message for signing up | As expected 
 
-<details><summary>Screenshot</summary>
-
-</details>
 
 ***
 
@@ -227,14 +195,10 @@ User can click signup button after entering details | User is sent verification 
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-User can navigate to checkout page frm  checkout  button on shopping bag page , or from secure checkout page from toast | checkout page loads| As expected 
+User can navigate to checkout page form  on shopping bag page , or from secure checkout page from toast | checkout page loads| As expected 
 User can enter valid card details in checkout form | Validation error if incorrect card details are given | As expected 
 
 
-<details><summary>Screenshot</summary>
-
-
-</details>
 
 ***
 
@@ -244,10 +208,8 @@ User can enter valid card details in checkout form | Validation error if incorre
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
 User can navigate to profile navigation tab | Orders purchased can be viewed in profile page | As expected 
+User can click on each individual order that was made | User is shown details for each order that was made in the past | As expected
 
-<details><summary>Screenshot</summary>
-
-</details>
 
 
 ### User story:Payment with Card
@@ -255,11 +217,9 @@ User can navigate to profile navigation tab | Orders purchased can be viewed in 
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-User can click on complete order button on checkout page | If user hasnt put in card details, form will request user to enter card details | As expected 
+User can click on complete order button on checkout page but did not put in card details|  form will request user to enter card details | As expected 
+User can click on complete order button on checkout page and has put in a valid card details | Loading page appears until user is directed to checkout sucess page | As expected 
 
-<details><summary>Screenshot</summary>
-
-</details>
 
 ***
 
@@ -271,9 +231,6 @@ User can click on complete order button on checkout page | If user hasnt put in 
 User click on add review button in product details page | Add review modal pops up If user hasnt added a review for a product yet | As expected 
 User click on add review button but they have already added review for particular product | Error toast pops up saying user has already reviewed product | As expected 
 
-<details><summary>Screenshot</summary>
-
-</details>
 
 ***
 
@@ -284,10 +241,8 @@ User click on add review button but they have already added review for particula
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
 User can click on edit review button for their reviews | Edit review modal pops up for user to edit their existing review | As expected
+User can scroll down to see other users reviews | Edit review button is not shown for reviews that are not the users| As expected
 
-<details><summary>Screenshot</summary>
-
-</details>
 
 ***
 
@@ -300,9 +255,6 @@ User can click on delete button for user's reviews | Delete review modal pops up
 User can click on delete button on delete review modal | Review made by user is then deleted | As expected
 
 
-<details><summary>Screenshot</summary>
-
-</details>
 
 
 ### User story:Add to wishlist
@@ -312,10 +264,7 @@ User can click on delete button on delete review modal | Review made by user is 
 ------------ | ------------ | ------------ |
 User can click on heart button in shop products page | Product is added to wishlist page | As expected 
 User can click on heart button in product details page | Product is added to wishlist page | As expected 
-
-<details><summary>Screenshot</summary>
-
-</details>
+User can click on heart button in product details page or shop products page but user had already added these products to wishlist before | An error message is shown to user saying that the product has already been added | As expected 
 
 ### User story:Remove from wishlist
 * As a User i can remove from wishlist so that i can change the list of products that i want to buy in the future
@@ -323,10 +272,8 @@ User can click on heart button in product details page | Product is added to wis
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
 User can click on "X" button for products in wishlist | remove modal pops up for user to confirm removal of product from wishlist | As expected  
+User can click on remove button in confirm removal popup | wishlist item is removed from wishlist page | As expected  
 
-<details><summary>Screenshot</summary>
-
-</details>
 
 ### User story:Contact Us
 * As a User i can Send a Contact us Query so that i can have the necessary information i require regarding the products or the website information
@@ -334,11 +281,8 @@ User can click on "X" button for products in wishlist | remove modal pops up for
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
 User can click on phone icon on navbar | User is directed to contact us form | As expected 
-User can click on send query button in contact us form | User is given a success message that the message has been sent| As expected
+User can click on send query button in contact us form | User is given a success message that the message has been sent and user is sent an email message| As expected
 
-<details><summary>Screenshot</summary>
-
-</details>
 
 ### User story:See Reviews 
 * As a User i can see all product reviews so that i can decide if i want to buy a product with more information
@@ -347,10 +291,6 @@ User can click on send query button in contact us form | User is given a success
 ------------ | ------------ | ------------ |
 User can scroll down on product details page | User is able to see all reviews for that particular product | As expected 
 
-
-<details><summary>Screenshot</summary>
-
-</details>
 
 ***
 
@@ -361,9 +301,6 @@ User can scroll down on product details page | User is able to see all reviews f
 ------------ | ------------ | ------------ |
 User clicks on complete order button in Checkout page | User is redirected to checkout success page and recieves an email confirming order | As expected
 
-<details><summary>Screenshot</summary>
-
-</details>
 
 ***
 
@@ -375,9 +312,6 @@ User clicks on complete order button in Checkout page | User is redirected to ch
 User can click on product management link if user is superuser | User is redirected to add products page where user can add new products to shop | As expected
 
 
-<details><summary>Screenshot</summary>
-
-</details>
 
 ***
 
@@ -389,9 +323,6 @@ User can click on product management link if user is superuser | User is redirec
 Site owner can click on delete product button in product details page | Delete product confirmation modal pops up | As expected 
 Site owner can click on delete button on confirm product deletion modal | Product is deleted from shop | As expected 
 
-<details><summary>Screenshot</summary>
-
-</details>
 
 ***
 
@@ -404,9 +335,6 @@ Super user can click on edit product button on product details page | User is di
 Super user can change information of existing product in edit product page and click on update product button| Success message is shown and the particular product's details have been updated | As expected 
 
 
-<details><summary>Screenshot</summary>
-
-</details>
 
 ***
 
@@ -416,12 +344,6 @@ Super user can change information of existing product in edit product page and c
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
 User can enter valid card details and click on complete order button | Loading overlay appears that shows loading animation and payment information is accepted | As expected
-
-<details><summary>Screenshot</summary>
-
-</details>
-
-
 
 
 
