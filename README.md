@@ -618,18 +618,17 @@ Users would be able to naviagate the website so that they can find any informati
 
 <details><summary>Navbar in desktop</summary>
 
-![Desktop navbar]()
+![Desktop navbar](docs/features/navbar/navbar-manual1.gif)
 
-![Desktop open navbar]()
-
+![Desktop open navbar](docs/features/navbar/navbar-opennormal.png
 </details>
 <details><summary>Navbar in Mobile devices</summary>
 
 In smaller devices a hamburger toggle button appears, where user can click on to show the navigation links.
 
-![Mobile Navbar]()
+![Mobile Navbar](docs/features/navbar/navbar-manual2.gif)
 
-![Mobile open navbar]()
+![Mobile open navbar](docs/features/navbar/navbar-mobile-open.png)
 
 </details>
 
@@ -637,7 +636,7 @@ In smaller devices a hamburger toggle button appears, where user can click on to
 
 Navbar will look different to superuser slightly. They will have access to product management page in navbar.
 
-![Superuser loggedin navbar]()
+![Superuser loggedin navbar](docs/features/navbar/navbar-open.png)
 
 </details>
 
@@ -645,14 +644,14 @@ Navbar will look different to superuser slightly. They will have access to produ
 
 Navbar will look different to users if they have logged out or havnt signed up for website yet. They will not have a profile tab and a logout tab, instead they will have access to login tab and register tab on navbar.
 
-![Loggedout navbar]()
+![Loggedout navbar](docs/features/navbar/loggedout-nav.png)
 
 </details>
 <details><summary>Dental Decor logo</summary>
 
 User can click on logo at any point, and the user will be redirected to the home page
 
-![Dental Decor Logo]()
+![Dental Decor Logo](docs/features/navbar/dentaldecor-logo.gif)
 
 </details>
 
@@ -660,7 +659,7 @@ User can click on logo at any point, and the user will be redirected to the home
 
 Users has access to search feature on navbar.
 
-![Search feature]()
+![Search feature](docs/features/home-page/search-feature.gif)
 
 </details>
 
@@ -668,22 +667,23 @@ Users has access to search feature on navbar.
 
 Users who inserts an input and clicks search button would not be able to search with numbers, special charectors , zero input or blank spaces. 
 
-![Search blank validation]()
+![Search blank validation](docs/features/navbar/search-val.gif)
 
 </details>
+
 ***Footer***
 
 Footer contains copyright statement and link to social media accounts and my(Soorya George's) github profile.
 
 <details><summary>Footer on desktop</summary>
 
-![Footer desktop]()
+![Footer desktop](docs/features/footer/footer-desktop.png)
 
 </details>
 
 <details><summary>Footer on mobiles</summary>
 
-![Footer mobile]()
+![Footer mobile](docs/features/footer/footer-mobile.png)
 
 </details>
 
@@ -693,13 +693,13 @@ Home page contains a carousal, helpful texts, buttons redirecting user to shop p
 
 <details><summary>Home page desktop</summary>
 
-![Home page desktop]()
+![Home page desktop](docs/features/home-page/home-page-manual1.gif)
 
 </details>
 
 <details><summary>Home page mobile</summary>
 
-![Home page mobile]()
+![Home page mobile](docs/features/home-page/home-page-responsive.gif)
 
 </details>
 
@@ -707,7 +707,7 @@ Home page contains a carousal, helpful texts, buttons redirecting user to shop p
 
 Users can click the next buttons to see some products sold on website.
 
-![Home page Carousal]()
+![Home page Carousal](docs/features/home-page/home-page-manual3.gif)
 
 </details>
 
@@ -715,28 +715,28 @@ Users can click the next buttons to see some products sold on website.
 
 Users are redirected to products page.
 
-![Shop Now Button]()
+![Shop Now Button](docs/features/home-page/home-page-manual2.gif)
 
 </details>
 
 <details><summary>About us section </summary>
 
 
-![About section]()
+![About section](docs/features/home-page/about-us.png)
 
 </details>
 
 <details><summary>Newsletter subscription</summary>
 
 Users can add their email addresses to receive newsletter
-![Newsletter subscription]()
+![Newsletter subscription](docs/features/home-page/newsletter-subscription.png)
 
 </details>
 
 <details><summary>Contact Us Section</summary>
 
 Users can send a query to site owner by filling out contact us form and pressing send query button. User will recieve a email confirming message sent.
-![Contact us form]()
+![Contact us form](docs/features/home-page/contact-form.gif)
 
 </details>
 
@@ -749,7 +749,7 @@ The products page has 2 dropdowns, 1 for categorsing products and other for sort
 
 For desktop - User is shown 4 product cards displayed in a row.Each card contains more information about the particular product such as price and category.
 
-![Products page desktop]()
+![Products page desktop](docs/features/shop-page/product-page.gif)
 
 </details>
 
@@ -757,7 +757,7 @@ For desktop - User is shown 4 product cards displayed in a row.Each card contain
 
 For mobile- User is shown 1product displayed as a card in a row.As you can see, a go up button is available to user to allow user to go up the page if they wanted to at any point.
 
-![Product page mobile]()
+![Product page mobile](docs/features/shop-page/productpage-responsive.gif)
 
 </details>
 
@@ -765,7 +765,7 @@ For mobile- User is shown 1product displayed as a card in a row.As you can see, 
 
 Users are allowed to add products to wishlist with this button
 
-![Add to wishlist button]()
+![Add to wishlist button](docs/features/shop-page/addtowishlist-shop.gif)
 
 </details>
 
@@ -773,7 +773,7 @@ Users are allowed to add products to wishlist with this button
 
 Users will be notified if users have already added a product to wishlist page
 
-![Add to wishlist error]()
+![Add to wishlist error](docs/features/shop-page/)
 
 </details>
 
@@ -781,7 +781,7 @@ Users will be notified if users have already added a product to wishlist page
 
 Users can links on this dropdown to view products according to the categories available
 
-![Categories dropdown]()
+![Categories dropdown](docs/features/shop-page/categories-dropdown.gif)
 
 </details>
 
@@ -789,7 +789,7 @@ Users can links on this dropdown to view products according to the categories av
 
 Users can links on this dropdown to sort products according to how you would like to view the products.
 
-![Sort by dropdown]()
+![Sort by dropdown](docs/features/shop-page/sorting-manual.gif)
 
 </details>
 
@@ -798,7 +798,7 @@ Users can links on this dropdown to sort products according to how you would lik
 
 Users will be able to access more details of each product when user clicks on see more button
 
-![See more button]()
+![See more button](docs/features/shop-page/seemore-manual.gif)
 
 </details>
 
@@ -806,7 +806,7 @@ Users will be able to access more details of each product when user clicks on se
 
 When users access this page, a go up button will appear which allow users to go to the top of the page by clicking on the button which will help user experience.
 
-![Go up button ]()
+![Go up button ](docs/features/shop-page/go-upbtn.gif)
 
 </details>
 
@@ -819,13 +819,13 @@ Users are redirected to product details page when they click on "See More" butto
 
 <details><summary>Product Details page desktop</summary>
 
-![Product Details page desktop]()
+![Product Details page desktop](docs/features/details-page/productdetail-manual.gif)
 
 </details>
 
 <details><summary>Product Details mobile</summary>
 
-![Product Details mobile]()
+![Product Details mobile](docs/features/details-page/details-mobile.gif)
 
 </details>
 
@@ -833,7 +833,7 @@ Users are redirected to product details page when they click on "See More" butto
 
 When superuser clicks on edit button on product page, they are redirected to edit product page.
 
-![Product edit button]()
+![Product edit button](docs/features/superuser/editproduct.gif)
 
 </details>
 
@@ -841,7 +841,7 @@ When superuser clicks on edit button on product page, they are redirected to edi
 
 When superuser clicks on delete button on product page, a delete product confirmation modal pops up.
 
-![Product delete button]()
+![Product delete button](docs/features/superuser/deleteproduct-modal.gif)
 
 </details>
 
@@ -849,7 +849,7 @@ When superuser clicks on delete button on product page, a delete product confirm
 
 Users can add these products with this button to shopping bag so users can checkout and buy the products.
 
-![Add to bag]()
+![Add to bag](docs/features/details-page/addtobag-details.gif)
 
 </details>
 
@@ -857,7 +857,7 @@ Users can add these products with this button to shopping bag so users can check
 
 Users would be able to Add products to wishlist from product details page for future buys. 
 
-![Add to wishlist -details]()
+![Add to wishlist -details](docs/features/details-page/addtowishlist-details.gif)
 
 </details>
 
@@ -865,7 +865,7 @@ Users would be able to Add products to wishlist from product details page for fu
 
 Users would be able to choose the particular size that they want if product has size options
 
-![Product size dropdown]()
+![Product size dropdown](docs/features/details-page/size-dropdown.png)
 
 </details>
 
@@ -873,7 +873,7 @@ Users would be able to choose the particular size that they want if product has 
 
 Users would be able to use increment and decrement button to change the quantity of products that they want to add to shopping bag.
 
-![Quantity buttons]()
+![Quantity buttons](docs/features/details-page/quantity-details.gif)
 
 </details>
 
@@ -882,7 +882,7 @@ Users would be able to use increment and decrement button to change the quantity
 
 Users can see reviews of each product in product details page
 
-![See reviews section]()
+![See reviews section](docs/features/details-page/see-reviews.png)
 
 </details>
 
@@ -890,7 +890,7 @@ Users can see reviews of each product in product details page
 
 Users would be able to click Add review button, and a modal will pop up for users to add comments and rate products out of 5 stars as a review for each product.Users will be shown a error message if users try to review products that they have already.
 
-![Add review button]()
+![Add review button](docs/features/details-page/addreview-btn.gif)
 
 </details>
 
@@ -898,7 +898,7 @@ Users would be able to click Add review button, and a modal will pop up for user
 
 User would be able to edit the reviews that they have added in product details page. An edit review modal will pop up for user to change their existing review.
 
-![Edit review button]()
+![Edit review button](docs/features/details-page/editreview-button.gif)
 
 </details>
 
@@ -906,7 +906,7 @@ User would be able to edit the reviews that they have added in product details p
 
 Users are able to delete reviews that they have added in product details page. An delete review modal will pop up for user to confirm deletion of review
 
-![Delete review button]()
+![Delete review button](docs/features/details-page/deletereview.gif)
 
 </details>
 
@@ -914,7 +914,7 @@ Users are able to delete reviews that they have added in product details page. A
 
 Users can only submit review if they have filled the form.
 
-![Review form validation]()
+![Review form validation](docs/features/details-page/review-val.gif)
 
 </details>
 
@@ -924,13 +924,13 @@ Users can click on heart icon on navbar for users to be redirected to wishlist p
 
 <details><summary>Wishlist page desktop</summary>
 
-![Wishlist desktop]()
+![Wishlist desktop](docs/features/wishlist-page/wishlist-desktop.gif)
 
 </details>
 
 <details><summary>Wishlist page mobile</summary>
 
-![Wishlist mobile]()
+![Wishlist mobile](docs/features/wishlist-page/wishlist-mobile.gif)
 
 </details>
 
@@ -938,7 +938,7 @@ Users can click on heart icon on navbar for users to be redirected to wishlist p
 
 User can remove product from wishlist by clicking this button. The action will allow a remove wishlist item modal to pop up to confirm wishlist product removal from wishlist.
 
-![Remove item button]()
+![Remove item button](docs/features/wishlist-page/remove-wishlistitem.gif)
 
 </details>
 
@@ -946,17 +946,11 @@ User can remove product from wishlist by clicking this button. The action will a
 
 Users can add wishlist items to shopping bag by clicking on add to bag button for each product.
 
-![All reviews go up button]()
+![All reviews go up button](docs/features/wishlist-page/addtobag-wishlist.gif)
 
 </details>
 
-<details><summary>Keep Browsing button</summary>
 
-Users are directed to shop products page.
-
-![Keep browsing button]()
-
-</details>
 
 
 
@@ -966,13 +960,13 @@ Users would be able to see all the products they have added to shopping bag from
 
 <details><summary>Shopping bag Desktop</summary>
 
-![Shopping bag Desktop]()
+![Shopping bag Desktop](docs/features/shoppingbag-page/shoppingbag-desktop.gif)
 
 </details>
 
 <details><summary>Shopping bag mobile</summary>
 
-![Shopping bag mobile]()
+![Shopping bag mobile](docs/features/shoppingbag-page/shoppingbag-mobile.gif)
 
 </details>
 
@@ -980,7 +974,7 @@ Users would be able to see all the products they have added to shopping bag from
 
 For each product in shopping bag, Users would be able to change the quantity of the product by using the increase or decrease buttons and then the update button.
 
-![Update button]()
+![Update button](docs/features/shoppingbag-page/productquantity-manual.gif)
 
 </details>
 
@@ -988,7 +982,7 @@ For each product in shopping bag, Users would be able to change the quantity of 
 
 Users would be able to remove shopping bag product from this page when user clicks on this button. A delete shopping bag item modal will pop up for user to confirm removal of item.
 
-![Remove shopping bag item]()
+![Remove shopping bag item](docs/features/shoppingbag-page/remove-shoppingbagitem.gif)
 
 </details>
 
@@ -996,7 +990,7 @@ Users would be able to remove shopping bag product from this page when user clic
 
 Users will be able to proceed to checkout page by clicking on this button if there are shopping bag items.
 
-![Checkout button]()
+![Checkout button](docs/features/checkout-page/checkout-page.gif)
 
 </details>
 
@@ -1004,7 +998,7 @@ Users will be able to proceed to checkout page by clicking on this button if the
 
 Users will be able to go back to products page by clicking the keep browsing button.
 
-![Keep browsing button]()
+![Keep browsing button](docs/features/shoppingbag-page/browse-shoppingbag.gif)
 
 </details>
 
@@ -1015,14 +1009,14 @@ Users can add their details such as name, email, address for delivery and card d
 <details><summary>Checkout page Desktop</summary>
 
 
-![Checkout page desktop]()
+![Checkout page desktop](docs/features/checkout-page/checkout-page.gif)
 
 </details>
 
 <details><summary>Checkout page mobile</summary>
 
 
-![Checkout page mobile]()
+![Checkout page mobile](docs/features/checkout-page/checkout-mobile.gif)
 
 </details>
 
@@ -1030,7 +1024,7 @@ Users can add their details such as name, email, address for delivery and card d
 
 Users can enter their address and phone number here.
 
-![Delivery section]()
+![Delivery section](docs/features/checkout-page/delivery-checkout.png)
 
 </details>
 
@@ -1038,7 +1032,7 @@ Users can enter their address and phone number here.
 
 Users would be able to add the card details here and users are also shown how much would be charged in red here.
 
-![Payment section]()
+![Payment section](docs/features/checkout-page/payment-checkout.png)
 
 </details>
 
@@ -1046,7 +1040,7 @@ Users would be able to add the card details here and users are also shown how mu
 
 Users can go back to adjust the products in shopping bag if user isnt happy about order right now
 
-![Adjust bag button]()
+![Adjust bag button](docs/features/checkout-page/adjust-bag.gif)
 
 </details>
 
@@ -1054,7 +1048,7 @@ Users can go back to adjust the products in shopping bag if user isnt happy abou
 
 Once user is happy about the order and have correctly filled in checkout form, User can click complete order button to complete the payment transaction. A loading overlay will be displayed on screen until user is directed to checkout success page
 
-![Complete order button]()
+![Complete order button](docs/features/checkout-success/checkout-success.gif)
 
 </details>
 
@@ -1062,13 +1056,13 @@ Once user is happy about the order and have correctly filled in checkout form, U
 
 <details><summary>Checkout success page Desktop</summary>
 
-![Checkout success desktop]()
+![Checkout success desktop](docs/features/checkout-success/checkout-success.gif)
 
 </details>
 
 <details><summary>Checkout success page mobile</summary>
 
-![Checkout success mobile]()
+![Checkout success mobile](docs/features/checkout-success/checkout-success-mobile.png)
 
 </details>
 
@@ -1076,13 +1070,13 @@ Once user is happy about the order and have correctly filled in checkout form, U
 
 <details><summary>Profile page desktop</summary>
 
-![Profile desktop]()
+![Profile desktop](docs/features/profile/orderhistory.gif)
 
 </details>
 
 <details><summary>Profile page mobile</summary>
 
-![Profile mobile]()
+![Profile mobile](docs/features/profile/profile-mobile.gif)
 
 </details>
 
@@ -1090,7 +1084,7 @@ Once user is happy about the order and have correctly filled in checkout form, U
 
 User would be able to change their details in this page
 
-![Profile update button]()
+![Profile update button](docs/features/profile/updateprofile.gif)
 
 </details>
 
@@ -1098,7 +1092,7 @@ User would be able to change their details in this page
 
 Users would be able to go to the order checkout success page for each order that was placed.
 
-![Order history feature]()
+![Order history feature](docs/features/profile/orderhistory.gif)
 
 </details>
 
@@ -1107,38 +1101,34 @@ Users would be able to go to the order checkout success page for each order that
 
 <details><summary>Sign up page</summary>
 
-![Sign up page]()
+![Sign up page](docs/features/signup/signup-feature.gif)
 
 </details>
 
-<details><summary>Sign up button + verfication email </summary>
+<details><summary> verfication email </summary>
 
-![Sign up button]()
-
-</details>
-
-<details><summary>Signup success</summary>
-
-![Sign up success]()
+![Sign up button](docs/features/signup/confirm-email.png)
 
 </details>
+
 
 **login page features**
 
 <details><summary>Login page</summary>
 
-![Sign up page]()
+![login page](docs/features/login/login-manual1.gif)
 
 </details>
 
 <details><summary>Log in button + success</summary>
 
-![Sign up success]()
+![login success](docs/features/login/login-manual1.gif)
 
 </details>
 
 <details><summary>Forgot password feature</summary>
  User can click on forgot password link
+
 ![Forgot password]()
 
 </details>
@@ -1146,7 +1136,7 @@ Users would be able to go to the order checkout success page for each order that
 <details><summary>Password reset form</summary>
 
  User can given in their email address here and a link will be sent to your email to change password.
-![Password reset form]()
+![Password reset form](docs/features/login/forgot-password-feat1.gif)
 
 </details>
 
@@ -1154,7 +1144,7 @@ Users would be able to go to the order checkout success page for each order that
 
 Users can change their password here, and a success message is shown to user.
 
-![Change password form]()
+![Change password form](docs/features/login/change-password-success.gif)
 
 </details>
 
@@ -1162,13 +1152,13 @@ Users can change their password here, and a success message is shown to user.
 
 <details><summary>Logout page</summary>
 
-![Sign up page]()
+![Sign up page](docs/features/logout/logout-feat.gif)
 
 </details>
 
 <details><summary>Confirm button + success</summary>
 
-![Sign up success]()
+![Sign up success](docs/features/logout/logout-feat.gif)
 
 </details>
 
@@ -1181,7 +1171,7 @@ I have included front end superuser features for product management.
 
 Superusers would are able to navigate to product management page from navbar drop down from navlink "Account"
 
-![Account dropdown superuser]()
+![Account dropdown superuser](docs/features/navbar/navbar-open.png)
 
 </details>
 
@@ -1189,7 +1179,7 @@ Superusers would are able to navigate to product management page from navbar dro
 
 Superusers would be able to go to this page from product management link from the navbar.
 
-![Add product page]()
+![Add product page](docs/features/superuser/addproduct-page.gif)
 
 </details>
 
@@ -1205,7 +1195,7 @@ Superusers would be able to add a new product by filling in the form correctly a
 
 Superusers would be able to click on edit button on product details page which will redirect user to edit product page. 
 
-![Superuser edit product page]()
+![Superuser edit product page](docs/features/superuser/editproduct.gif)
 
 </details>
 
@@ -1221,7 +1211,7 @@ Superusers would be able to click on update button in edit product page if they 
 
 Superusers would be able to click on delete button on product details page where a delete product confirmation modal will pop up for user to confirm deletion.
 
-![Superuser delete product modal]()
+![Superuser delete product modal](docs/features/superuser/deleteproduct-modal.gif)
 ![Superuser delete product confirmation]()
 
 </details>
@@ -1237,7 +1227,7 @@ Superusers would be able to click on delete button on product details page where
 
 This page appears when a page is not found.
 
-![]()
+![404 page](docs/features/error-page/error-page.png)
 
 </details>
 
@@ -1251,14 +1241,14 @@ Unregistered users can access all features of website except wishlist page, the 
 
 <details><summary>Unable to add products to wishlist without loging in.</summary>
 
-![unable to add to wishlist]()
+![unable to add to wishlist](docs/features/unregistered-users/wishlist-unreg.gif)
 
 
 </details>
 
 <details><summary>Unable to rate products without loging in</summary>
 
-![Unable to rate]()
+![Unable to rate](docs/features/unregistered-users/addreview-unreg.gif)
 
 </details>
 
