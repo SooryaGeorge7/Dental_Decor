@@ -348,6 +348,147 @@ User can enter valid card details and click on complete order button | Loading o
 
 
 ***
+## **Validators**
+
+
+### **CI Python Linter**
+
+The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the python code used throughout the project. The results are outlined in below:
+
+|     **Files**      |     **Result**    |    **Pass**   |
+|--------------------|-------------------|---------------|
+|   **DentalDecor**  |                   |               |
+| asgi.py            |returned no errors |     Pass      |
+| settings.py        |returned no errors |     Pass      |
+| urls.py            |returned no errors |     Pass      |
+| wsgi.py            |returned no errors |     Pass      |
+|--------------------|-------------------|---------------|
+|     **HOME**       |                   |               |
+| admin.py           |returned no errors |     Pass      |
+| apps.py            |returned no errors |     Pass      |
+| urls.py            |returned no errors |     Pass      |
+| views.py           |returned no errors |     Pass      |
+| test_views.py      |returned no errors |     Pass      |
+|--------------------|-------------------|---------------|
+|    **Products**    |                   |               |
+| admin.py           |returned no errors |     Pass      |
+| apps.py            |returned no errors |     Pass      |
+| urls.py            |returned no errors |     Pass      |
+| views.py           |returned no errors |     Pass      |
+| models.py          |returned no errors |     Pass      |
+|--------------------|-------------------|---------------|
+|  **reviews**       |                   |               |
+| admin.py           |returned no errors |     Pass      |
+| apps.py            |returned no errors |     Pass      |
+| urls.py            |returned no errors |     Pass      |
+| views.py           |returned no errors |     Pass      |
+| models.py          |returned no errors |     Pass      |
+| forms.py           |returned no errors |     Pass      |
+|--------------------|-------------------|---------------|
+|    **Profile**     |                   |               |
+| admin.py           |returned no errors |    Pass       |
+| apps.py            |returned no errors |    Pass       |
+| urls.py            |returned no errors |    Pass       |
+| views.py           |returned no errors |    Pass       |
+| models.py          |returned no errors |    Pass       |
+| forms.py           |returned no errors |    Pass       |
+|--------------------|-------------------|---------------|
+
+
+### **JSHint**
+
+
+**rate.js**
+![rate.js JSHint Results]()
+
+**timeout.js**
+![timeout.js JSHint Results]()
+
+
+### **W3C CSS Validator**
+
+base.css was passed through [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) with no errors.
+
+![CSS]()
+
+### **W3C Markup Validator**
+
+All pages were run through the [W3C Markup Validator](https://validator.w3.org/nu/). Initially, there were some errors but all these issues were corrected and all pages passed validation.
+
+The errors shown below were all corrected accordingly:
+
+1. Error 1
+
+![Error 1]()
+
+### **Lighthouse**
+
+A number of issues were found during lighthouse testing which were all corrected.
+Namely :
+
+#### **Home Page**
+
+***Mobile***
+
+![Home page mobile]()
+
+***Desktop***
+
+![Home page desktop]()
+
+#### **Profile Page**
+
+***Mobile***
+
+![Profile page mobile]()
+
+***Desktop***
+
+![Profile page desktop]()
+
+#### **Review/Rating Page**
+
+***Mobile***
+
+![Review page mobile]()
+
+***Desktop***
+
+![Review page desktop]()
+
+
+
+
+### **Wave Accessibility Tests**
+
+All pages were tested using [Wave Evaluation Tool](https://wave.webaim.org/) via the Chrome extension.
+The following errors were found and corrected : 
+
+**homepage**
+
+![Home page wave]()
+
+**review page**
+
+![Review page wave]()
+
+
+**login**
+
+![Login page wave]()
+
+**logout**
+
+![logout page wave]()
+
+**profile**
+
+![Profile page wave]()
+
+**signup**
+
+![signup page wave]()
+
 
 
 
