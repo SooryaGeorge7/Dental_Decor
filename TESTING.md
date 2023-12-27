@@ -426,6 +426,64 @@ The errors shown below were all corrected accordingly:
 
 ![Error 1]()
 
+**homepage**
+
+![Home page ](docs/validation/html/home-page-html-validation.png)
+
+**review page**
+
+![Review page ](docs/validation/html/review-html-validation.png)
+
+
+**login**
+
+![Login page ](docs/validation/html/login-htmlvalidation.png)
+
+**logout**
+
+![logout page ](docs/validation/html/logout-validation.png)
+
+**profile**
+
+![Profile page ](docs/validation/html/profile-htmlvalidation.png)
+
+**signup**
+
+![signup page ](docs/validation/html/signup-htmlvalidation.png)
+
+
+**Shopping bag page**
+
+![Shopping bag page](docs/validation/html/shoppingbag-htmlvalidation.png)
+
+**Checkout page**
+
+![Checkout page](docs/validation/html/checkout-htmlvalidation.png)
+
+**Wishlist page**
+
+![Wishlist page](docs/validation/html/wishlist-htmlvalidation.png)
+
+**Product detail page**
+
+![Product details page](docs/validation/html/productdetails-htmlvalidation.png)
+
+**Shop products page**
+
+![Shop products page](docs/validation/html/productspage-html-validation.png)
+
+**Add product page**
+
+![Add product page](docs/validation/html/addproduct-htmlval.png)
+
+**Edit product page**
+
+![Edit product page](docs/validation/html/editproduct-validation.png)
+
+**Checkout success Page**
+
+![Checkout success page](docs/validation/html/checkout-success-htmlvalidation.png)
+
 ### **Lighthouse**
 
 A number of issues were found during lighthouse testing which were all corrected.
@@ -461,6 +519,115 @@ Namely :
 
 ![Review page desktop]()
 
+#### **Shopping bag page**
+
+***Mobile***
+
+![Review page mobile]()
+
+***Desktop***
+
+![Review page desktop]()
+
+#### **Checkout page**
+
+***Mobile***
+
+![Review page mobile]()
+
+***Desktop***
+
+![Review page desktop]()
+
+#### **Wishlist page**
+
+***Mobile***
+
+![Review page mobile]()
+
+***Desktop***
+
+![Review page desktop]()
+
+#### **Product detail page**
+
+***Mobile***
+
+![Review page mobile]()
+
+***Desktop***
+
+![Review page desktop]()
+
+#### **Shop products page**
+
+***Mobile***
+
+![Review page mobile]()
+
+***Desktop***
+
+![Review page desktop]()
+
+#### **Add product page**
+
+***Mobile***
+
+![Review page mobile]()
+
+***Desktop***
+
+![Review page desktop]()
+
+#### **Edit product page**
+
+***Mobile***
+
+![Review page mobile]()
+
+***Desktop***
+
+![Review page desktop]()
+
+#### **Checkout success Page**
+
+***Mobile***
+
+![Review page mobile]()
+
+***Desktop***
+
+![Review page desktop]()
+
+#### **Signup**
+
+***Mobile***
+
+![Review page mobile]()
+
+***Desktop***
+
+![Review page desktop]()
+
+#### **Login**
+
+***Mobile***
+
+![Review page mobile]()
+
+***Desktop***
+
+![Review page desktop]()
+
+#### **logout**
+
+***Mobile***
+
+![Review page mobile]()
+
+***Desktop***
+
+![Review page desktop]()
 
 
 
@@ -495,8 +662,37 @@ The following errors were found and corrected :
 ![signup page wave]()
 
 
+**Shopping bag page**
 
+![Shopping bag page]()
 
+**Checkout page**
+
+![Checkout page]()
+
+**Wishlist page**
+
+![Wishlist page]()
+
+**Product detail page**
+
+![Product details page]()
+
+**Shop products page**
+
+![Shop products page]()
+
+**Add product page**
+
+![Add product page]()
+
+**Edit product page**
+
+![Edit product page]()
+
+**Checkout success Page**
+
+![Checkout success page]()
 
 ***
 
