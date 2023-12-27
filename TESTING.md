@@ -398,18 +398,23 @@ The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the p
 ### **JSHint**
 
 
-**rate.js**
-![rate.js JSHint Results]()
+**add_rate.js**
+![add_rate.js JSHint Results](docs/validation/js/addreview-jsval.png)
 
-**timeout.js**
-![timeout.js JSHint Results]()
 
 
 ### **W3C CSS Validator**
 
 base.css was passed through [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) with no errors.
 
-![CSS]()
+* ![Base CSS](docs/validation/css/base-cssvalidation.png)
+
+* ![Checkout CSS](docs/validation/css/checkout-css-validation.png)
+
+* ![Products CSS](docs/validation/css/products-css-validation.png)
+
+* ![Profile CSS](docs/validation/css/profile-css-validation.png)
+
 
 ### **W3C Markup Validator**
 
