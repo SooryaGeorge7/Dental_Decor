@@ -638,61 +638,61 @@ The following errors were found and corrected :
 
 **homepage**
 
-![Home page wave]()
+![Home page wave](docs/validation/wave/home-page.png)
 
 **review page**
 
-![Review page wave]()
+![Review page wave](docs/validation/wave/addreview-wave.png)
 
 
 **login**
 
-![Login page wave]()
+![Login page wave](docs/validation/wave/login-wave.png)
 
 **logout**
 
-![logout page wave]()
+![logout page wave](docs/validation/wave/logout-wave.png)
 
 **profile**
 
-![Profile page wave]()
+![Profile page wave](docs/validation/wave/profile-wave.png)
 
 **signup**
 
-![signup page wave]()
+![signup page wave](docs/validation/wave/signup-wave.png)
 
 
 **Shopping bag page**
 
-![Shopping bag page]()
+![Shopping bag page](docs/validation/wave/shoppingbag-wave.png)
 
 **Checkout page**
 
-![Checkout page]()
+![Checkout page](docs/validation/wave/checkout-wave.png)
 
 **Wishlist page**
 
-![Wishlist page]()
+![Wishlist page](docs/validation/wave/wishlist-wave.png)
 
 **Product detail page**
 
-![Product details page]()
+![Product details page](docs/validation/wave/details-wave.png)
 
 **Shop products page**
 
-![Shop products page]()
+![Shop products page](docs/validation/wave/productspage-wave.png)
 
 **Add product page**
 
-![Add product page]()
+![Add product page](docs/validation/wave/addproduct-wave.png)
 
 **Edit product page**
 
-![Edit product page]()
+![Edit product page](docs/validation/wave/editproduct-wave.png)
 
 **Checkout success Page**
 
-![Checkout success page]()
+![Checkout success page](docs/validation/wave/checkoutsuccess-wave.png)
 
 ***
 
