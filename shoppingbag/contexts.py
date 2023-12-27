@@ -39,6 +39,5 @@ def shoppingbag_contents(request):
         'product_count': product_count,
     }
 
-    print(product_count)
 
     return context

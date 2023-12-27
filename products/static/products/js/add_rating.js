@@ -1,6 +1,6 @@
 
 var form = document.querySelector('.reviewform');
-console.log(form);
+
 
 
 
@@ -8,7 +8,7 @@ var handleRatings = (choice, criteria) => {
     var stars = document.querySelectorAll(`.${criteria} .btn i`);
     
 
-    console.log(stars);
+    
 
 
     stars.forEach(star => star.classList.remove('checked'));
@@ -67,11 +67,9 @@ var getNumValue = (stringValue) => {
 };
 
 var criterias = ['product_rating'];
-console.log(criterias);
 
 criterias.forEach(criteria => {
     var stars = document.querySelectorAll(`.${criteria} .btn i`);
-    console.log(stars);
 
     stars.forEach(star => {
         star.addEventListener('click', (event) => {
@@ -83,10 +81,7 @@ criterias.forEach(criteria => {
 
 var updateStarRatings = (criteria) => {
     var stars = document.querySelectorAll(`.${criteria} .btn i`);
-    console.log(stars);
-    console.log(criteria);
     var value = form[criteria].value;
-    console.log(value);
   
     stars.forEach((star, index) => {
       if (index < value) {
@@ -101,5 +96,4 @@ var updateStarRatings = (criteria) => {
 criterias.forEach(criteria => {
     updateStarRatings(criteria);
   });
-console.log(criterias);
 

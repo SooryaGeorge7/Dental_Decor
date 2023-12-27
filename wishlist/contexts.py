@@ -9,7 +9,6 @@ def wishlist_counter(request):
     else:
         wishlist_count = 0
 
-    print(wishlist_count)
 
     return {
         'wishlist_count': wishlist_count,
