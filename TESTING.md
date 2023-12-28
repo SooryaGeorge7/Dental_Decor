@@ -493,141 +493,151 @@ Namely :
 
 ***Mobile***
 
-![Home page mobile]()
+![Home page mobile](docs/validation/lighthouse/homepage-mobile.png)
 
 ***Desktop***
 
-![Home page desktop]()
+![Home page desktop](docs/validation/lighthouse/homepage-desktop-buttons,links%20alt.png)
 
 #### **Profile Page**
 
 ***Mobile***
 
-![Profile page mobile]()
+![Profile page mobile](docs/validation/lighthouse/profile-mobile-links,headings.png)
 
 ***Desktop***
 
-![Profile page desktop]()
+![Profile page desktop](docs/validation/lighthouse/profile-desktop-links,bg,buttons,heading.png)
 
-#### **Review/Rating Page**
+#### **Add Review/Rating Page**
 
 ***Mobile***
 
-![Review page mobile]()
+![Review page mobile](docs/validation/lighthouse/addreview-mobile-same%20as%20edit.png)
 
 ***Desktop***
 
-![Review page desktop]()
+![Review page desktop](docs/validation/lighthouse/addreview-desktop-same.png)
+
+#### **Edit Review/Rating Page**
+
+***Mobile***
+
+![Edit Review page mobile](docs/validation/lighthouse/editreview-mobile-buttons,links,headings,.png)
+
+***Desktop***
+
+![Edit Review page desktop](docs/validation/lighthouse/editreview-desktop-same%20mobile.png)
 
 #### **Shopping bag page**
 
 ***Mobile***
 
-![Review page mobile]()
+![shopping bag page mobile](docs/validation/lighthouse/shoppingbag-mobile-all%20plus%20form%20label.png)
 
 ***Desktop***
 
-![Review page desktop]()
+![shopping bag page desktop](docs/validation/lighthouse/shoppingbag-desktop-same.png)
 
 #### **Checkout page**
 
 ***Mobile***
 
-![Review page mobile]()
+![Checkout page mobile](docs/validation/lighthouse/checkout-mobile-all,select%20no%20label.png)
 
 ***Desktop***
 
-![Review page desktop]()
+![Checkout page desktop](docs/validation/lighthouse/checkout-desktop-same.png)
 
 #### **Wishlist page**
 
 ***Mobile***
 
-![Review page mobile]()
+![Review page mobile](docs/validation/lighthouse/wishlist-mobile-buttons,links,%20bg,%20heading.png)
 
 ***Desktop***
 
-![Review page desktop]()
+![Review page desktop](docs/validation/lighthouse/wishlist-desktop-same.png)
 
 #### **Product detail page**
 
 ***Mobile***
 
-![Review page mobile]()
+![Review page mobile](docs/validation/lighthouse/detailspage-mobile-%20link,%20buttons,%20heading,%20background%20contrast-%20also%20product%20page.png)
 
 ***Desktop***
 
-![Review page desktop]()
+![Review page desktop](docs/validation/lighthouse/detailspage-desktop-same%20as%20mobile.png)
 
 #### **Shop products page**
 
 ***Mobile***
 
-![Review page mobile]()
+![Review page mobile](docs/validation/lighthouse/productpage-mobile-%20links,%20headings,%20.png)
 
 ***Desktop***
 
-![Review page desktop]()
+![Review page desktop](docs/validation/lighthouse/productpage-desktop-links,%20buttons.png)
 
 #### **Add product page**
 
 ***Mobile***
 
-![Review page mobile]()
+![Review page mobile](docs/validation/lighthouse/addproduct-mobile-links,headings.png)
 
 ***Desktop***
 
-![Review page desktop]()
+![Review page desktop](docs/validation/lighthouse/addproduct-desktop-same.png)
 
 #### **Edit product page**
 
 ***Mobile***
 
-![Review page mobile]()
+![Review page mobile](docs/validation/lighthouse/editproduct-mobile-links,headings.png)
 
 ***Desktop***
 
-![Review page desktop]()
+![Review page desktop](docs/validation/lighthouse/editproduct-desktop-button,%20link,%20bg,heading.png)
 
 #### **Checkout success Page**
 
 ***Mobile***
 
-![Review page mobile]()
+![Review page mobile](docs/validation/lighthouse/checkout-successmobile-buttons,%20links,%20headings,%20contrast.png)
 
 ***Desktop***
 
-![Review page desktop]()
+![Review page desktop](docs/validation/lighthouse/checkoutsuccess-desktop.png)
 
 #### **Signup**
 
 ***Mobile***
 
-![Review page mobile]()
+![Review page mobile](docs/validation/lighthouse/signup-mobile-links,%20bg.png)
 
 ***Desktop***
 
-![Review page desktop]()
+![Review page desktop](docs/validation/lighthouse/signup-desktop.png)
 
 #### **Login**
 
 ***Mobile***
 
-![Review page mobile]()
+![Review page mobile](docs/validation/lighthouse/login-mobile-links,%20bg.png)
 
 ***Desktop***
 
-![Review page desktop]()
+![Review page desktop](docs/validation/lighthouse/login-desktop.png)
 
 #### **logout**
 
 ***Mobile***
 
-![Review page mobile]()
+![Review page mobile](docs/validation/lighthouse/logout-mobile-links,contrast.png)
 
 ***Desktop***
 
-![Review page desktop]()
+![Review page desktop](docs/validation/lighthouse/logout-desktop.png)
 
 
 
@@ -636,64 +646,118 @@ Namely :
 All pages were tested using [Wave Evaluation Tool](https://wave.webaim.org/) via the Chrome extension.
 The following errors were found and corrected : 
 
-**homepage**
+
+
+
+****
+<details><summary> Homepage </summary>
+
 
 ![Home page wave](docs/validation/wave/home-page.png)
 
-**review page**
+</details>
+
+<details><summary> Review page </summary>
+
 
 ![Review page wave](docs/validation/wave/addreview-wave.png)
 
+</details>
 
-**login**
+<details><summary> Login </summary>
+
+
 
 ![Login page wave](docs/validation/wave/login-wave.png)
 
-**logout**
+</details>
+
+<details><summary> Logout </summary>
+
+
 
 ![logout page wave](docs/validation/wave/logout-wave.png)
 
-**profile**
+</details>
+
+<details><summary> Profile </summary>
+
+
 
 ![Profile page wave](docs/validation/wave/profile-wave.png)
 
-**signup**
+</details>
+
+<details><summary> Signup </summary>
+
+
 
 ![signup page wave](docs/validation/wave/signup-wave.png)
 
 
-**Shopping bag page**
+</details>
+
+<details><summary> Shopping bag page </summary>
+
 
 ![Shopping bag page](docs/validation/wave/shoppingbag-wave.png)
 
-**Checkout page**
+</details>
+
+
+<details><summary> Checkout page </summary>
+
 
 ![Checkout page](docs/validation/wave/checkout-wave.png)
 
-**Wishlist page**
+</details>
+
+
+<details><summary> Wishlist page </summary>
+
 
 ![Wishlist page](docs/validation/wave/wishlist-wave.png)
 
-**Product detail page**
+</details>
+
+
+<details><summary> Product detail page </summary>
+
 
 ![Product details page](docs/validation/wave/details-wave.png)
 
-**Shop products page**
+</details>
+
+
+<details><summary> Shop products page </summary>
+
 
 ![Shop products page](docs/validation/wave/productspage-wave.png)
 
-**Add product page**
+</details>
+
+<details><summary> Add product page </summary>
+
 
 ![Add product page](docs/validation/wave/addproduct-wave.png)
 
-**Edit product page**
+</details>
+
+
+<details><summary> Edit product page </summary>
+
 
 ![Edit product page](docs/validation/wave/editproduct-wave.png)
 
-**Checkout success Page**
+</details>
+
+
+<details><summary> Checkout success Page </summary>
+
 
 ![Checkout success page](docs/validation/wave/checkoutsuccess-wave.png)
 
+</details>
 ***
 
 Return to  [README]() document.
