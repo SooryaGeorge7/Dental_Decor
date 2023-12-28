@@ -16,8 +16,8 @@
                 <img class=" mb-5 mb-md-0 img-thumbnail" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
-                <a href="{{ MEDIA_URL }}no_image.jpg" target="_blank">
-                    <img class=" mb-5 mb-md-0" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                <a href="{{ MEDIA_URL }}invalid-image.webp" target="_blank">
+                    <img class="mb-5 mb-md-0 img-thumbnail" src="{{ MEDIA_URL }}invalid-image.webp" alt="{{ product.name }}">
                 </a>
                 {% endif %}
             </div>

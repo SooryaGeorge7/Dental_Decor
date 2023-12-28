@@ -23,7 +23,7 @@
                         {% if item.product.image %}
                         <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                         {% else %}
-                        <img class="img-fluid rounded" src="/media/invalid-image.webp" alt="{{ item.product.name }}">
+                        <img class="img-fluid rounded" src="{{ MEDIA_URL }}invalid-image.webp" alt="{{ item.product.name }}">
                         {% endif %}
                     </div>
                     <div class="col-md-9 col-lg-4">
