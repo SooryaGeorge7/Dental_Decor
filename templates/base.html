@@ -93,10 +93,20 @@
               
               </div>
             </li>
-            <li class="nav-item text-center">
+            <li class="nav-item dropdown text-center">
               <div class=" flex-sm-row flex-md-column align-items-center justify-content-evenly">
-                <a class="nav-link fs-4 {% if request.resolver_match.url_name == 'shop_products' %}active{% endif %}" href="{% url 'shop_products' %}"><i class="bi bi-shop"></i><span class="d-md-none"> Shop </span></a>
-                
+                <a class="nav-link fs-4 dropdown-toggle {% if request.resolver_match.url_name == 'shop_products' %}active{% endif %}" href="#"  role="button"
+                data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-shop"></i><span class="d-md-none"> Shop </span></a>
+                <ul class="dropdown-menu ">
+                  <li><a class="dropdown-item" href="{% url 'shop_products' %}">All Products</a>
+                  </li>
+                  <li><a class="dropdown-item" href="{% url 'shop_products' %}?category=Wallart">Wall Art</a></li>
+                  <li><a class="dropdown-item" href="{% url 'shop_products' %}?category=Apparel">Apparel</a></li>
+                  <li><a class="dropdown-item" href="{% url 'shop_products' %}?category=Collectables">Collectables</a>
+                  </li>
+                  <li><a class="dropdown-item" href="{% url 'shop_products' %}?category=Educational">Educational</a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="nav-item text-center">
