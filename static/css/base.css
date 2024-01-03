@@ -323,6 +323,22 @@ input[name='q']::placeholder {
     font:14px Helvetica,Arial,sans-serif; 
 }
 
+/**Pagination buttons **/
+.page-item:not(.active) .page-link {
+    color: #003333;
+    background-color: #F5F5F5;
+    border-color: #F5F5F5;
+}
+
+/* Active page link */
+.page-item.active .page-link {
+    color: #FFFFF0;
+    background-color: #006666;
+    border-color: #FFFFF0;
+}
+
+
+
 /* checkout page*/
 
                     /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.

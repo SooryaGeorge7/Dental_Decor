@@ -8,6 +8,7 @@ from django.contrib.auth.decorators import login_required
 from .forms import ProductForm
 from reviews.forms import RatingForm
 from reviews.models import Review
+from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 
 
 # Create your views here.
@@ -56,12 +57,29 @@ def shop_products(request):
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
+    product_count = products.count()
+
+    paginator = Paginator(products, 8)
+    page_number = request.GET.get('page')
+
+    try:
+        products = paginator.page(page_number)
+    except PageNotAnInteger:
+        page_number = 1
+        products = paginator.page(page_number)
+    except EmptyPage:
+        page_number = paginator.num_pages
+        products = paginator.page(page_number)
+
+    
 
     context = {
         'products': products,
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
+        'product_count':product_count,
+        'page_number':page_number,
     }
 
     return render(request, 'products/shop_products.html', context)

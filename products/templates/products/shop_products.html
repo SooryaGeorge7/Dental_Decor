@@ -86,7 +86,7 @@
                     {% if search_term or current_categories or current_sorting != 'None_None' %}
                     <span class="small"><a href="{% url 'shop_products' %}">Products Home</a> | </span>
                     {% endif %}
-                    {{ products|length }} Products
+                    {{ product_count }} Products
                     {% if search_term %} found for <strong>"{{ search_term }}"</strong>
                     {% endif %}
                 </p>
@@ -162,6 +162,38 @@
         <a class="btn fw-bold" href="{% url 'shop_products' %}" id="scroll-to-top" aria-label="shop page link">
             <i class="bi bi-arrow-up-circle "></i>
         </a>
+    </div>
+    <!--Container for pagination-->
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <nav aria-label="Products pagination">
+                    <ul class="pagination justify-content-center">
+                        {% if products.has_previous %}
+                        <li class="page-item ">
+                            <a class="page-link " href="?page={{ products.previous_page_number }}" aria-label="Move to previous page"><i class="bi bi-arrow-left-circle-fill"></i></a>
+                        </li>
+                        {% endif %}
+                        {% for num in products.paginator.page_range %}
+                        {% if num == products.number %}
+                        <li class="page-item active" aria-current="page">
+                            <span class="page-link">{{ num }}</span>
+                        </li>
+                        {% else %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ num }}" aria-label="Move to page{{ num }}">{{ num }}</a>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                        {% if productst.has_next %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ products.next_page_number }}" aria-label="Move to next page"><i class="bi bi-arrow-right-circle-fill"></i></a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}
