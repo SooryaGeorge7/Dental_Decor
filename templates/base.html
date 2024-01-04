@@ -89,14 +89,16 @@
             <li class="nav-item text-center">
               
               <div class=" flex-sm-row flex-md-column align-items-center justify-content-evenly">
-              <a class="nav-link fs-4 {% if request.resolver_match.url_name == 'home' %}active{% endif %}" href="{% url 'home' %}"><i class="bi bi-house"></i><span class="d-md-none"> Home </span></a>
+              <a class="nav-link fs-4 {% if request.resolver_match.url_name == 'home' %}active{% endif %}" href="{% url 'home' %}" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Home"><i class="bi bi-house"></i><span class="d-md-none"> Home </span></a>
               
               </div>
             </li>
             <li class="nav-item dropdown text-center">
               <div class=" flex-sm-row flex-md-column align-items-center justify-content-evenly">
                 <a class="nav-link fs-4 dropdown-toggle {% if request.resolver_match.url_name == 'shop_products' %}active{% endif %}" href="#"  role="button"
-                data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-shop"></i><span class="d-md-none"> Shop </span></a>
+                data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Shop Products"><i class="bi bi-shop"></i><span class="d-md-none"> Shop </span></a>
                 <ul class="dropdown-menu ">
                   <li><a class="dropdown-item" href="{% url 'shop_products' %}">All Products</a>
                   </li>
@@ -111,7 +113,8 @@
             </li>
             <li class="nav-item text-center">
               <div class=" flex-sm-row flex-md-column align-items-center justify-content-evenly">
-                <a class="nav-link fs-4 {% if request.resolver_match.url_name == '#contactus' %}active{% endif %}" href="{% url 'contact_us' %}#contactus"><i class="bi bi-telephone"></i><span class="d-md-none"> Contact </span></a>
+                <a class="nav-link fs-4 {% if request.resolver_match.url_name == '#contactus' %}active{% endif %}" href="{% url 'contact_us' %}#contactus" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Contact Us"><i class="bi bi-telephone"></i><span class="d-md-none"> Contact </span></a>
                 
               </div>
             </li>
@@ -124,7 +127,8 @@
                 {% if request.resolver_match.url_name ==  'account_login' %}active{% endif %}
                 {% if request.resolver_match.url_name ==  'account_signup' %}active{% endif %}" 
                 href="#" id="navbarDropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
+                  data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Account">
                   <i class="bi bi-person"></i><span class="d-md-none"> Account </span>
 
                 </a>
@@ -148,7 +152,8 @@
           </li>
             <li class="nav-item position-relative text-center">
               <div class=" flex-sm-row flex-md-column align-items-center justify-content-evenly">
-              <a class="nav-link fs-4 {% if request.resolver_match.url_name == 'wishlist' %}active{% endif %}" href="{% url 'wishlist' %}"><i class="bi bi-suit-heart "></i>
+              <a class="nav-link fs-4 {% if request.resolver_match.url_name == 'wishlist' %}active{% endif %}" href="{% url 'wishlist' %}" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Wishlist"><i class="bi bi-suit-heart "></i>
                 {% if wishlist_count > 0 %}
                 <span class="badge count  badge-sm rounded-pill position-absolute  translate-middle">{{ wishlist_count}}</span>
                 {% endif %}
@@ -159,7 +164,8 @@
             <li class="nav-item position-relative text-center">
               <div class=" flex-sm-row flex-md-column align-items-center justify-content-evenly">
               <a class="{% if total %} fw-bold{% else %}text-black{% endif %} nav-link fs-4 {% if request.resolver_match.url_name == 'view_shoppingbag' %}active{% endif %}"
-                href="{% url 'view_shoppingbag' %}">
+                href="{% url 'view_shoppingbag' %}" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Shopping Cart">
 
 
                 <i class="bi bi-cart3"></i>
