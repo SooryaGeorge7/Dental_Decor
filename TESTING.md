@@ -5,8 +5,10 @@
 ## Table of Contents
 
 1. [Responsiveness](#responsiveness)
-2. [Manual Testing](#manual-testing-of-user-stories)
-3. [Validators](#validators)
+2. [Automated Testing](#automated-testing)
+    - [Unit Testing](#unit-testing)
+3. [Manual Testing](#manual-testing-of-user-stories)
+4. [Validators](#validators)
     - [CI Python Linter](#ci-python-linter)
     - [JSHint](#jshint)
     - [W3C CSS Validator](#w3c-css-validator)
@@ -39,6 +41,97 @@ All pages were tested to ensure responsiveness from devices of 320px and upwards
 |Dell inspiron 3593   |     As expected   |    Pass       |  
 
 
+## **Automated Testing**
+
+### **Unit Testing**
+
+Unit tests were created to test the functionality of the apps. These can be found in the tests.py files in the respective apps.
+
+#### **Checkout App**
+
+**Checkout forms.py Test**
+
+![Checkout forms.py](docs/unit-tests/checkout.test_forms.png)
+
+**Checkout models.py Test**
+
+![Checkout models.py](docs/unit-tests/checkout.test_models.png)
+
+**Checkout views.py Test**
+
+![Checkout views.py](docs/unit-tests/checkout.test_views.png)
+
+#### **Contactus App**
+
+**Contactus forms.py Test**
+
+![Contactus forms.py](docs/unit-tests/contactus.test_forms.png)
+
+**Contactus models.py Test**
+
+![Contactus models.py](docs/unit-tests/contactus.test_models.png)
+
+**Contactus views.py Test**
+
+![Contactus views.py](docs/unit-tests/contactus.test_views.png)
+
+#### **Products App**
+
+**Products forms.py Test**
+
+![Products forms.py](docs/unit-tests/products.test_forms.png)
+
+**Products models.py Test**
+
+![Products models.py](docs/unit-tests/products.test_models.png)
+
+**Products views.py Test**
+
+![Products views.py](docs/unit-tests/products.test_views.png)
+
+#### **Profiles App**
+
+**Profiles forms.py Test**
+
+![Profiles forms.py](docs/unit-tests/profile.test_forms.png)
+
+**Profiles models.py Test**
+
+![Profiles models.py](docs/unit-tests/profiles.test_models.png)
+
+**Profiles views.py Test**
+
+![Profiles views.py](docs/unit-tests/profiles.test_views.png)
+
+#### **Reviews App**
+
+**Reviews forms.py Test**
+
+![Reviews forms.py](docs/unit-tests/reviews.test_forms.png)
+
+**Reviews models.py Test**
+
+![Reviews models.py](docs/unit-tests/reviews.test_models.png)
+
+**Reviews views.py Test**
+
+![Reviews views.py](docs/unit-tests/reviews.test_views.png)
+
+#### **Shoppingbag App**
+
+**Shoppingbag views.py Test**
+
+![Shoppingbag views.py](docs/unit-tests/shoppingbag.test_views.png)
+
+#### **Wishlist App**
+
+**Wishlist models.py Test**
+
+![Wishlist models.py](docs/unit-tests/wishlist.test_models.png)
+
+**Wishlist views.py Test**
+
+![Wishlist views.py](docs/unit-tests/wishlist.test_views.png)
 
 ## **Manual testing of user stories**
 
