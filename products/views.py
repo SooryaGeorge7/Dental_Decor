@@ -57,7 +57,7 @@ def shop_products(request):
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
-    product_count = products.count()
+    products_count = products.count()
 
     paginator = Paginator(products, 8)
     page_number = request.GET.get('page')
@@ -78,7 +78,7 @@ def shop_products(request):
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
-        'product_count':product_count,
+        'products_count':products_count,
         'page_number':page_number,
     }
 

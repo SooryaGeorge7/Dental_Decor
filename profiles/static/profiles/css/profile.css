@@ -1,8 +1,11 @@
 .order-history {
-    max-height: 640px; /* height of profile form + submit button */
+    max-height: 320px; /* height of profile form + submit button */
     overflow-y: auto;
 }
-
+.review-table {
+    max-height: 320px; /* height of profile form + submit button */
+    overflow-y: auto;
+}
 
 #profile-update-form .form-control {
     color: #000;

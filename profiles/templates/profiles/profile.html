@@ -41,7 +41,7 @@
                             {% for order in orders %}
                                 <tr>
                                     <td>
-                                        <a href="{% url 'order_history' order.order_number %}"
+                                        <a class="dentaldecor-link" href="{% url 'order_history' order.order_number %}"
                                         title="{{ order.order_number }}">
                                             {{ order.order_number|truncatechars:6 }}
                                         </a>
@@ -64,7 +64,35 @@
                         </tbody>
                     </table>
                 </div>
+                <p class="text-muted mb-3">Your reviews</p>
+                <div class="review-table table-responsive">
+                    <table class="table table-sm table-hover">
+                        <thead>
+                            <tr>
+                                <th class="text-muted mb-3">Products reviews</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for review in user_reviews %}
+                                <tr>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li class="small">
+                                                <strong>
+                                                    <a class="dentaldecor-link" href="{% url 'product_detail' review.product.id %}">
+                                                        {{ review.product.name }}' reviews
+                                                    </a>
+                                                </strong>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
             </div>
+            
         </div>
     </div>
 {% endblock %}
