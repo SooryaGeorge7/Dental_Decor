@@ -11,6 +11,7 @@ body {
     height: calc(100vh - 164px);
     color: #333333;
     font-family: 'Lato', open-sans;
+    overflow-x: hidden;
 }
 
 .logo-image {
@@ -92,7 +93,7 @@ body {
 
 
 .footer-div {
-    font-size: 1.25rem;
+    font-size: 1rem;
     
 }
 

@@ -221,73 +221,61 @@
   
   <footer class="text-center text-light">
     <div class="container pt-2">
-      <div class="row d-flex justify-content-center justify-content-lg-between">
-        <div class="col-md-6">
-            <!-- Social Media Links -->
-            
-            <div class="footer-div text-light text-lg-start">
-              <small>Follow us on our socials:</small>
-            </div>
-        </div>
-        <div class="col-md-6">
-          
-          <div class="footer-div text-light text-lg-end">
-            <small>
-            <a href="https://www.facebook.com/" class="me-3 text-light" aria-label="facebook link" data-bs-toggle="tooltip" data-bs-placement="top"
-            title="Visit Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/" class="me-3 text-light" aria-label="instagram link" data-bs-toggle="tooltip" data-bs-placement="top"
-            title="Visit Instagram"><i class="bi bi-instagram"></i></a>
-          </small>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="footer-div text-light">
+            <p class="m-0">Want to enquire about something?</p>
           </div>
-      </div>
-        
-      </div>
-      
-    </div>
-    <hr class="text-light">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="footer-div text-light">
-              <p class="m-0">Want to enquire about something?</p>
-            </div>
-            <div class="footer-div text-light">
-              <a href="{% url 'home' %}#contactus" class="me-md-3 text-light" aria-label="contact us link">
-                Contact Us <i class="bi bi-send"></i>
-              </a>
-            </div>
-            
-        </div>
-            
-            <div class="col-md-4">
-              <div class="footer-div text-light">
-                <p class="m-0">Stay updated with our newsletter!</p>
-              </div>
-              <div class="footer-div text-light">
-                <a href="{% url 'home' %}#mc_embed_shell" class="me-md-3 text-light"
-                  aria-label="newsletter subscription link">
-                  Subscribe <i class="bi bi-envelope-paper-heart"></i></a>
-              
-              </div>
-              
+          <div class="footer-div text-light">
+            <a href="{% url 'home' %}#contactus" class="me-md-3 text-light" aria-label="contact us link">
+              Contact Us <i class="bi bi-send"></i>
+            </a>
           </div>
-          <div class="col-md-4">
-              
+        </div>
+        <div class="col-md-4">
+          <div class="footer-div text-light">
+              <p class="m-0">Stay updated with our newsletter!</p>
+          </div>
+          <div class="footer-div text-light">
+              <a href="{% url 'home' %}#mc_embed_shell" class="me-md-3 text-light"
+                aria-label="newsletter subscription link">
+                Subscribe <i class="bi bi-envelope-paper-heart"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4">
             <div class="footer-div text-light">
               <p class="m-0">Learn more about Dental Decor team.</p>
             </div>
             <div class="footer-div text-light">
               <a href="{% url 'home' %}#about-us" class="me-md-3 text-light"
-                aria-label="newsletter subscription link">
-                About Us <i class="bi bi-people-fill"></i></a>
-            
+              aria-label="newsletter subscription link">
+              About Us <i class="bi bi-people-fill"></i></a>
             </div>
         </div>
+      </div>
+      <hr class="text-light">
+      <div class="row d-flex justify-content-center justify-content-lg-between">
+        <div class="col-md-6">
+          <div class="footer-div text-light ">
+            <p class="py-b fs-6">Get connected with us : 
+              <a href="https://www.facebook.com/" class="me-3 text-light" aria-label="facebook link" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Visit Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/" class="me-3 text-light" aria-label="instagram link" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Visit Instagram"><i class="bi bi-instagram"></i></a>
+            </p>
+          </div>
         </div>
-        
-        <p class="py-2 fs-6">Copyright@DentalDecor. All rights reserved.<a href="https://github.com/" class="me-3 text-light" aria-label="github link" data-bs-toggle="tooltip" data-bs-placement="top"
-          title="Visit Dev Github"><i class="bi bi-github" aria-label="github link"></i></a></p>
-    </div>
-</footer>
+        <div class="col-md-6">
+          <div class="footer-div text-light ">
+            <p class="pb-2 fs-6">
+            Copyright@DentalDecor. All rights reserved.<a href="https://github.com/" class="me-3 text-light" aria-label="github link" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Visit Dev Github"><i class="bi bi-github" aria-label="github link"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>  
+    </div>  
+  </footer>
 
   {% block postloadjs %}
   <script >
