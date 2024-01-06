@@ -52,7 +52,7 @@
 
 <body class="dental-decorbg ">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light ">
+    <nav class="navbar navbar-expand-md navbar-light ">
       <div class="container">
         <a class="navbar-brand nav-link" href="{% url 'home' %}">
           <img src="{{ MEDIA_URL }}favicon.ico" alt="" class="img-fluid logo-image"> | DentalDecor
@@ -90,7 +90,7 @@
               
               <div class=" flex-sm-row flex-md-column align-items-center justify-content-evenly">
               <a class="nav-link fs-5 {% if request.resolver_match.url_name == 'home' %}active{% endif %}" href="{% url 'home' %}" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Home"><span class="d-lg-none"><i class="bi bi-house"></i></span><span> Home </span></a>
+              title="Home"><span class="d-md-none"><i class="bi bi-house"></i></span><span> Home </span></a>
               
               </div>
             </li>
@@ -98,7 +98,7 @@
               <div class=" flex-sm-row flex-md-column align-items-center justify-content-evenly">
                 <a class="nav-link fs-5 dropdown-toggle {% if request.resolver_match.url_name == 'shop_products' %}active{% endif %}" href="#"  role="button"
                 data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="tooltip" data-bs-placement="top"
-                title="Shop Products"><span class="d-lg-none"><i class="bi bi-shop"></i></span><span> Shop </span></a>
+                title="Shop Products"><span class="d-md-none"><i class="bi bi-shop"></i></span><span> Shop </span></a>
                 <ul class="dropdown-menu ">
                   <li><a class="dropdown-item" href="{% url 'shop_products' %}">All Products</a>
                   </li>
@@ -111,13 +111,7 @@
                 </ul>
               </div>
             </li>
-            <li class="nav-item text-center">
-              <div class=" flex-sm-row flex-md-column align-items-center justify-content-evenly">
-                <a class="nav-link fs-5 " href="#contactus" data-bs-toggle="tooltip" data-bs-placement="top"
-                title="Contact Us"><span class="d-lg-none"><i class="bi bi-telephone"></i></span><span> Contact </span></a>
-                
-              </div>
-            </li>
+            
             <li class="nav-item dropdown text-center ">
               <div class="flex-sm-row flex-md-column align-items-center justify-content-evenly">
                 <a class="nav-link fs-5 dropdown-toggle
@@ -129,7 +123,7 @@
                 href="#" id="navbarDropdown" role="button"
                   data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="tooltip" data-bs-placement="top"
                   title="Account">
-                  <i class="bi bi-person"></i><span class="d-lg-none"> Account </span>
+                  <i class="bi bi-person"></i><span class="d-md-none"> Account </span>
 
                 </a>
               
@@ -157,7 +151,7 @@
                 {% if wishlist_count > 0 %}
                 <span class="badge count  badge-sm rounded-pill position-absolute  translate-middle">{{ wishlist_count}}</span>
                 {% endif %}
-                <span class="d-lg-none"> Wishlist </span>
+                <span class="d-md-none"> Wishlist </span>
               </a>
             </div>
             </li>
@@ -172,14 +166,14 @@
                 {% if product_count > 0 %}
                 <span class="badge count badge-sm rounded-pill position-absolute  translate-middle">{{ product_count}}</span>
                 {% endif %}
-                <div class="navbar-price  position-absolute start-0 d-none d-lg-block badge-sm rounded-pill text-bg-warning">
+                <div class="navbar-price  position-absolute start-0 d-none d-md-block badge-sm rounded-pill text-bg-warning">
                   {% if total %}
                    €{{ total|floatformat:2 }}
                   {% else %}
                   €0.00
                   {% endif %}
                 </div>
-                <span class="d-lg-none  navbar-price badge-sm rounded-pill text-bg-warning ">
+                <span class="d-md-none  navbar-price badge-sm rounded-pill text-bg-warning ">
                   {% if total %}
                     €{{ total|floatformat:2 }}
                   {% else %}
