@@ -224,16 +224,53 @@
 
 
 
-  <footer class="text-center text-light ">
+  
+  <footer class="text-center text-light">
     <div class="container py-3">
-      <div class="footer-div text-light">
-        <a href="https://www.facebook.com/" class="me-3 text-light" aria-label="facebook link"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/" class="me-3 text-light" aria-label="instagram link"><i class="bi bi-instagram"></i></a>
-        <a href="https://github.com/" class="me-3 text-light" aria-label="github link"><i class="bi bi-github" aria-label="github link"></i></a>
-      </div>
-      <p>Copyright@DentalDecor. All rights reserved.</p>
+        <div class="row">
+            <div class="col-md-4">
+            <!-- Contact Us Link -->
+              <div class="footer-div text-light">
+                <p>Have any questions?</p>
+              </div>
+              <div class="footer-div text-light">
+                <a href="{% url 'home' %}#contactus" class="me-md-3 text-light" aria-label="contact us link">
+                    Contact Us <i class="bi bi-send"></i>
+                </a>
+              </div>
+            
+            </div>
+            <div class="col-md-4">
+                <!-- Social Media Links -->
+                <div class="footer-div text-light">
+                  <p>Follow us on our socials:</p>
+                </div>
+                <div class="footer-div text-light">
+                  <a href="https://www.facebook.com/" class="me-3 text-light" aria-label="facebook link" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Visit Facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/" class="me-3 text-light" aria-label="instagram link" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Visit Instagram"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="footer-div text-light">
+                <p>Stay updated with our newsletter!</p>
+              </div>
+              <!-- Newsletter Subscription Link -->
+              <div class="footer-div text-light">
+                  <a href="{% url 'home' %}#mc_embed_shell" class="me-md-3 text-light"
+                      aria-label="newsletter subscription link">
+                      Subscribe <i class="bi bi-envelope-paper-heart"></i>
+                  </a>
+              </div>
+          </div>
+        </div>
+        <hr class="my-4 text-light">
+        <p>Copyright@DentalDecor. All rights reserved.<a href="https://github.com/" class="me-3 text-light" aria-label="github link" data-bs-toggle="tooltip" data-bs-placement="top"
+          title="Visit Dev Github"><i class="bi bi-github" aria-label="github link"></i></a></p>
     </div>
-  </footer>
+</footer>
 
   {% block postloadjs %}
   <script >
