@@ -51,10 +51,17 @@ body {
     color:#003333;
     
 }
+.nav-link{
+    color:#003333 !important;
+}
 
 .nav-link:hover {
-    color:#006666;
+    color:#006666 !important;
+    font-weight: bold;
 
+}
+.nav-link i:hover {
+    -webkit-text-stroke: 1px;
 }
 
 .nav-link.active {
@@ -63,7 +70,6 @@ body {
 
 
 }
-
 
 .dropdown-item.active{
     background-color: #FFFFFF;

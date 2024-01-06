@@ -52,7 +52,7 @@
 
 <body class="dental-decorbg ">
   <header>
-    <nav class="navbar navbar-expand-md navbar-light ">
+    <nav class="navbar navbar-expand-lg navbar-light ">
       <div class="container">
         <a class="navbar-brand nav-link" href="{% url 'home' %}">
           <img src="{{ MEDIA_URL }}favicon.ico" alt="" class="img-fluid logo-image"> | DentalDecor
@@ -89,38 +89,38 @@
             <li class="nav-item text-center">
               
               <div class=" flex-sm-row flex-md-column align-items-center justify-content-evenly">
-              <a class="nav-link fs-4 {% if request.resolver_match.url_name == 'home' %}active{% endif %}" href="{% url 'home' %}" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Home"><i class="bi bi-house"></i><span class="d-md-none"> Home </span></a>
+              <a class="nav-link fs-5 {% if request.resolver_match.url_name == 'home' %}active{% endif %}" href="{% url 'home' %}" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Home"><span class="d-md-none"><i class="bi bi-house"></i></span><span> Home </span></a>
               
               </div>
             </li>
             <li class="nav-item dropdown text-center">
               <div class=" flex-sm-row flex-md-column align-items-center justify-content-evenly">
-                <a class="nav-link fs-4 dropdown-toggle {% if request.resolver_match.url_name == 'shop_products' %}active{% endif %}" href="#"  role="button"
+                <a class="nav-link fs-5 dropdown-toggle {% if request.resolver_match.url_name == 'shop_products' %}active{% endif %}" href="#"  role="button"
                 data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="tooltip" data-bs-placement="top"
-                title="Shop Products"><i class="bi bi-shop"></i><span class="d-md-none"> Shop </span></a>
+                title="Shop Products"><span class="d-md-none"><i class="bi bi-shop"></i></span><span> Shop </span></a>
                 <ul class="dropdown-menu ">
                   <li><a class="dropdown-item" href="{% url 'shop_products' %}">All Products</a>
                   </li>
-                  <li><a class="dropdown-item" href="{% url 'shop_products' %}?category=Wallart">Wall Art</a></li>
-                  <li><a class="dropdown-item" href="{% url 'shop_products' %}?category=Apparel">Apparel</a></li>
-                  <li><a class="dropdown-item" href="{% url 'shop_products' %}?category=Collectables">Collectables</a>
+                  <li><a class="dropdown-item {% if request.resolver_match.url_name == 'shop_products' and request.GET.category == 'Wallart' %}active{% endif %}" href="{% url 'shop_products' %}?category=Wallart">Wall Art</a></li>
+                  <li><a class="dropdown-item {% if request.resolver_match.url_name == 'shop_products' and request.GET.category == 'Apparel' %}active{% endif %}" href="{% url 'shop_products' %}?category=Apparel">Apparel</a></li>
+                  <li><a class="dropdown-item {% if request.resolver_match.url_name == 'shop_products' and request.GET.category == 'Collectables' %}active{% endif %}" href="{% url 'shop_products' %}?category=Collectables">Collectables</a>
                   </li>
-                  <li><a class="dropdown-item" href="{% url 'shop_products' %}?category=Educational">Educational</a>
+                  <li><a class="dropdown-item {% if request.resolver_match.url_name == 'shop_products' and request.GET.category == 'Educational' %}active{% endif %}" href="{% url 'shop_products' %}?category=Educational">Educational</a>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="nav-item text-center">
               <div class=" flex-sm-row flex-md-column align-items-center justify-content-evenly">
-                <a class="nav-link fs-4 {% if request.resolver_match.url_name == '#contactus' %}active{% endif %}" href="{% url 'contact_us' %}#contactus" data-bs-toggle="tooltip" data-bs-placement="top"
-                title="Contact Us"><i class="bi bi-telephone"></i><span class="d-md-none"> Contact </span></a>
+                <a class="nav-link fs-5 " href="#contactus" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Contact Us"><span class="d-md-none"><i class="bi bi-telephone"></i></span><span> Contact </span></a>
                 
               </div>
             </li>
             <li class="nav-item dropdown text-center ">
               <div class="flex-sm-row flex-md-column align-items-center justify-content-evenly">
-                <a class="nav-link fs-4 dropdown-toggle
+                <a class="nav-link fs-5 dropdown-toggle
                 {% if request.resolver_match.url_name ==  'add_product' %}active{% endif %}
                 {% if request.resolver_match.url_name ==  'profile' %}active{% endif %}
                 {% if request.resolver_match.url_name ==  'account_logout' %}active{% endif %}
@@ -152,7 +152,7 @@
           </li>
             <li class="nav-item position-relative text-center">
               <div class=" flex-sm-row flex-md-column align-items-center justify-content-evenly">
-              <a class="nav-link fs-4 {% if request.resolver_match.url_name == 'wishlist' %}active{% endif %}" href="{% url 'wishlist' %}" data-bs-toggle="tooltip" data-bs-placement="top"
+              <a class="nav-link fs-5 {% if request.resolver_match.url_name == 'wishlist' %}active{% endif %}" href="{% url 'wishlist' %}" data-bs-toggle="tooltip" data-bs-placement="top"
               title="Wishlist"><i class="bi bi-suit-heart "></i>
                 {% if wishlist_count > 0 %}
                 <span class="badge count  badge-sm rounded-pill position-absolute  translate-middle">{{ wishlist_count}}</span>
@@ -163,7 +163,7 @@
             </li>
             <li class="nav-item position-relative text-center">
               <div class=" flex-sm-row flex-md-column align-items-center justify-content-evenly">
-              <a class="{% if total %} fw-bold{% else %}text-black{% endif %} nav-link fs-4 {% if request.resolver_match.url_name == 'view_shoppingbag' %}active{% endif %}"
+              <a class="{% if total %} fw-bold{% else %}text-black{% endif %} nav-link fs-5 {% if request.resolver_match.url_name == 'view_shoppingbag' %}active{% endif %}"
                 href="{% url 'view_shoppingbag' %}" data-bs-toggle="tooltip" data-bs-placement="top"
                 title="Shopping Cart">
 
