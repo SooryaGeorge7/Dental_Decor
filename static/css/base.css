@@ -85,6 +85,11 @@ body {
     
 }
 
+#sort-selector {
+    min-width: 7rem;
+
+}
+
 
 .footer-div {
     font-size: 1.5rem;

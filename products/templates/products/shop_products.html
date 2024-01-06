@@ -9,7 +9,7 @@
 
         </div>
     </div>
-    <div class="row mb-5">
+    <div class="row mb-5 ">
         <div class="col d-flex justify-content-center">
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle dental-decorbtn" type="button" id="filterDropdown"
@@ -40,43 +40,22 @@
             </div>
         </div>
         <div class="col d-flex justify-content-center">
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle dental-decorbtn" type="button" id="sortDropdown"
-                    data-bs-toggle="dropdown">
-                    {% if current_sorting != 'None_None' %}
-                    {% if current_sorting == 'price_asc' %}
-                    Price (low to high)
-                    {% elif current_sorting == 'price_desc' %}
-                    Price (high to low)
-                    {% elif current_sorting == 'name_asc' %}
-                    Name (A-Z)
-                    {% elif current_sorting == 'name_desc' %}
-                    Name (Z-A)
-                    {% elif current_sorting == 'category_asc' %}
-                    Category (A-Z)
-                    {% elif current_sorting == 'category_desc' %}
-                    Category (Z-A)
-                    {% endif %}
-                    {% else %}
-                    <i class="bi bi-funnel"></i>Sort by...
-                    {% endif %}
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="sortDropdown">
-                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?sort=price&direction=asc">Price (Lowest
-                            to Highest)</a></li>
-                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?sort=price&direction=desc">Price
-                            (Highest to Lowest)</a></li>
-                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?sort=name&direction=asc">Alphabet
-                            (A-Z)</a></li>
-                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?sort=name&direction=desc">Alphabet
-                            (Z-A)</a></li>
-                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?sort=category&direction=asc">Category
-                            (A-Z)</a></li>
-                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?sort=category&direction=desc">Category
-                            (Z-A)</a></li>
-                    <li><a class="dropdown-item" href="{% url 'shop_products' %}">All</a></li>
-                </ul>
-
+            
+            <div class="sort-select-wrapper">
+                <select id="sort-selector" class="form-select">
+                    <option class="sort-option" value="reset"  {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
+                    <option class="sort-option" value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}> Price (low to high)
+                    </option>
+                    <option class="sort-option" value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)
+                    </option>
+                    <option class="sort-option" value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Alphabet (A-Z)</option>
+                    <option class="sort-option" value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Alphabet (Z-A)</option>
+                    <option class="sort-option" value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)
+                    </option>
+                    <option class="sort-option" value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)
+                    </option>
+                    
+                </select>
             </div>
 
         </div>
@@ -197,3 +176,10 @@
     </div>
 </div>
 {% endblock %}
+
+
+{% block postloadjs %}
+{{ block.super }}
+<script src="{% static 'products/js/sort.js' %}">
+</script>
+{% endblock%}
