@@ -65,9 +65,11 @@ body {
     -webkit-text-stroke: 1px;
 }
 
+
+
 .nav-link.active {
-    font-weight: bold;
     color:#006666 !important;
+    -webkit-text-stroke: 1px;
 
 
 }
@@ -192,6 +194,7 @@ input[name='q']::placeholder {
     object-fit: cover; 
     object-position:  center center;
 }
+
 .product-image {
     height: 20rem;
     object-fit: cover; 

@@ -9,7 +9,11 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>Are you sure you want to delete this review?</p>
+                {% if user.is_superuser and user != review.user %}
+                    <span class="text-capitalize">{{ request.user }}</span>, Are you sure you want to delete {{ review.user}}'s review and ratings?
+                {% else %}
+                    <span class="text-capitalize">{{ review.user }}</span>, Are you sure you want to delete your review and ratings?
+                {% endif %}
                 <!-- Add a form for confirming the delete action -->
                 <form method="post" action="{% url 'delete_review' review.id %}" id="deleteReviewForm">
                     {% csrf_token %}

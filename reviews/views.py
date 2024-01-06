@@ -95,13 +95,19 @@ def edit_review(request, review_id):
 @login_required()
 def delete_review(request,  review_id):
     """
-    This function handles deleting of review for a particular restaurant.
+    This function handles deleting of review for a particular product.
     """
     user = request.user
     review = get_object_or_404(Review, id=review_id)
     product = review.product
     review.delete()
-    messages.success(
+    if user.is_superuser:
+        messages.success(
+            request,
+            f"{review.user}'s review for {product.name} has been deleted "
+        )
+    else:
+        messages.success(
             request,
             f"Your review for {product.name} has been deleted {user.username}"
         )
