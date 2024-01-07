@@ -16,8 +16,9 @@ def contact_us(request):
         if form.is_valid():
             contact_instance = form.save()
             subject = 'Confirmation Email'
-            message = 'Thank you for your message. We will get back \
-             to you soon!'
+            message = (
+            'Thank you for your message. We will get back to you soon!\
+            - Dental Decor Team')
             from_email = settings.DEFAULT_FROM_EMAIL
             to_email = [contact_instance.email]
 

@@ -227,6 +227,7 @@
         <form action="{% url 'contact_us' %}" method="post">
           {% csrf_token %}
           {{ contact_form | crispy }}
+          
           <button type="submit" class="btn dental-decor-actionbtn m-2">Send Query</button>
         </form>
       </div>
