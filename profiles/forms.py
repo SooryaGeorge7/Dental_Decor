@@ -4,6 +4,9 @@ from .models import UserProfile
 
 
 class UserProfileForm(forms.ModelForm):
+    """
+       Form to handle profile
+    """
     class Meta:
         model = UserProfile
         exclude = ('user',)
@@ -30,19 +33,3 @@ class UserProfileForm(forms.ModelForm):
                     'border-black rounded-0 profile-form-input'
                 )
             self.fields[field].label = labels.get(field, False)
-
-                # if self.fields[field].required:
-                #     self.fields[field].widget.attrs['placeholder'] = f'{labels[field]} *'
-                # else:
-                #     self.fields[field].widget.attrs.pop('placeholder', None)
-
-                
-            
-
-            #     if self.fields[field].required:
-            #         placeholder = f'{placeholders[field]} *'
-            #     else:
-            #         placeholder = placeholders[field]
-            #     self.fields[field].widget.attrs['placeholder'] = placeholder
-            # self.fields[field].widget.attrs['class'] = 'border-black rounded-0 profile-form-input'
-            # self.fields[field].label = False

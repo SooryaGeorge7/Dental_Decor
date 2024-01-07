@@ -1,9 +1,9 @@
 .order-history {
-    max-height: 320px; /* height of profile form + submit button */
+    max-height: 320px; 
     overflow-y: auto;
 }
 .review-table {
-    max-height: 320px; /* height of profile form + submit button */
+    max-height: 320px; 
     overflow-y: auto;
 }
 
