@@ -9,6 +9,7 @@
 
 {% include 'products/includes/delete_product_modal.html' %}
 {% include 'reviews/delete_review_modal.html' %}
+<!--Product details page-->
 <div class="overlay"></div>
 <div class="container carousal-border">
     <div class="row justify-content-around">
@@ -45,7 +46,7 @@
                 {% if product.category %}
                 <p class="small mt-2 mb-4">
                     <i class="bi bi-ui-checks-grid"></i>  
-                    <a class="text-muted" href="{% url 'shop_products' %}?category={{ product.category.name }}">
+                    <a class="text-muted" href="{% url 'shop_products' %}?category={{ product.category.name }}" aria-label="category link">
                          {{ product.category.friendly_name }}
                     </a>
                 </p>

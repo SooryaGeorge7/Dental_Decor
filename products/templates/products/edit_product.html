@@ -1,8 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
-
+{% block extra_title %}
+Edit Product
+{% endblock extra_title %}
 
 {% block content %}
+<!--Edit product page-->
     <div class="overlay"></div>
     <div class="container carousal-border">
         <div class="row">
@@ -11,12 +14,12 @@
                 <h2 class="text-muted ">Edit a Product</h2>
                 <div class="w-75 d-flex justify-content-center ">
                 {% if product.image %}
-                <a href="{{ product.image.url }}" target="_blank">
+                <a href="{{ product.image.url }}" target="_blank" aria-label="product image link">
 
                 <img class=" mb-5 mb-md-0 img-thumbnail" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
-                <a href="{{ MEDIA_URL }}invalid-image.webp" target="_blank">
+                <a href="{{ MEDIA_URL }}invalid-image.webp" target="_blank" aria-label="product image link">
                     <img class="mb-5 mb-md-0 img-thumbnail" src="{{ MEDIA_URL }}invalid-image.webp" alt="{{ product.name }}">
                 </a>
                 {% endif %}
@@ -30,13 +33,12 @@
                 <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
-                        
                             {{ field | as_crispy_field }}
-                        
                     {% endfor %}
                     <div class="text-right">
-                        <a class="btn btn-danger" href="{% url 'shop_products' %}">Cancel</a>
+                        <a class="btn btn-danger" href="{% url 'shop_products' %}" aria-label="cancel editing link">Cancel</a>
                         <button class="btn dental-decor-actionbtn" type="submit">Update Product</button>
+                        <a class="btn btn-secondary" href="{% url 'product_detail' product.id %}" aria-label="product details page link">Go Back to Product Page</a>
                     </div>
                 </form>
             </div>            
