@@ -4,6 +4,9 @@ from django.urls import reverse
 
 class ShoppingBagPageTests(TestCase):
     def test_cart_page(self):
+        """
+        Test case to check the rendering of the shopping bag page.
+        """
         response = self.client.get(reverse('view_shoppingbag'))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'shoppingbag/shoppingbag.html')

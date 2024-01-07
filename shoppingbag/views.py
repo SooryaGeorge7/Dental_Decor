@@ -7,12 +7,16 @@ from products.models import Product
 
 # Create your views here.
 def view_shoppingbag(request):
-
+    '''
+    A view to display the shopping bag page
+    '''
     return render(request, 'shoppingbag/shoppingbag.html')
 
 
 def add_to_shoppingbag(request, item_id):
-
+    '''
+    A view that handles adding items to shopping bag
+    '''
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
@@ -61,7 +65,9 @@ def add_to_shoppingbag(request, item_id):
 
 
 def update_shoppingbag(request, item_id):
-
+    '''
+    Update shopping bag
+    '''
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     size = None

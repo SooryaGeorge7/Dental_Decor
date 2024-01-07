@@ -2,22 +2,23 @@
 {% load static %}
 {% load bag_tools %}
 
+{% block extra_title %}
+Shopping bag
+{% endblock extra_title %}
+
+<!--shopping bag page-->
 {% block content %}
 <div class="container carousal-border min-vh-100 ">
     <div class="row mt-4 mb-4">
         <div class="col">
             <h1 class="logo-font">Shopping Bag</h1>
-
         </div>
     </div>
 
     <div class="row shoppingbag-row">
-        
             {% if shoppingbag_items %}
             <div class="d-flex flex-column justify-content-between flex-grow-1">
                 {% for item in shoppingbag_items %}
-
-
                 <div class="row mb-3 border-bottom ">
                     <div class="col-md-3 col-lg-2 mb-3 mb-md-0">
                         {% if item.product.image %}
