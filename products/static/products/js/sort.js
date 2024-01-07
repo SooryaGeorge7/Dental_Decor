@@ -1,3 +1,5 @@
+// Handles the sorting of products in shop products page
+
 $('#sort-selector').change(function () {
     let selector = $(this);
     let currentUrl = new URL(window.location);

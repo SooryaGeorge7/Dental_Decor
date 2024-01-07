@@ -1,9 +1,13 @@
 from django.test import TestCase
 from .models import Category, Product
 
+
 class CategoryModelTest(TestCase):
 
     def test_category_model_creation(self):
+        """
+        Test case to ensure the creation of a Category instance with the correct attributes.
+        """
         category = Category.objects.create(
             name='Dentaldecor Category',
             notes='This is a Dentaldecor category.',
@@ -15,12 +19,21 @@ class CategoryModelTest(TestCase):
         self.assertEqual(category.friendly_name, 'Dentaldecor Friendly Name')
 
     def test_category_model_str_method(self):
+        """
+        Test case to check the string representation of the Category model.
+        """
         category = Category.objects.create(name='Dentaldecor Category')
         self.assertEqual(str(category), 'Dentaldecor Category')
 
     def test_category_model_get_friendly_name_method(self):
-        category = Category.objects.create(name='Dentaldecor Category', friendly_name='Dentaldecor Friendly Name')
+        """
+        Test case to check the get_friendly_name method of the Category model.
+        """
+        category = Category.objects.create(
+            name='Dentaldecor Category', friendly_name='Dentaldecor Friendly Name'
+            )
         self.assertEqual(category.get_friendly_name(), 'Dentaldecor Friendly Name')
+
 
 class ProductModelTest(TestCase):
 
@@ -28,6 +41,9 @@ class ProductModelTest(TestCase):
         self.category = Category.objects.create(name='Dentaldecor Category')
 
     def test_product_model_creation(self):
+        """
+        Test case to ensure the creation of a Product instance with the correct attributes.
+        """
         product = Product.objects.create(
             category=self.category,
             name='Dentaldecor Product',

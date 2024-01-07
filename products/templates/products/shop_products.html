@@ -28,19 +28,18 @@
                     {% endif %}
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="filterDropdown">
-                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?category=Wallart">Wall Art</a></li>
-                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?category=Apparel">Apparel</a></li>
-                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?category=Collectables">Collectibles</a>
+                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?category=Wallart" aria-label="wallart category link">Wall Art</a></li>
+                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?category=Apparel" aria-label="apparel category link">Apparel</a></li>
+                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?category=Collectables" aria-label="collectibles category link">Collectibles</a>
                     </li>
-                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?category=Educational">Educational</a>
+                    <li><a class="dropdown-item" href="{% url 'shop_products' %}?category=Educational" aria-label="educational category link">Educational</a>
                     </li>
-                    <li><a class="dropdown-item" href="{% url 'shop_products' %}">All</a>
+                    <li><a class="dropdown-item" href="{% url 'shop_products' %}" aria-label="All products link">All</a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="col d-flex justify-content-center">
-            
             <div class="sort-select-wrapper">
                 <select id="sort-selector" class="form-select">
                     <option class="sort-option" value="reset"  {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
@@ -78,7 +77,6 @@
         {% for product in products %}
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-3">
             <div class="card h-100 shadow">
-
                 <div class="card-body d-flex flex-column justify-content-between">
                     <div class="position-relative">
                         <div>

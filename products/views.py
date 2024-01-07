@@ -11,9 +11,10 @@ from reviews.models import Review
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 
 
-# Create your views here.
 def shop_products(request):
-
+    '''
+    Render all products on products page
+    '''
     products = Product.objects.all()
     query = None
     categories = None
@@ -86,7 +87,9 @@ def shop_products(request):
 
 
 def product_detail(request, product_id):
-
+    '''
+    Render product details page
+    '''
     product = get_object_or_404(Product, pk=product_id)
     reviews = Review.objects.filter(product=product)
     rating_form = RatingForm()

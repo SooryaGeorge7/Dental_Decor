@@ -3,7 +3,9 @@ from django.utils.crypto import get_random_string
 
 
 class Category(models.Model):
-
+    """
+    Category model
+    """
     class Meta:
         verbose_name_plural = 'Categories'
 
@@ -21,6 +23,9 @@ class Category(models.Model):
 
 
 def unique_sku():
+    """
+    Function that generated sku
+    """
     sku = get_random_string(length=7)
     while Product.objects.filter(sku=sku).exists():
         sku = get_random_string(length=7)
@@ -28,6 +33,9 @@ def unique_sku():
 
 
 class Product(models.Model):
+    """
+    Product model
+    """
     category = models.ForeignKey(
         'Category', null=True, blank=True,
         on_delete=models.SET_NULL

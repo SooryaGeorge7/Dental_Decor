@@ -1,18 +1,16 @@
+//This js file handles the star ratings.
+//Used this document as a guide to implement star ratings in my website. https://www.codingnepalweb.com/star-rating-html-css-javascript-2/
 
+//Import the review form 
 var form = document.querySelector('.reviewform');
 
 
-
-
+//Define function handle ratings for specific criterias using eventhandler
 var handleRatings = (choice, criteria) => {
     var stars = document.querySelectorAll(`.${criteria} .btn i`);
-    
-
-    
-
-
     stars.forEach(star => star.classList.remove('checked'));
 
+    //Determine the user's choice and add the 'checked' class so the selected stars change color
     var i;
     switch (choice) {
         case `${criteria}-first`:
@@ -41,13 +39,13 @@ var handleRatings = (choice, criteria) => {
             }
             break;
     }
-
+    //Get the numeric value from getNumValue and update the corresponding form field/criteria values
     var val_num = getNumValue(choice);
     form[criteria].value = val_num;
 
 };
 
-
+//Function to determine value of checked stars
 var getNumValue = (stringValue) => {
     let numValue;
     if (stringValue.endsWith('-first') ) {
@@ -68,6 +66,7 @@ var getNumValue = (stringValue) => {
 
 var criterias = ['product_rating'];
 
+//Eventhandler to handle star rating when user clicks on star
 criterias.forEach(criteria => {
     var stars = document.querySelectorAll(`.${criteria} .btn i`);
 
@@ -79,6 +78,8 @@ criterias.forEach(criteria => {
     });
 });
 
+
+//Function to update the star color and field values when user wants to edit review form
 var updateStarRatings = (criteria) => {
     var stars = document.querySelectorAll(`.${criteria} .btn i`);
     var value = form[criteria].value;

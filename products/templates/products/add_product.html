@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
-
-
+{% block extra_title %}
+Add Product
+{% endblock extra_title %}
+<!--Add product page-->
 {% block content %}
     <div class="overlay"></div>
     <div class="container carousal-border ">
@@ -25,7 +27,7 @@
                         
                     {% endfor %}
                     <div class="text-right">
-                        <a class="btn btn-danger " href="{% url 'shop_products' %}">Cancel</a>
+                        <a class="btn btn-danger " href="{% url 'shop_products' %}" aria-label="products page link">Cancel</a>
                         <button class="btn dental-decor-actionbtn" type="submit">Add Product</button>
                     </div>
                 </form>
