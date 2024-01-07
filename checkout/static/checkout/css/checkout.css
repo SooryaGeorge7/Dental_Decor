@@ -25,8 +25,6 @@
     color: #aab7c4;
 }
 
-
-
 #payment-form .form-control,
 #card-element {
     color: #000;
@@ -61,8 +59,6 @@ select option[value=""] {
     margin: 0;
     height: 100%;
 }
-
-
 
 .spinning-icon {
   animation: spinIcon 2s linear infinite; 

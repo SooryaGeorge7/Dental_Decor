@@ -4,6 +4,9 @@ from .models import Order
 class OrderModelTest(TestCase):
 
     def test_order_model_fields(self):
+        """
+        Test case to ensure that the fields of the Order model are correctly saved and retrieved.
+        """
         order = Order.objects.create(
             full_name='Soorya George',
             email='Soorya@example.com',
@@ -25,4 +28,3 @@ class OrderModelTest(TestCase):
         self.assertEqual(order.postcode, '53953')
         self.assertEqual(order.country, 'IE')
         self.assertEqual(order.county, 'Wexford')
-

@@ -12,20 +12,32 @@ class CheckoutViewsTest(TestCase):
         )
 
     def test_cache_checkout_data_view(self):
+        """
+        Test case for the cache_checkout_data view when a POST request is made.
+        """
         response = self.client.post(reverse('cache_checkout_data'))
         self.assertEqual(response.status_code, 400)
 
     def test_checkout_view_unauthenticated_user(self):
+        """
+        Test case for the shop_checkout view when the user is not authenticated.
+        """
         response = self.client.get(reverse('shop_checkout'))
         self.assertEqual(response.status_code, 302)
 
     def test_checkout_view_authenticated_user(self):
+        """
+        Test case for the shop_checkout view when the user is authenticated.
+        """
         self.client.login(username='testuser', password='testpassword')
 
         response = self.client.get(reverse('shop_checkout'))
         self.assertEqual(response.status_code, 302)
 
     def test_checkout_success_view(self):
+        """
+        Test case for the checkout_success view when a valid order is provided.
+        """
         order = Order.objects.create(
             full_name='Test User',
             email='test@example.com',

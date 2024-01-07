@@ -4,6 +4,9 @@ from .forms import OrderForm
 class OrderFormTest(TestCase):
 
     def test_order_form_fields(self):
+        """
+        Test case to ensure that the expected fields are present in the OrderForm.
+        """
         form = OrderForm()
         expected_fields = [
             'full_name', 'email', 'phone_number',
@@ -14,6 +17,9 @@ class OrderFormTest(TestCase):
             self.assertIn(field, form.fields)
 
     def test_order_form_widget_attrs(self):
+        """
+        Test case to ensure that the widget attributes of the OrderForm fields are as expected.
+        """
         form = OrderForm()
         expected_attrs = {
             'full_name': 'stripe-style-input',
@@ -30,6 +36,9 @@ class OrderFormTest(TestCase):
             self.assertEqual(form.fields[field].widget.attrs['class'], expected_attr)
 
     def test_order_form_placeholder(self):
+        """
+        Test case to ensure that the placeholder attributes of the OrderForm fields are as expected.
+        """
         form = OrderForm()
         expected_placeholders = {
             'full_name': 'Full Name *',
@@ -43,4 +52,3 @@ class OrderFormTest(TestCase):
         }
         for field, expected_placeholder in expected_placeholders.items():
             self.assertEqual(form.fields[field].widget.attrs['placeholder'], expected_placeholder)
-

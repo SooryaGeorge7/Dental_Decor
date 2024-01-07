@@ -15,6 +15,10 @@ import json
 
 @require_POST
 def cache_checkout_data(request):
+    '''
+    Handles the modification of Stripe PaymentIntent
+    with cart data and user information.
+    '''
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -33,7 +37,7 @@ def cache_checkout_data(request):
 
 
 def checkout(request):
-
+    ''' Renders the checkout page '''
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -150,11 +154,10 @@ def checkout_success(request, order_number):
 
     if request.user.is_authenticated:
         profile = UserProfile.objects.get(user=request.user)
-        # Attach the user's profile to the order
+        
         order.user_profile = profile
         order.save()
 
-        # Save the user's info
         if save_info:
             profile_data = {
                 'default_phone_number': order.phone_number,
