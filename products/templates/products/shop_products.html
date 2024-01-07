@@ -63,7 +63,7 @@
             <div class="col-12 col-md-6 order-md-first">
                 <p class="text-muted mt-3 text-center text-md-left">
                     {% if search_term or current_categories or current_sorting != 'None_None' %}
-                    <span class="small"><a href="{% url 'shop_products' %}">Products Home</a> | </span>
+                    <span class="small"><a href="{% url 'shop_products' %}" aria-label="products page">Products Home</a> | </span>
                     {% endif %}
                     {{ products_count }} Products
                     {% if search_term %} found for <strong>"{{ search_term }}"</strong>
@@ -121,7 +121,7 @@
                             <p class="small mt-1 mb-0">
                                 <i class="bi bi-ui-checks-grid"></i>  
                                 <a class="text-muted"
-                                    href="{% url 'shop_products' %}?category={{ product.category.name }}">
+                                    href="{% url 'shop_products' %}?category={{ product.category.name }}" aria-label="category link">
                                     {{ product.category.friendly_name }}
                                 </a>
                             </p>
@@ -150,7 +150,7 @@
                     <ul class="pagination justify-content-center">
                         {% if products.has_previous %}
                         <li class="page-item ">
-                            <a class="page-link " href="?page={{ products.previous_page_number }}" aria-label="Move to previous page"><i class="bi bi-arrow-left-circle-fill"></i></a>
+                            <a class="page-link " href="?page={{ products.previous_page_number }}{% if current_categories %}&category={{ current_categories|join:',' }}{% endif %}" aria-label="Move to previous page"><i class="bi bi-arrow-left-circle-fill"></i></a>
                         </li>
                         {% endif %}
                         {% for num in products.paginator.page_range %}
@@ -160,13 +160,13 @@
                         </li>
                         {% else %}
                         <li class="page-item">
-                            <a class="page-link" href="?page={{ num }}" aria-label="Move to page{{ num }}">{{ num }}</a>
+                            <a class="page-link" href="?page={{ num }}{% if current_categories %}&category={{ current_categories|join:',' }}{% endif %}" aria-label="Move to page{{ num }}">{{ num }}</a>
                         </li>
                         {% endif %}
                         {% endfor %}
-                        {% if productst.has_next %}
+                        {% if products.has_next %}
                         <li class="page-item">
-                            <a class="page-link" href="?page={{ products.next_page_number }}" aria-label="Move to next page"><i class="bi bi-arrow-right-circle-fill"></i></a>
+                            <a class="page-link" href="?page={{ products.next_page_number }}{% if current_categories %}&category={{ current_categories|join:',' }}{% endif %}" aria-label="Move to next page"><i class="bi bi-arrow-right-circle-fill"></i></a>
                         </li>
                         {% endif %}
                     </ul>
