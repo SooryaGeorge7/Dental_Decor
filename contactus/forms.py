@@ -4,6 +4,9 @@ import re
 
 
 class ContactForm(forms.ModelForm):
+    """
+    Contact form
+    """
     class Meta:
         model = Contact
         fields = ['name', 'email', 'phone', 'message']
@@ -18,5 +21,3 @@ class ContactForm(forms.ModelForm):
             'phone': 'Phone',
             'message': 'Message',
         }
-
-   

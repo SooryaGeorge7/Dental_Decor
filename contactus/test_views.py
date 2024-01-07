@@ -5,6 +5,9 @@ from .forms import ContactForm
 
 class ContactUsViewTest(TestCase):
     def test_contact_us_view_post_valid_form(self):
+        """
+        Test case for submitting a valid contact form through the Contact Us view.
+        """
         data = {
             'name': 'Soorya george',
             'email': 'soorya@example.com',
@@ -16,6 +19,9 @@ class ContactUsViewTest(TestCase):
 
 
     def test_contact_us_view_post_invalid_form(self):
+        """
+        Test case for submitting an invalid contact form through the Contact Us view.
+        """
         data = {
             'name': 'Soorya George',
             'email': 'invalid_email', 
