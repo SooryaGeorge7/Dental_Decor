@@ -37,8 +37,8 @@
 
 ## Overview
 
-Dental Decor is an e-commerce platform built on the Django framework, specializing in the sale of exquisite dental art and curated gifts tailored for dental professionals and businesses. Our product range is thoughtfully categorized into custom, collectibles, educational, and wall art segments, offering a diverse selection to meet the distinct preferences of our discerning clientele.The website is meticulously designed to offer an intuitive and seamless user experience. Navigating through our carefully curated categories is effortless, ensuring customers find the information they seek with ease.
-A search feature empowers customers to quickly locate specific items of interest, enhancing the efficiency of their shopping experience.Customers can explore products, submit queries, and view detailed product information without the need for website registration. However, features such as wishlists and reviews are exclusively available to registered users.
+Dental Decor is an e-commerce platform built on the Django framework, specializing in the sale of exquisite dental art and curated gifts tailored for dental professionals and businesses. Our product range is thoughtfully categorized into Apparels, Collectibles, Educational, and Wall art segments, offering a diverse selection to meet the distinct preferences of our discerning clientele.The website is meticulously designed to offer an intuitive and seamless user experience. Navigating through our carefully curated categories is effortless, ensuring customers find the information they seek with ease.
+A search feature empowers customers to quickly locate specific items of interest, enhancing the efficiency of their shopping experience.Customers can explore products, submit queries, and view detailed product information without the need for website registration. However, features such as wishlists and adding reviews are exclusively available to registered users.
 Upon registration, user information is securely stored, providing a personalized experience. Each registered user gains access to a dedicated profile page, streamlining future interactions.As the website is created for my fifth Portfolio project for code institute and  is therefore intended for demonstration purposes, users can test the purchasing functionality using the following card details:
 
 **Card Number**: 4242424242424242|
@@ -57,6 +57,7 @@ Dental Decor aims to provide not only a seamless shopping experience but also a 
 * To showcase features for registered and unregistered customers.
 * To give users visiting the website the option to regsiter an account.
 * To ensure customers can leave a product review.
+* To ensure customers can see other customers reviews.
 * To allow registered customers to add product to a wishlist for future purchases. 
 * To ensure sufficient website traffic is generated with Search engine optimization and social media marketting.
 
@@ -79,7 +80,7 @@ Dental Decor aims to provide not only a seamless shopping experience but also a 
 
 I have developed an e-commerce Django website that sells dental art that involves the following factors:
 
-1. Product:Dental Decor products are categorized into wall art, collectables , educational and custom pieces, created to attract dental professionals or businesses.
+1. Product:Dental Decor products are categorized into wall art, collectables , educational and apparel pieces, created to attract dental professionals or businesses.
 2. Target:Any individuals in a dental community or someone who'd want to gift a dental professional.
 3. Features:Dental decor customers should be able to browse, select and purchase products, add products to wishlist, see and add reviews, sign up for newspaper susbscription and would be able to make contact with the business by sending a query via contact form.
 5. Marketing and Branding:This implemented through social media such as facebook, instagram
@@ -90,9 +91,8 @@ Business is able to engage with customers through newsletters, contact form or v
 
 ### SEO
 
- I executed a  SEO plan to enhance the online presence of the dental decor websitet. The initial phase involved e keyword research to pinpoint relevant long and short-tail keywords associated with my products. I optimized title tags, meta descriptions, and URLs by incorporating these keywords, thereby boosting the web-shop's visibility in search engine results.I created high-quality content that seamlessly integrated the identified keywords. To optimize images, I employed descriptive file names and alt tags, contributing to an overall improvement in search engine rankings. The ultimate goal was to attract potential customers actively searching for products within the same category, thus increasing the visibility and reach of the website.
-
-    ![SEO  HTML]()
+ I executed a  SEO plan to enhance the online presence of the dental decor websitet. The initial phase involved e keyword research to pinpoint relevant long and short-tail keywords associated with my products. I optimized title tags, meta descriptions, and URLs by incorporating these keywords, thereby boosting the web-shop's visibility in search engine results.I created high-quality content that seamlessly integrated the identified keywords. To optimize images, I employed descriptive file names and alt tags, contributing to an overall improvement in search engine rankings. The ultimate goal was to attract potential customers actively searching for products within the same category, thus increasing the visibility and reach of the website. sitemap was generated using xml-sitemaps and is included in the root level of the project.Robots.txt file was created and tells the search engine crawlers which URLs they can access on the website.
+    
 
 
 
@@ -115,7 +115,7 @@ Business is able to engage with customers through newsletters, contact form or v
 ### User Requirements and Expectations
 
 * Customers are able to navigate through the website intuitively.
-* Customers are able to descriptions for each product.
+* Customers are able to read descriptions for each product.
 * Customers can search for specific products.
 * Customers are able sort and filter products.
 * Customers are able to checkout seamlessly.
@@ -188,15 +188,15 @@ This font family was used because of its modern and professional feel. It is oft
 
 ### Imagery
 
-All the product images and carousal images were sourced from [Etsy](https://www.etsy.com/ie/market/dentist_clinic_decor?ref=return_to_search). My Code institute facilitator had mentioned to us that sourcing images from amazon or etsy were perfectly okay as long as this was credited in Readme. All other images were sourced from free image sources such as pexels. Please see [Acknowledgment Secion](#acknowledgements) below.
+All the product images and carousal images were sourced from [Etsy](https://www.etsy.com/ie/market/dentist_clinic_decor?ref=return_to_search). My Code institute facilitator(Chris Quinn) had mentioned to us that sourcing images from amazon or etsy were perfectly okay as long as this was credited in Readme. All other images were sourced from free image sources such as pexels. Please see [Acknowledgment Secion](#acknowledgements) below.
 
 ##### Back to [top](#table-of-contents)
 
 ## Database
-***
+
 
 <details><summary>(ERD)Physical database model</summary>
-<img src=>
+<img src="docs/wireframes/DentalDecor-ERD.png" >
 </details>
 
 ### Data Models
@@ -348,9 +348,6 @@ related_name='lineitems'|
 <img src="docs/wireframes/desktop/shoppage-desktop.png">
 </details>
 
-<details><summary> details</summary>
-<img src="docs/wireframes/desktop/">
-</details>
 
 <details><summary>Shopping cart</summary>
 <img src="docs/wireframes/desktop/shoppingcartpage-desktop.png">
@@ -396,9 +393,6 @@ related_name='lineitems'|
 <img src="docs/wireframes/tablet/shoppage-tablet.png">
 </details>
 
-<details><summary> details</summary>
-<img src="">
-</details>
 
 <details><summary>Shopping cart</summary>
 <img src="docs/wireframes/tablet/shoppingcartpage-tablet.png">
@@ -442,9 +436,6 @@ related_name='lineitems'|
 <img src="docs/wireframes/mobile/shoppage-mobile.png">
 </details>
 
-<details><summary> details</summary>
-<img src="">
-</details>
 
 <details><summary>Shopping cart</summary>
 <img src="docs/wireframes/mobile/shoppingcartpage-mobile.png">
@@ -479,18 +470,21 @@ related_name='lineitems'|
 
 ##### Back to [top](#table-of-contents)
 
-## Agile Design
 
 ## Agile Design
 
 ### Overview
 
 Agile Methodology were followed more closely in this project compared to my last project. Although this was my second attempt in implementing and prioritizing tasks, changes were made on th way to accomodate project needs. I have used milestones as Epics , Userstories to implement the project tasks and see through user stories.My kanban board are constructed by sprints this time.This allowed me a regularly correct and improve where needed.Overall, .By implementing Agile principles and design, I was confident in delivering a high-quality and user-centric e-commerce website.
+Each Userstory had labels such as must-haves(necessity), should-haves(beneficial to have), could-haves(not important, nice to have).  During development of website, most of the must-haves were implemented first to reach the MVP project(except README and TESTING). I  used userstories to allocate story points and how much story points to provide for each user story.Story points were allocated according to complexity or how time consuming the user story was.The should-have user story points did not exceed 60% of user story points total. The must-have user stories were prioritized first. Certain other user stories were implemented based on time and complexity. Project Kanan board was used to track progress with user stories moving between Todo, In Progress and Done columns.The kanan board can be located here. All user stories have acceptance critera and tasks that needs to be ticked off on the go as this will mark the story as complete.The acceptance criteria, with tasks associated with each user story can be found in project kanban boards linked ![Here](https://github.com/SooryaGeorge7/Dental_Decor/projects?query=is%3Aopen)
+
 
 ### Epics(Milestones)
 - The GitHub's 'Milestones' feature was used to connect user stories to their corresponding tasks,A set of 6 epics for this project.
 
 <details><summary>See epics</summary>
+
+![Epics]()
 
 </details>
 
@@ -502,6 +496,8 @@ Agile Methodology were followed more closely in this project compared to my last
 It  proved valuable in ensuring that the most critical requirements received prompt attention and were addressed as a priority
 
 <details><summary> Moscow </summary>
+
+![Here](Moscow)
 </details>
 
 ### Iterations(Sprints)
@@ -512,7 +508,7 @@ It  proved valuable in ensuring that the most critical requirements received pro
 
 I used the 1st sprint to set up the project and have the basic framework such as base.html to work. This allowed me to establish a solid foundation for the project and lay the devlopment groundwork for future tasks.
 
-[Link to 1st Sprint Kanban board.]()
+[Link to 1st Sprint Kanban board.](https://github.com/users/SooryaGeorge7/projects/5/views/1)
 
 
 <details><summary>See 1st sprint progress</summary>
@@ -523,7 +519,7 @@ I used the 1st sprint to set up the project and have the basic framework such as
 
 During my second sprint, my primary focus was to add all the products in database. To add the products app and its functionality such as shop product page, and product details page. 
 
-[Link to 2nd Sprint Kanban board.]()
+[Link to 2nd Sprint Kanban board.](https://github.com/users/SooryaGeorge7/projects/6/views/1)
 
 <details><summary>See 2nd sprint progress</summary>
 
@@ -536,7 +532,7 @@ For my 3rd sprint, i implemented shopping cart functionality and completing a po
 
 
 
-[Link to 3rd Sprint Kanban board.]()
+[Link to 3rd Sprint Kanban board.](https://github.com/users/SooryaGeorge7/projects/7/views/1)
 
 <details><summary>See 3nd sprint progress</summary>
 
@@ -550,7 +546,7 @@ In the fourth sprint, my main objective was to finalize the Payment epic, ensuri
 
 
 
-[Link to the 4th Sprint Kanban board.]()
+[Link to the 4th Sprint Kanban board.](https://github.com/users/SooryaGeorge7/projects/8/views/1)
 
 <details><summary>See 4th sprint progress</summary>
 
@@ -563,7 +559,7 @@ In the fourth sprint, my main objective was to finalize the Payment epic, ensuri
 For my 5th, I implemented  various other features such as reviews, wishlist and contact us form.
 I also used this sprint to track my documentation process.
 
-[Link to the 5th Sprint Kanban board.]()
+[Link to the 5th Sprint Kanban board.](https://github.com/users/SooryaGeorge7/projects/9/views/1)
 
 <details><summary>See 5th sprint progress</summary>
 
@@ -571,7 +567,7 @@ I also used this sprint to track my documentation process.
 
 #### Agile Conclusion 
 
-Leveraging Agile methodologies across the 5 sprints of my  e-commerce project, I experienced consistent advancement through the systematic breakdown of tasks into manageable components. This method allowed me to prioritize and roll out essential features one by one. By embracing mentor feedback, I enhanced the development process, integrated important functionalities, and crafted an intuitive e-commerce platform for users. The Agile framework emerged as a vital tool, steering me through challenges,  and placing user satisfaction at the forefront of the project's priorities.
+Leveraging Agile methodologies across the 5 sprints of my  e-commerce project, I experienced consistent advancement through the systematic breakdown of tasks into manageable components. This method allowed me to prioritize and roll out essential features one by one. By embracing mentor feedback, I enhanced the development process, integrated important functionalities, and crafted an intuitive e-commerce platform for users. The Agile framework emerged as a vital tool, steering me through challenges,  and placing user satisfaction at the forefront of the project's priorities. 
 
 
 ## Technologies Used
