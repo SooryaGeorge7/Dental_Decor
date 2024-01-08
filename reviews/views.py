@@ -11,6 +11,9 @@ from django.contrib import messages
 
 @login_required
 def add_review(request, product_id):
+    """
+        Function to add reviews
+    """
     product = get_object_or_404(Product, pk=product_id)
     reviews = Review.objects.filter(product=product)
 
@@ -54,7 +57,9 @@ def add_review(request, product_id):
 
 @login_required
 def edit_review(request, review_id):
-
+    """
+        Function to edit reviews
+    """
     review = get_object_or_404(Review, id=review_id)
     product = review.product
     reviews = Review.objects.filter(product=product)

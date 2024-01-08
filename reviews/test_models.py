@@ -14,6 +14,9 @@ class ReviewModelTest(TestCase):
         )
 
     def test_review_model_fields(self):
+        """
+        Test case to ensure that the Review model contains the expected fields.
+        """
         review = Review.objects.create(
             user=self.user,
             product=self.product,
@@ -26,6 +29,9 @@ class ReviewModelTest(TestCase):
         self.assertEqual(review.comment_text, 'Test comment')
 
     def test_review_model_default_values(self):
+        """
+        Test case to check the default values of the Review model.
+        """
         review = Review.objects.create(
             user=self.user,
             product=self.product,
@@ -36,6 +42,9 @@ class ReviewModelTest(TestCase):
         self.assertIsNone(review.comment_text)
 
     def test_review_model_ordering(self):
+        """
+        Test case to verify the ordering of reviews.
+        """
         review1 = Review.objects.create(
             user=self.user,
             product=self.product,
@@ -53,6 +62,9 @@ class ReviewModelTest(TestCase):
         self.assertEqual(reviews[1], review1)
 
     def test_review_model_str_method(self):
+        """
+        Test case to check the string representation of the Review model.
+        """
         review = Review.objects.create(
             user=self.user,
             product=self.product,

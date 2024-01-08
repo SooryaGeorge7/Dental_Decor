@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="{% static 'products/css/products.css' %}">
 {% endblock %}
 
+
 {% block additional_content %}
 
 
@@ -25,7 +26,6 @@
                 {% endif %}
                 
                 <div class="modal-body"> 
-                    <!-- Add a form for users to submit reviews -->
                     <form method="post"  class="reviewform" enctype="multipart/form-data">
                         
                         {% csrf_token %}
@@ -87,13 +87,3 @@
         
     </script>
 {% endblock %}
-<!-- <script src="{% static 'products/js/add_rating.js' %}">
-</script>
-<script>
-    $(document).ready(function () {
-
-        $('#addReviewModal').modal('show');
-
-    });
-    
-</script> -->

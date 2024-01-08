@@ -15,6 +15,9 @@ class WishlistModelTest(TestCase):
         )
 
     def test_wishlist_creation(self):
+        """
+        Test case for creating a wishlist item.
+        """
         wishlist_item = Wishlist.objects.create(user=self.user, product=self.product)
 
         self.assertTrue(isinstance(wishlist_item, Wishlist))

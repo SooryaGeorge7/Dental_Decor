@@ -1,4 +1,3 @@
-
 {% if reviews %}
 {% for review in reviews %}
 <div class="modal fade" id="deleteReviewModal{{ review.id }}" tabindex="-1" aria-labelledby="deleteReviewModalLabel{{ review.id }}" aria-hidden="true">
@@ -14,7 +13,6 @@
                 {% else %}
                     <span class="text-capitalize">{{ review.user }}</span>, Are you sure you want to delete your review and ratings?
                 {% endif %}
-                <!-- Add a form for confirming the delete action -->
                 <form method="post" action="{% url 'delete_review' review.id %}" id="deleteReviewForm">
                     {% csrf_token %}
                     <input type="hidden" name="review_id" id="deleteReviewId">

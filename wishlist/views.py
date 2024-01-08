@@ -10,6 +10,9 @@ from django.contrib import messages
 
 @login_required
 def wishlist(request):
+    """
+        Renders wishlist page
+    """
     wish_items = Wishlist.objects.filter(user=request.user)
     context = {
         'wish_items': wish_items,
@@ -20,6 +23,9 @@ def wishlist(request):
 
 @login_required
 def add_to_wishlist(request, product_id):
+    """
+        Handles Adding items to wishlist
+    """
     product = get_object_or_404(Product, id=product_id)
     try:
         wish_item = Wishlist.objects.get(user=request.user,
@@ -36,7 +42,9 @@ def add_to_wishlist(request, product_id):
 
 
 def remove_from_wishlist(request, product_id):
-
+    """
+        Handles removing items from wishlist
+    """
     product = get_object_or_404(Product, id=product_id)
     print(product)
     wish_item = Wishlist.objects.get(user=request.user, product=product)

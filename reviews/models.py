@@ -4,7 +4,6 @@ from products.models import Product
 from django.core.validators import MaxLengthValidator
 
 
-# Create your models here.
 class Review(models.Model):
     """
     Model for creating a User Review

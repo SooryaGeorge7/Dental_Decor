@@ -5,6 +5,7 @@ from products.models import Product
 from .models import Review
 from .forms import RatingForm
 
+
 class ReviewsViewsTest(TestCase):
 
     def setUp(self):
@@ -23,11 +24,17 @@ class ReviewsViewsTest(TestCase):
         )
 
     def test_add_review_view_authenticated_user(self):
+        """
+        Test case for adding a review with an authenticated user.
+        """
         self.client.login(username='testuser', password='testpassword')
         response = self.client.post(reverse('add_review', args=[self.product.id]), data={'product_rating': 5})
         self.assertEqual(response.status_code, 302) 
 
     def test_add_review_view_authenticated_user_duplicate_review(self):
+        """
+        Test case for attempting to add a duplicate review with an authenticated user.
+        """
         Review.objects.create(
             user=self.user,
             product=self.product,
@@ -39,6 +46,9 @@ class ReviewsViewsTest(TestCase):
         self.assertEqual(response.status_code, 302) 
 
     def test_edit_review_view_authenticated_user(self):
+        """
+        Test case for editing a review with an authenticated user.
+        """
         self.client.login(username='testuser', password='testpassword')
         response = self.client.post(reverse('edit_review', args=[self.review.id]), data={'product_rating': 3})
         self.assertEqual(response.status_code, 302)  
@@ -46,19 +56,30 @@ class ReviewsViewsTest(TestCase):
         self.assertEqual(self.review.product_rating, 3) 
 
     def test_delete_review_view_authenticated_user(self):
+        """
+        Test case for deleting a review with an authenticated user.
+        """
         self.client.login(username='testuser', password='testpassword')
         response = self.client.post(reverse('delete_review', args=[self.review.id]))
         self.assertEqual(response.status_code, 302) 
 
     def test_add_review_view_unauthenticated_user(self):
+        """
+        Test case for attempting to add a review with an unauthenticated user.
+        """
         response = self.client.post(reverse('add_review', args=[self.product.id]), data={'product_rating': 5})
         self.assertEqual(response.status_code, 302)  
 
     def test_edit_review_view_unauthenticated_user(self):
+        """
+        Test case for attempting to edit a review with an unauthenticated user.
+        """
         response = self.client.post(reverse('edit_review', args=[self.review.id]), data={'product_rating': 3})
         self.assertEqual(response.status_code, 302)  
 
     def test_delete_review_view_unauthenticated_user(self):
+        """
+        Test case for attempting to delete a review with an unauthenticated user.
+        """
         response = self.client.post(reverse('delete_review', args=[self.review.id]))
         self.assertEqual(response.status_code, 302)  
-

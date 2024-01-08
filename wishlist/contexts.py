@@ -2,6 +2,9 @@ from .models import Wishlist
 
 
 def wishlist_counter(request):
+    """
+    Handles wishlist item count
+    """
     if request.user.is_authenticated:
         wishlist_count = (
             Wishlist.objects.filter(user=request.user).count()

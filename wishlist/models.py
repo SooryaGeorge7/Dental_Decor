@@ -1,14 +1,13 @@
 
-# Create your models here.
 from django.db import models
 from django.contrib.auth.models import User
-# Internal:
 from products.models import Product
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 class Wishlist(models.Model):
-
+    """
+    wishlist model
+    """
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
 
