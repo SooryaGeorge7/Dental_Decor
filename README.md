@@ -616,8 +616,9 @@ Users would be able to naviagate the website so that they can find any informati
 
 ![Desktop navbar](docs/features/navbar/navbar-manual1.gif)
 
-![Desktop open navbar](docs/features/navbar/navbar-opennormal.png
+![Desktop open navbar](docs/features/navbar/navbar-opennormal.png)
 </details>
+
 <details><summary>Navbar in Mobile devices</summary>
 
 In smaller devices a hamburger toggle button appears, where user can click on to show the navigation links.
@@ -669,7 +670,7 @@ Users who inserts an input and clicks search button would not be able to search 
 
 ***Footer***
 
-Footer contains copyright statement and link to social media accounts and my(Soorya George's) github profile.
+Footer contains copyright statement and link to social media accounts and my(Soorya George's) github profile. Users can also click on links to get to contact us form , newsletter subscription and about us section fast when user is on another page.
 
 <details><summary>Footer on desktop</summary>
 
@@ -724,7 +725,7 @@ Users are redirected to products page.
 
 <details><summary>Newsletter subscription</summary>
 
-Users can add their email addresses to receive newsletter
+Users can add their email addresses to receive newsletter and would recieve a message if they have already used the same email address before.
 ![Newsletter subscription](docs/features/home-page/newsletter-subscription.png)
 
 </details>
@@ -806,6 +807,13 @@ When users access this page, a go up button will appear which allow users to go 
 
 </details>
 
+<details><summary>Products pagination feature</summary>
+
+When users access use these buttons to move to the next page to access more products in the specific category or all products.
+
+![Pagination ]()
+
+</details>
 
 
 
@@ -1252,12 +1260,19 @@ Unregistered users can access all features of website except wishlist page, the 
 
 ## Future features
 
+- I would add google maps directions for the headquaters of the store.
+- I would want to implement discount codes for products.
+- I would want to implement even more categories in shop tabs as currently i only have 4 categories on navbar.
+- Ability to register and login with social media accounts.
+- Allow for users to report other users to the site admin incases of inappropraite comments or reviews.
+- Mechanism for users to easily contact the site admin.
+- Implement feature to delete  wishlist item automatically when user clicks on add to bag button from wishlist page.
 
 ##### Back to [top](#table-of-contents)
 
 
 ## Testing
-
+Testing for the wesbite can be found here. [TESTING.md](TESTING.md)
 
 ## Bugs
 
@@ -1268,12 +1283,16 @@ Unregistered users can access all features of website except wishlist page, the 
 | The textarea for leave a review was overflowing in smaller screens  | I managed to add a class to Rating form in forms.py where i can style the class in stylesheet to make textarea responsive. [See solution here]()|
 | The navbar looked very crowded in bigger devices when the navlink icons have description | I managed to hide the descriptions in bigger screens [See solution here]()|
 | The review modals were not popping up when user clicked on the buttons because the review.html contained the review modal while the buttons were located in the product details page | I managed to extend the product details page in review.html and adding javascript to help with this modal poppup up[See solution here]()|
+|User was able to submit contact form without phone number being valid. I could just enter letters instead of numbers and the form would still send [See Problem here]()| I used pattern regression in my forms.py to validate phone number. [See solution here] |
+| Users were not able move to next page when on a specific category using pagination[See problem here]() | I handled this by add categories to pagination links [See solution here]()| 
+|Sorting of products were not working once i implemented pagination [See problem here]()| I handled this with some js code [See solution here]()|
 
 
 ## **Unresolved Bugs/Issues**
 
 * Search query doesn’t have to make sense to return a result. If user types in “uherge” this will return some products regardless of there is result for that exact query. This is due to the fact the results rendered are not strict to query but rather "could be related" to query.
 * I realized this too late but the add review and edit review modal keeps popping up everytime the product details page the user is already on is reloaded but only if user has clicked on add review or edit review button already.[see bug here]()
+* I would have wanted a pop up to appear for users when on wishlist page after user had clicked on add to bag button to ask user for permission to remove the wishlist item if they already added the item to the shopping bag, but i was not able to implement this due to time constraints and users can only remove wishlist item manually.[See problem here]()
 
 ## Deployment
 
@@ -1429,12 +1448,14 @@ Your application is now successfully deployed!
 ### **Code Used**
 
 * The steps to connect to a Heroku Postgres database and deploy were adapted from the Code Institute 'Boutique Ado' tutorial. This includes defining DATABASE_URL and SECRET_KEY environment variables in an env.py file in the local environment and adding corresponding config variables in the Heroku dashboard, using dj_database_url to create a URL from the database URL in settings.py, updating ALLOWED_HOSTS in settings.py with the deployed Heroku URL and adding the templates path to a TEMPLATES_DIR variable in settings.py
+* Boutique Ado Walkthrough was used implement the base of this website.
 * The Bootstrap 5 documentation was extensively referenced for guidance on implementing navbars and modal dialogs.
 * This repository was created using the template provided by Code Institute.
 * Thanks to the Django docs which were also used as a step-by-step while going through the project to ensure everything was set up correctly
 * [Learnt how to implement star rating using javascript here](https://www.codingnepalweb.com/star-rating-html-css-javascript-2/)
 * [Learnt to use css on active nav links here](https://stackoverflow.com/questions/32931436/active-tag-on-bootstrap-with-django/47530688#47530688)
 * [Learnt how to implement wishlist here](https://www.youtube.com/watch?v=pdttUeJi7j8)
+* [Learn how to implement pagination here](https://realpython.com/django-pagination/)
 
 ### **Content**
 
@@ -1448,10 +1469,10 @@ Your application is now successfully deployed!
 
 I would like to acknowledge the following people in helping with my project one way or another:
 
-* My husband for supporting me through my decision to do this course and through all the late nights and meltdowns so far especially knowing that 
-  this will only get worse through the course of the year. :D
+* My husband for supporting me through my decision to do this course and through all the late nights and meltdowns.. :D
 * My friends ,family and colleagues who have tested my site on their devices to make sure all looks and works well.
 * My Mentor Brian O'Hare for guiding me and giving constructive criticism in our 6 mentor sessions so far.
 * UCD academy november private group in slack for our almost weekly facilitator sessions that have helped me in getting some our doubts cleared with regards to the project.
+* Special shout out to my slack friends Especially Eli Dimitrova and Stuart Parker in Our private UCD group for the encouragements and support.
 * Chris Quinn for delivering our facilitator and master classes so far which has helped me to not feel completely alone in this journey.
 
