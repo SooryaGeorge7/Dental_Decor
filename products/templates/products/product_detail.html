@@ -152,7 +152,15 @@ Product Details
             <div class="card mb-3">
                 
                 <div class="card-body">
+                    {% if request.user == review.user %}
+                    <h3 class="card-title"><a  class="dentaldecor-link" href="{% url 'profile' %}" aria-label="profile link" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Go to profile">
+                        {{ review.user.username }}
+                    </a></h3>
+                    
+                    {% else %}
                     <h3 class="card-title">{{ review.user.username }}</h3>
+                    {% endif %}
                     <p class="text-start">{{ review.created_on }}</p>
                     <div class="col-12 justify-content-center text-center">
                         <a  class="btn {% if review.product_rating >= 1 %}checked{% endif %} rated"><i class="bi bi-star-fill" ></i></a>

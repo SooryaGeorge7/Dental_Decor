@@ -614,18 +614,16 @@ Users would be able to naviagate the website so that they can find any informati
 
 <details><summary>Navbar in desktop</summary>
 
-![Desktop navbar](docs/features/navbar/navbar-manual1.gif)
+![Desktop navbar](docs/features/navbar/navbar-desktop-open.gif)
 
-![Desktop open navbar](docs/features/navbar/navbar-opennormal.png)
 </details>
 
 <details><summary>Navbar in Mobile devices</summary>
 
 In smaller devices a hamburger toggle button appears, where user can click on to show the navigation links.
 
-![Mobile Navbar](docs/features/navbar/navbar-manual2.gif)
+![Mobile Navbar](docs/features/navbar/navbar-mobile.gif)
 
-![Mobile open navbar](docs/features/navbar/navbar-mobile-open.png)
 
 </details>
 
@@ -633,7 +631,7 @@ In smaller devices a hamburger toggle button appears, where user can click on to
 
 Navbar will look different to superuser slightly. They will have access to product management page in navbar.
 
-![Superuser loggedin navbar](docs/features/navbar/navbar-open.png)
+![Superuser loggedin navbar](docs/features/navbar/nav-superuser.png)
 
 </details>
 
@@ -641,7 +639,7 @@ Navbar will look different to superuser slightly. They will have access to produ
 
 Navbar will look different to users if they have logged out or havnt signed up for website yet. They will not have a profile tab and a logout tab, instead they will have access to login tab and register tab on navbar.
 
-![Loggedout navbar](docs/features/navbar/loggedout-nav.png)
+![Loggedout navbar](docs/features/navbar/nav-loggedout.png)
 
 </details>
 <details><summary>Dental Decor logo</summary>
@@ -668,19 +666,27 @@ Users who inserts an input and clicks search button would not be able to search 
 
 </details>
 
+<details><summary>Toast feature</summary>
+
+Everytime user recieves a notification from an action a message pops up as shown below. It also contains the items in your shopping cart.
+
+![Toast feature](docs/features/navbar/toast-feature.png)
+
+</details>
+
 ***Footer***
 
 Footer contains copyright statement and link to social media accounts and my(Soorya George's) github profile. Users can also click on links to get to contact us form , newsletter subscription and about us section fast when user is on another page.
 
 <details><summary>Footer on desktop</summary>
 
-![Footer desktop](docs/features/footer/footer-desktop.png)
+![Footer desktop](docs/features/footer/footer-desktopn.png)
 
 </details>
 
 <details><summary>Footer on mobiles</summary>
 
-![Footer mobile](docs/features/footer/footer-mobile.png)
+![Footer mobile](docs/features/footer/footer-mobilen.gif)
 
 </details>
 
@@ -690,13 +696,13 @@ Home page contains a carousal, helpful texts, buttons redirecting user to shop p
 
 <details><summary>Home page desktop</summary>
 
-![Home page desktop](docs/features/home-page/home-page-manual1.gif)
+![Home page desktop](docs/features/home-page/homepage-desktop.gif)
 
 </details>
 
 <details><summary>Home page mobile</summary>
 
-![Home page mobile](docs/features/home-page/home-page-responsive.gif)
+![Home page mobile](docs/features/home-page/homepage-mobile.gif)
 
 </details>
 
@@ -746,7 +752,7 @@ The products page has 2 dropdowns, 1 for categorsing products and other for sort
 
 For desktop - User is shown 4 product cards displayed in a row.Each card contains more information about the particular product such as price and category.
 
-![Products page desktop](docs/features/shop-page/product-page.gif)
+![Products page desktop](docs/features/shop-page/productspage-desktop.gif)
 
 </details>
 
@@ -754,7 +760,7 @@ For desktop - User is shown 4 product cards displayed in a row.Each card contain
 
 For mobile- User is shown 1product displayed as a card in a row.As you can see, a go up button is available to user to allow user to go up the page if they wanted to at any point.
 
-![Product page mobile](docs/features/shop-page/productpage-responsive.gif)
+![Product page mobile](docs/features/shop-page/productspage-mobile.gif)
 
 </details>
 
@@ -811,7 +817,7 @@ When users access this page, a go up button will appear which allow users to go 
 
 When users access use these buttons to move to the next page to access more products in the specific category or all products.
 
-![Pagination ]()
+![Pagination ](docs/features/shop-page/pagination-feature.gif)
 
 </details>
 
@@ -823,7 +829,7 @@ Users are redirected to product details page when they click on "See More" butto
 
 <details><summary>Product Details page desktop</summary>
 
-![Product Details page desktop](docs/features/details-page/productdetail-manual.gif)
+![Product Details page desktop](docs/features/details-page/productdetail-desktop.gif)
 
 </details>
 
@@ -894,7 +900,7 @@ Users can see reviews of each product in product details page
 
 Users would be able to click Add review button, and a modal will pop up for users to add comments and rate products out of 5 stars as a review for each product.Users will be shown a error message if users try to review products that they have already.
 
-![Add review button](docs/features/details-page/addreview-btn.gif)
+![Add review button](docs/features/details-page/add-review-btnn.gif)
 
 </details>
 
@@ -919,6 +925,14 @@ Users are able to delete reviews that they have added in product details page. A
 Users can only submit review if they have filled the form.
 
 ![Review form validation](docs/features/details-page/review-val.gif)
+
+</details>
+
+<details><summary>Profile link feature</summary>
+
+Users can go to their profile from product reviews if they have reviewed a product
+
+![profile link product page](docs/features/details-page/profilelink-product.gif)
 
 </details>
 
@@ -954,6 +968,14 @@ Users can add wishlist items to shopping bag by clicking on add to bag button fo
 
 </details>
 
+<details><summary>wishlist counter feature</summary>
+
+Every time user adds an item to wishlist, the counter increases on navbar
+
+![All reviews go up button](docs/features/wishlist-page/wishlist-counter-feat.gif)
+
+</details>
+
 
 
 
@@ -964,7 +986,7 @@ Users would be able to see all the products they have added to shopping bag from
 
 <details><summary>Shopping bag Desktop</summary>
 
-![Shopping bag Desktop](docs/features/shoppingbag-page/shoppingbag-desktop.gif)
+![Shopping bag Desktop](docs/features/shoppingbag-page/shoppingbag-desktop.png)
 
 </details>
 
@@ -1006,6 +1028,13 @@ Users will be able to go back to products page by clicking the keep browsing but
 
 </details>
 
+<details><summary>shoppingbag counter feature</summary>
+
+Users will be able to see a counter on navbar everytime they add an item in shoppingbag.
+![Keep browsing button](docs/features/shoppingbag-page/shoppingbag-counter-feat.gif)
+
+</details>
+
 **Checkout page features**
 
 Users can add their details such as name, email, address for delivery and card details to complete their order. Users also has the option to save their details to their profile if they click on save details button.The order summary is shown in this page as well but no changes can be made to the order in this page.
@@ -1013,7 +1042,7 @@ Users can add their details such as name, email, address for delivery and card d
 <details><summary>Checkout page Desktop</summary>
 
 
-![Checkout page desktop](docs/features/checkout-page/checkout-page.gif)
+![Checkout page desktop](docs/features/checkout-page/checkoutpage-desktopn.gif)
 
 </details>
 
@@ -1074,13 +1103,13 @@ Once user is happy about the order and have correctly filled in checkout form, U
 
 <details><summary>Profile page desktop</summary>
 
-![Profile desktop](docs/features/profile/orderhistory.gif)
+![Profile desktop](docs/features/profile/profile-page-desktop.gif)
 
 </details>
 
 <details><summary>Profile page mobile</summary>
 
-![Profile mobile](docs/features/profile/profile-mobile.gif)
+![Profile mobile](docs/features/profile/profile-page-mobile.gif)
 
 </details>
 
@@ -1097,6 +1126,14 @@ User would be able to change their details in this page
 Users would be able to go to the order checkout success page for each order that was placed.
 
 ![Order history feature](docs/features/profile/orderhistory.gif)
+
+</details>
+
+<details><summary>Profile page reviews link</summary>
+
+Users would be see the products that they have reviewed and would be able to go their respective review.
+
+![profile page review link](docs/features/profile/profile-page-review-feat.gif)
 
 </details>
 
@@ -1133,7 +1170,7 @@ Users would be able to go to the order checkout success page for each order that
 <details><summary>Forgot password feature</summary>
  User can click on forgot password link
 
-![Forgot password]()
+![Forgot password](docs/features/login/forgot-password-feat.gif)
 
 </details>
 
@@ -1175,7 +1212,7 @@ I have included front end superuser features for product management.
 
 Superusers would are able to navigate to product management page from navbar drop down from navlink "Account"
 
-![Account dropdown superuser](docs/features/navbar/navbar-open.png)
+![Account dropdown superuser](docs/features/superuser/add-product-desktopn.gif)
 
 </details>
 
@@ -1183,7 +1220,7 @@ Superusers would are able to navigate to product management page from navbar dro
 
 Superusers would be able to go to this page from product management link from the navbar.
 
-![Add product page](docs/features/superuser/addproduct-page.gif)
+![Add product page](docs/features/superuser/add-product-desktopn.gif)
 
 </details>
 
@@ -1199,7 +1236,7 @@ Superusers would be able to add a new product by filling in the form correctly a
 
 Superusers would be able to click on edit button on product details page which will redirect user to edit product page. 
 
-![Superuser edit product page](docs/features/superuser/editproduct.gif)
+![Superuser edit product page](docs/features/superuser/edit-product-pagen.gif)
 
 </details>
 
@@ -1220,7 +1257,13 @@ Superusers would be able to click on delete button on product details page where
 
 </details>
 
+<details><summary>Superuser Remove review feat</summary>
 
+Superusers would be able to remove other user's reviews if their comments are inappropriate.
+
+![Superuser remove review feat](docs/features/superuser/superuser-remove-review.gif)
+
+</details>
 
 
 **Error pages**
