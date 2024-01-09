@@ -1499,6 +1499,7 @@ Your application is now successfully deployed!
 * [Learnt to use css on active nav links here](https://stackoverflow.com/questions/32931436/active-tag-on-bootstrap-with-django/47530688#47530688)
 * [Learnt how to implement wishlist here](https://www.youtube.com/watch?v=pdttUeJi7j8)
 * [Learn how to implement pagination here](https://realpython.com/django-pagination/)
+* [Learn how to implement sorting with pagination here](https://github.com/Dayana-N/Book-Heaven-PP5)- This repository was shared on slack channels, linked in and i was battling to fix my sorting products problem after adding pagination until i tried her products.js code in her repository as i saw she also implemented pagination for her products page and it worked well! Full Credit to Dayana N. 
 
 ### **Content**
 

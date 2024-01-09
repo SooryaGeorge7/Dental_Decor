@@ -1,4 +1,5 @@
-// Handles the sorting of products in shop products page
+// Handles the sorting of products in shop products page with pagination
+// Got this code from dayana https://github.com/Dayana-N/Book-Heaven-PP5
 
 $('#sort-selector').change(function () {
     let selector = $(this);
