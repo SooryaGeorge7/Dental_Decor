@@ -484,7 +484,7 @@ Each Userstory had labels such as must-haves(necessity), should-haves(beneficial
 
 <details><summary>See epics</summary>
 
-![Epics]()
+![Epics](docs/agile/epics.png)
 
 </details>
 
@@ -497,7 +497,14 @@ It  proved valuable in ensuring that the most critical requirements received pro
 
 <details><summary> Moscow </summary>
 
-![Here](Moscow)
+![Moscow](docs/agile/moscow.png)
+
+</details>
+
+<details><summary> Acceptance criterias and tasks</summary>
+
+![Moscow](docs/agile/acceptance-agile.png)
+
 </details>
 
 ### Iterations(Sprints)
@@ -513,6 +520,8 @@ I used the 1st sprint to set up the project and have the basic framework such as
 
 <details><summary>See 1st sprint progress</summary>
 
+![Sprint5](docs/agile/sprint1.png)
+
 </details>
 
 #### 2nd sprint
@@ -522,6 +531,8 @@ During my second sprint, my primary focus was to add all the products in databas
 [Link to 2nd Sprint Kanban board.](https://github.com/users/SooryaGeorge7/projects/6/views/1)
 
 <details><summary>See 2nd sprint progress</summary>
+
+![Sprint2](docs/agile/sprint2.png)
 
 </details>
 
@@ -535,6 +546,8 @@ For my 3rd sprint, i implemented shopping cart functionality and completing a po
 [Link to 3rd Sprint Kanban board.](https://github.com/users/SooryaGeorge7/projects/7/views/1)
 
 <details><summary>See 3nd sprint progress</summary>
+
+![Sprint3](docs/agile/sprint3.png)
 
 </details>
 
@@ -550,6 +563,8 @@ In the fourth sprint, my main objective was to finalize the Payment epic, ensuri
 
 <details><summary>See 4th sprint progress</summary>
 
+![Sprint4](docs/agile/sprint4.png)
+
 </details>
 
 
@@ -562,6 +577,8 @@ I also used this sprint to track my documentation process.
 [Link to the 5th Sprint Kanban board.](https://github.com/users/SooryaGeorge7/projects/9/views/1)
 
 <details><summary>See 5th sprint progress</summary>
+
+![Sprint5](docs/agile/sprint5-progress.png)
 
 </details>
 
@@ -1228,7 +1245,7 @@ Superusers would be able to go to this page from product management link from th
 
 Superusers would be able to add a new product by filling in the form correctly and clicking on this button
 
-![Add product button]()
+![Add product button](docs/features/superuser/add-product-btn.gif)
 
 </details>
 
@@ -1244,7 +1261,7 @@ Superusers would be able to click on edit button on product details page which w
 
 Superusers would be able to click on update button in edit product page if they want to make any changes to a particular product that exists.. 
 
-![Superuser Update product button]()
+![Superuser Update product button](docs/features/superuser/update-product-btn.gif)
 
 </details>
 
@@ -1253,7 +1270,7 @@ Superusers would be able to click on update button in edit product page if they 
 Superusers would be able to click on delete button on product details page where a delete product confirmation modal will pop up for user to confirm deletion.
 
 ![Superuser delete product modal](docs/features/superuser/deleteproduct-modal.gif)
-![Superuser delete product confirmation]()
+![Superuser delete product confirmation](docs/features/superuser/delete-product-btn.gif)
 
 </details>
 
@@ -1323,19 +1340,19 @@ Testing for the wesbite can be found here. [TESTING.md](TESTING.md)
 
 | **Bug** | **Resolution** |
 |---------|----------------|
-| The textarea for leave a review was overflowing in smaller screens  | I managed to add a class to Rating form in forms.py where i can style the class in stylesheet to make textarea responsive. [See solution here]()|
-| The navbar looked very crowded in bigger devices when the navlink icons have description | I managed to hide the descriptions in bigger screens [See solution here]()|
-| The review modals were not popping up when user clicked on the buttons because the review.html contained the review modal while the buttons were located in the product details page | I managed to extend the product details page in review.html and adding javascript to help with this modal poppup up[See solution here]()|
-|User was able to submit contact form without phone number being valid. I could just enter letters instead of numbers and the form would still send [See Problem here]()| I used pattern regression in my forms.py to validate phone number. [See solution here] |
-| Users were not able move to next page when on a specific category using pagination[See problem here]() | I handled this by add categories to pagination links [See solution here]()| 
-|Sorting of products were not working once i implemented pagination [See problem here]()| I handled this with some js code [See solution here]()|
+| The textarea for leave a review was overflowing in smaller screens  | I managed to add a class to Rating form in forms.py where i can style the class in stylesheet to make textarea responsive. [See solution here](docs/bugs/responsive-textarea-sol.png)|
+| The navbar looked very crowded in bigger devices when the navlink icons have description | I managed to hide the descriptions in bigger screens [See solution here](docs/bugs/navbar-congest.png)|
+| The review modals were not popping up when user clicked on the buttons because the review.html contained the review modal while the buttons were located in the product details page | I managed to extend the product details page in review.html and adding javascript to help with this modal poppup up[See solution here](docs/bugs/review-page-sol.png)|
+|User was able to submit contact form without phone number being valid. I could just enter letters instead of numbers and the form would still send [See Problem here](docs/bugs/contactus.png)| I used pattern regression in my forms.py to validate phone number. [See solution here](docs/bugs/pattern-reg-solution.png) |
+| Users were not able move to next page when on a specific category using pagination[See problem here](docs/bugs/paginator-bug.gif) | I handled this by add categories to pagination urls which checks for if products has previous or next.| 
+|Sorting of products were not working once i implemented pagination | I handled this with some js code [See solution here](docs/bugs/sorting-sol.png)|
 
 
 ## **Unresolved Bugs/Issues**
 
 * Search query doesn’t have to make sense to return a result. If user types in “uherge” this will return some products regardless of there is result for that exact query. This is due to the fact the results rendered are not strict to query but rather "could be related" to query.
-* I realized this too late but the add review and edit review modal keeps popping up everytime the product details page the user is already on is reloaded but only if user has clicked on add review or edit review button already.[see bug here]()
-* I would have wanted a pop up to appear for users when on wishlist page after user had clicked on add to bag button to ask user for permission to remove the wishlist item if they already added the item to the shopping bag, but i was not able to implement this due to time constraints and users can only remove wishlist item manually.[See problem here]()
+* I realized this too late but the add review and edit review modal keeps popping up everytime the product details page the user is already on is reloaded but only if user has clicked on add review or edit review button already.
+* I would have wanted a pop up to appear for users when on wishlist page after user had clicked on add to bag button to ask user for permission to remove the wishlist item if they already added the item to the shopping bag, but i was not able to implement this due to time constraints and users can only remove wishlist item manually.[See problem here](docs/bugs/wishlist-bug.gif)
 
 ## Deployment
 
@@ -1345,7 +1362,7 @@ Testing for the wesbite can be found here. [TESTING.md](TESTING.md)
 2. To establish a new application, click the "new" button located at the top right corner of the dashboard, then select "Create new app."
 3. Pick a distinct name for the application, indicate your residing region, and proceed by clicking "Create App."
 
-![Heroku Step]()
+![Heroku Step](docs/heroku-image.png)
 
 ### ElephantSQL
 
@@ -1353,7 +1370,7 @@ Testing for the wesbite can be found here. [TESTING.md](TESTING.md)
 2. Once your project instance is set up, copy the URL. You can store this value as an environment variable to match the DATABASES variable in settings.py.
 3. Utilize pip3 install dj_database_url==0.5.0 to install the dj-database-url package version 0.5.0. This will format the URL into a Django-compatible format and necessitate an update to the requirements.txt file.
 
-![ElephantSQL]()
+![ElephantSQL](docs/elephantsql.png)
 
 ### Final Repo Preparations
 
@@ -1515,7 +1532,7 @@ I would like to acknowledge the following people in helping with my project one 
 
 * My husband for supporting me through my decision to do this course and through all the late nights and meltdowns.. :D
 * My friends ,family and colleagues who have tested my site on their devices to make sure all looks and works well.
-* My Mentor Brian O'Hare for guiding me and giving constructive criticism in our 6 mentor sessions so far.
+* My Mentor Brian O'Hare for guiding me and giving constructive criticism in our  mentor sessions so far.
 * UCD academy november private group in slack for our almost weekly facilitator sessions that have helped me in getting some our doubts cleared with regards to the project.
 * Special shout out to my slack friends Especially Eli Dimitrova and Stuart Parker in Our private UCD group for the encouragements and support.
 * Chris Quinn for delivering our facilitator and master classes so far which has helped me to not feel completely alone in this journey.
