@@ -1,7 +1,6 @@
 # TESTING
 
 
-
 ## Table of Contents
 
 1. [Responsiveness](#responsiveness)
@@ -51,13 +50,19 @@ Unit tests were created to test the functionality of the apps. These can be foun
 
 **Checkout forms.py Test**
 
+Test to ensure that the expected fields are present in the OrderForm, widget attributes of the OrderForm fields are as expected,that the placeholder attributes of the OrderForm fields are as expected.
+  
 ![Checkout forms.py](docs/unit-tests/checkout.test_forms.png)
 
 **Checkout models.py Test**
 
+Test case to ensure that the fields of the Order model are correctly saved and retrieved.
+
 ![Checkout models.py](docs/unit-tests/checkout.test_models.png)
 
 **Checkout views.py Test**
+
+Test case for the cache_checkout_data view when a POST request is made,the shop_checkout view when the user is not authenticated and  when the user is authenticated and for the checkout_success view when a valid order is provided.
 
 ![Checkout views.py](docs/unit-tests/checkout.test_views.png)
 
@@ -65,13 +70,19 @@ Unit tests were created to test the functionality of the apps. These can be foun
 
 **Contactus forms.py Test**
 
+Test for a valid contact form,for an invalid contact form with missing required fields,for an invalid contact form with an invalid email address,for contact form widget attributes,Test case for contact form field labels.
+        
 ![Contactus forms.py](docs/unit-tests/contactus.test_forms.png)
 
 **Contactus models.py Test**
 
+Test case for creating a Contact instance, for the str method of the Contact model, for the auto_now_add attribute of the sent_time field,Test case for the ordering of Contact instances.
+       
 ![Contactus models.py](docs/unit-tests/contactus.test_models.png)
 
 **Contactus views.py Test**
+
+Test case for submitting a valid contact form through the Contact Us view and for submitting an invalid contact form through the Contact Us view.
 
 ![Contactus views.py](docs/unit-tests/contactus.test_views.png)
 
@@ -79,13 +90,19 @@ Unit tests were created to test the functionality of the apps. These can be foun
 
 **Products forms.py Test**
 
+Test case to check if the form is invalid when required fields are missing, that the 'image' field uses the expected widget type,that the 'category' field choices match the expected choices, that the widget classes of form fields match the expected classes.
+
 ![Products forms.py](docs/unit-tests/products.test_forms.png)
 
 **Products models.py Test**
 
+Test  to ensure the creation of a Category instance with the correct attributes, check the string representation of the Category model, check the get_friendly_name method of the Category model, ensure the creation of a Product instance with the correct attributes.
+
 ![Products models.py](docs/unit-tests/products.test_models.png)
 
 **Products views.py Test**
+
+Test case to check the response of the shop_products view, check the response of the product_detail view.
 
 ![Products views.py](docs/unit-tests/products.test_views.png)
 
@@ -93,27 +110,39 @@ Unit tests were created to test the functionality of the apps. These can be foun
 
 **Profiles forms.py Test**
 
+Test case to ensure that the UserProfileForm is created successfully, check if the labels of the UserProfileForm fields match the expected labels, check if the widget attributes of UserProfileForm fields match the expected values, to ensure that the 'user' field is excluded from the UserProfileForm.
+
 ![Profiles forms.py](docs/unit-tests/profile.test_forms.png)
 
 **Profiles models.py Test**
+
+Test case to check if a customer profile is created and contains the expected values and check if the string method of UserProfile returns the expected username.
 
 ![Profiles models.py](docs/unit-tests/profiles.test_models.png)
 
 **Profiles views.py Test**
 
+Test case to check the GET request to the profile view and check the POST request to the profile view with a valid form.
+    
 ![Profiles views.py](docs/unit-tests/profiles.test_views.png)
 
 #### **Reviews App**
 
 **Reviews forms.py Test**
 
+Test case to ensure that the RatingForm contains the expected fields, check the widget attributes of the fields in the RatingForm,ensure that the labels in the RatingForm match the expected labels and verify that the help texts in the RatingForm match the expected help texts.
+
 ![Reviews forms.py](docs/unit-tests/reviews.test_forms.png)
 
 **Reviews models.py Test**
 
+Test case to ensure that the Review model contains the expected fields, check the default values of the Review model, verify the ordering of reviews, check the string representation of the Review model.
+
 ![Reviews models.py](docs/unit-tests/reviews.test_models.png)
 
 **Reviews views.py Test**
+
+Test case for adding a review with an authenticated user, for attempting to add a duplicate review with an authenticated user,for editing a review with an authenticated user,for deleting a review with an authenticated user,Test case for attempting to add a review with an unauthenticated user, Test case for attempting to edit a review with an unauthenticated user,Test case for attempting to delete a review with an unauthenticated user.
 
 ![Reviews views.py](docs/unit-tests/reviews.test_views.png)
 
@@ -121,15 +150,21 @@ Unit tests were created to test the functionality of the apps. These can be foun
 
 **Shoppingbag views.py Test**
 
+Test case to check the rendering of the shopping bag page.
+
 ![Shoppingbag views.py](docs/unit-tests/shoppingbag.test_views.png)
 
 #### **Wishlist App**
 
 **Wishlist models.py Test**
 
+Test case for creating a wishlist item.
+
 ![Wishlist models.py](docs/unit-tests/wishlist.test_models.png)
 
 **Wishlist views.py Test**
+
+Test case for the wishlist view, for adding a product to the wishlist, for removing a product from the wishlist.
 
 ![Wishlist views.py](docs/unit-tests/wishlist.test_views.png)
 
@@ -142,7 +177,7 @@ Unit tests were created to test the functionality of the apps. These can be foun
 ------------ | ------------ | ------------ |
 User can navigate to [Home Page](https://dental-decor-ee0d87f16edf.herokuapp.com/) | Dental Decor home page loads | As Expected 
 User can access all home page features. ie: carousal, shop now button, newsletter sub, Contact me form, social media links | All buttons, links, features work | As expected 
-User should experince the home page to be responsive | App works on different device sizes | As expected
+User should experience the home page to be responsive | App works on different device sizes | As expected
 
 ***
 
@@ -153,8 +188,7 @@ User should experince the home page to be responsive | App works on different de
 ------------ | ------------ | ------------ |
 User can navigate through website  | Navigation is intuitive | As expected
 User Can click on navbar links in different screen sizes | Navbar is responsive | As expected 
-User Can hover over navlinks | Navbar icons change color | As expected 
-
+User Can hover over navlinks | Navbar icons change color and width | As expected 
 
 
 ***
@@ -189,7 +223,7 @@ User can click on links on footer | Links can redirect user to relevant pages | 
 ------------ | ------------ | ------------ |
 User can click on shop button/icon on navigation bar | Navigation link leads to shop products page | As expected 
 User can click on shop now button on carousal in home page | Button redirects to shop products page | As expected 
-
+User can click on pagination buttons | User is redirected to next page which shows the products in the category chosen | As expected 
 
 *** 
 
@@ -346,8 +380,7 @@ User can scroll down to see other users reviews | Edit review button is not show
 ------------ | ------------ | ------------ |
 User can click on delete button for user's reviews | Delete review modal pops up to confirm user's actions | As expected 
 User can click on delete button on delete review modal | Review made by user is then deleted | As expected
-
-
+superusers can click on delete button on other users reviews | Review made by others can be deleted | As expected
 
 
 ### User story:Add to wishlist
@@ -373,9 +406,9 @@ User can click on remove button in confirm removal popup | wishlist item is remo
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-User can click on phone icon on navbar | User is directed to contact us form | As expected 
+User can click on contact navlink on navbar | User is directed to contact us form | As expected 
 User can click on send query button in contact us form | User is given a success message that the message has been sent and user is sent an email message| As expected
-
+User enters alphabets in phone field | validation error pops up because user is not entering valid phone number | As expected 
 
 ### User story:See Reviews 
 * As a User i can see all product reviews so that i can decide if i want to buy a product with more information
@@ -515,9 +548,6 @@ All pages were run through the [W3C Markup Validator](https://validator.w3.org/n
 
 The errors shown below were all corrected accordingly:
 
-1. Error 1
-
-![Error 1]()
 
 **homepage**
 
@@ -581,6 +611,12 @@ The errors shown below were all corrected accordingly:
 
 A number of issues were found during lighthouse testing which were all corrected.
 Namely :
+
+- Incorrect image ratios.
+- Not setting fixed width and height for images.
+- Not having aria-labels for all links.
+- Not have alt for images
+
 
 #### **Home Page**
 
@@ -739,7 +775,14 @@ Namely :
 All pages were tested using [Wave Evaluation Tool](https://wave.webaim.org/) via the Chrome extension.
 The following errors were found and corrected : 
 
+1. There was a Contrast error for home page. The yellow i chose was used with white text which gave a contrast error. I changed the text to black.
+2. Headings were not in sequential order, this was corrected on all pages.
+3. Images had alerted suspicious alt test which were also corrected.
+4. First headings on each page were not starting with h1 tag.
 
+All the above alerts and errors were corrected but there remained alerts for redundant link. This would be the case for pages that would have links to all pages pages on other areas other than just the navbar.
+
+All pages otherwise passed WAVE validation.
 
 
 ****
