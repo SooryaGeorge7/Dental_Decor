@@ -526,7 +526,7 @@ The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the p
 
 **add_rate.js**
 ![add_rate.js JSHint Results](docs/validation/js/addreview-jsval.png)
-
+![sort.js JSHint Results](docs/validation/js/sort-js.png)
 
 
 ### **W3C CSS Validator**
