@@ -26,14 +26,15 @@
     2. [Libraries and Tools](#libraries--tools)
 7. [Features](#features)
 8. [Future Features](#future-features)
+9. [Testing](#testing)
+10. [Bugs](#bugs)
+11. [Deployment](#deployment)
 
-9. [Deployment](#deployment)
-
-10. [Credits](#credits)
+12. [Credits](#credits)
     1. [Code](#code)
     2. [Tutorials](#tutorials)
     3. [Imagery](#imagery)
-11. [Acknowledgements](#acknowledgements)
+13. [Acknowledgements](#acknowledgements)
 
 ## Overview
 
@@ -1332,7 +1333,7 @@ Unregistered users can access all features of website except wishlist page, the 
 
 
 ## Testing
-Testing for the wesbite can be found here. [TESTING.md](TESTING.md)
+Testing for the wesbite can be found here. [TESTING.md](/TESTING.md)
 
 ## Bugs
 
