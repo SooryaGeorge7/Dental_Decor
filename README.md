@@ -1,6 +1,8 @@
 # DentalDecor
 
+![Site Display](docs/am-i-responsive-final.gif)
 
+[Link to deployed verson](https://dental-decor-ee0d87f16edf.herokuapp.com/)
 
 ## Table of Contents
 
@@ -476,8 +478,8 @@ related_name='lineitems'|
 
 ### Overview
 
-Agile Methodology were followed more closely in this project compared to my last project. Although this was my second attempt in implementing and prioritizing tasks, changes were made on th way to accomodate project needs. I have used milestones as Epics , Userstories to implement the project tasks and see through user stories.My kanban board are constructed by sprints this time.This allowed me a regularly correct and improve where needed.Overall, .By implementing Agile principles and design, I was confident in delivering a high-quality and user-centric e-commerce website.
-Each Userstory had labels such as must-haves(necessity), should-haves(beneficial to have), could-haves(not important, nice to have).  During development of website, most of the must-haves were implemented first to reach the MVP project(except README and TESTING). I  used userstories to allocate story points and how much story points to provide for each user story.Story points were allocated according to complexity or how time consuming the user story was.The should-have user story points did not exceed 60% of user story points total. The must-have user stories were prioritized first. Certain other user stories were implemented based on time and complexity. Project Kanan board was used to track progress with user stories moving between Todo, In Progress and Done columns.The kanan board can be located here. All user stories have acceptance critera and tasks that needs to be ticked off on the go as this will mark the story as complete.The acceptance criteria, with tasks associated with each user story can be found in project kanban boards linked ![Here](https://github.com/SooryaGeorge7/Dental_Decor/projects?query=is%3Aopen)
+Agile Methodology were followed more closely in this project compared to my last project. Although this was my second attempt in implementing and prioritizing tasks, changes were made on th way to accomodate project needs. I have used milestones as Epics , Userstories to implement the project tasks and see through user stories.My kanban board are constructed by sprints this time.This allowed me to regularly correct and improve where needed.Overall, .By implementing Agile principles and design, I was confident in delivering a high-quality and user-centric e-commerce website.
+Each Userstory had labels such as must-haves(necessity), should-haves(beneficial to have), could-haves(not important, nice to have).  During development of website, most of the must-haves were implemented first to reach the MVP project(except README and TESTING). I  used userstories to allocate story points and how much story points to provide for each user story.Story points were allocated according to complexity or how time consuming the user story was.The should-have user story points did not exceed 60% of user story points total. The must-have user stories were prioritized first. Certain other user stories were implemented based on time and complexity. Project Kanan board was used to track progress with user stories moving between Todo, In Progress and Done columns.The kanan board can be located here. All user stories have acceptance critera and tasks that needs to be ticked off on the go as this will mark the story as complete.The acceptance criteria, with tasks associated with each user story can be found in project kanban boards linked [Here](https://github.com/SooryaGeorge7/Dental_Decor/projects?query=is%3Aclosed)
 
 
 ### Epics(Milestones)
@@ -622,7 +624,7 @@ Leveraging Agile methodologies across the 5 sprints of my  e-commerce project, I
 
 1. **REGISTERED USER FEATURES**
 
-Registered users for DublinEats would be able to access all features available.
+Registered users for DentalDecor would be able to access all features available.
 
 **Across All Pages**
 

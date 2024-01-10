@@ -494,7 +494,6 @@ The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the p
 | apps.py            |returned no errors |     Pass      |
 | urls.py            |returned no errors |     Pass      |
 | views.py           |returned no errors |     Pass      |
-| test_views.py      |returned no errors |     Pass      |
 |--------------------|-------------------|---------------|
 |    **Products**    |                   |               |
 | admin.py           |returned no errors |     Pass      |
@@ -502,6 +501,8 @@ The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the p
 | urls.py            |returned no errors |     Pass      |
 | views.py           |returned no errors |     Pass      |
 | models.py          |returned no errors |     Pass      |
+| forms.py           |returned no errors |     Pass      |
+| widgets.py         |returned no errors |     Pass      |
 |--------------------|-------------------|---------------|
 |  **reviews**       |                   |               |
 | admin.py           |returned no errors |     Pass      |
@@ -511,7 +512,7 @@ The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the p
 | models.py          |returned no errors |     Pass      |
 | forms.py           |returned no errors |     Pass      |
 |--------------------|-------------------|---------------|
-|    **Profile**     |                   |               |
+|    **Profiles**     |                   |               |
 | admin.py           |returned no errors |    Pass       |
 | apps.py            |returned no errors |    Pass       |
 | urls.py            |returned no errors |    Pass       |
@@ -519,7 +520,43 @@ The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the p
 | models.py          |returned no errors |    Pass       |
 | forms.py           |returned no errors |    Pass       |
 |--------------------|-------------------|---------------|
-
+|    **Shoppingbag** |                   |               |
+| admin.py           |returned no errors |    Pass       |
+| apps.py            |returned no errors |    Pass       |
+| urls.py            |returned no errors |    Pass       |
+| views.py           |returned no errors |    Pass       |
+| models.py          |returned no errors |    Pass       |
+| forms.py           |returned no errors |    Pass       |
+| contexts.py        |returned no errors |    Pass       |
+|--------------------|-------------------|---------------|
+|    **Wishlist**    |                   |               |
+| admin.py           |returned no errors |    Pass       |
+| apps.py            |returned no errors |    Pass       |
+| urls.py            |returned no errors |    Pass       |
+| views.py           |returned no errors |    Pass       |
+| models.py          |returned no errors |    Pass       |
+| forms.py           |returned no errors |    Pass       |
+| contexts.py        |returned no errors |    Pass       |
+|--------------------|-------------------|---------------|
+|    **ContactUs**   |                   |               |
+| admin.py           |returned no errors |    Pass       |
+| apps.py            |returned no errors |    Pass       |
+| urls.py            |returned no errors |    Pass       |
+| views.py           |returned no errors |    Pass       |
+| models.py          |returned no errors |    Pass       |
+| forms.py           |returned no errors |    Pass       |
+|--------------------|-------------------|---------------|
+|    **Checkout**    |                   |               |
+| admin.py           |returned no errors |    Pass       |
+| apps.py            |returned no errors |    Pass       |
+| urls.py            |returned no errors |    Pass       |
+| views.py           |returned no errors |    Pass       |
+| models.py          |returned no errors |    Pass       |
+| forms.py           |returned no errors |    Pass       |
+| signals.py         |returned no errors |    Pass       |
+| webhook_handler.py |returned no errors |    Pass       |
+| webhooks.py        |returned no errors |    Pass       |
+|--------------------|-------------------|---------------|
 
 ### **JSHint**
 
@@ -533,12 +570,16 @@ The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the p
 
 base.css was passed through [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) with no errors.
 
+- Base.css
 * ![Base CSS](docs/validation/css/base-cssvalidation.png)
 
+- Checkout.css
 * ![Checkout CSS](docs/validation/css/checkout-css-validation.png)
 
+- Products.css
 * ![Products CSS](docs/validation/css/products-css-validation.png)
 
+- Profile.css
 * ![Profile CSS](docs/validation/css/profile-css-validation.png)
 
 
